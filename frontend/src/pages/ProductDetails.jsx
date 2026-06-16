@@ -299,7 +299,7 @@ export const ProductDetails = () => {
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <img 
+                  <img referrerPolicy="no-referrer" 
                     src={galleryImages[activeImgIndex] || product.image || product.imageUrl || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'} 
                     alt={product.name} 
                     className="w-full h-full object-cover transition-transform duration-100 ease-out" 
@@ -323,7 +323,7 @@ export const ProductDetails = () => {
                           : 'border-slate-200 dark:border-darkBorder/40 hover:border-slate-400'
                       }`}
                     >
-                      <img 
+                      <img referrerPolicy="no-referrer" 
                         src={img} 
                         alt={`${product.name} thumb-${idx}`} 
                         className="w-full h-full object-cover" 
@@ -453,7 +453,7 @@ export const ProductDetails = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center">
             {/* Primary Product Mini Summary */}
             <div className="p-4 rounded-2xl border border-slate-200 bg-white/40 dark:bg-darkCard/40 dark:border-darkBorder/40 glass flex gap-3 text-xs items-center">
-               <img 
+               <img referrerPolicy="no-referrer" 
                 src={product.images?.[0] || product.image || product.imageUrl || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'} 
                 alt="primary" 
                 className="w-12 h-12 object-cover rounded-xl bg-slate-100" 
@@ -475,7 +475,7 @@ export const ProductDetails = () => {
                 className="p-4 rounded-2xl border border-emerald-500/25 bg-emerald-500/5 glass flex justify-between items-center text-xs"
               >
                 <div className="flex gap-3 items-center min-w-0">
-                  <img 
+                  <img referrerPolicy="no-referrer" 
                     src={item.images?.[0] || item.image || item.imageUrl || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'} 
                     alt={item.name} 
                     className="w-12 h-12 object-cover rounded-xl bg-slate-100" 

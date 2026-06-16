@@ -225,7 +225,7 @@ export const CustomerDashboard = () => {
               <div className="relative group">
                 <div className="w-16 h-16 rounded-full border-2 border-emerald-500/30 overflow-hidden bg-slate-100 dark:bg-darkBorder/40 flex items-center justify-center text-slate-700 dark:text-slate-200">
                   {user?.profileImage ? (
-                    <img src={user.profileImage} alt="Profile" className="w-full h-full object-cover" />
+                    <img referrerPolicy="no-referrer" src={user.profileImage} alt="Profile" className="w-full h-full object-cover" />
                   ) : (
                     <span className="text-xl font-black uppercase">{user?.name ? user.name[0] : 'U'}</span>
                   )}

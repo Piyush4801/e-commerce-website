@@ -95,7 +95,7 @@ export const Cart = () => {
               className="p-4 rounded-2xl border border-slate-200 dark:border-darkBorder bg-white dark:bg-darkCard flex flex-col sm:flex-row gap-4 items-center justify-between glass hover:border-emerald-500/20 transition-all duration-300"
             >
               <div className="flex gap-4 items-center w-full sm:w-auto">
-                <img 
+                <img referrerPolicy="no-referrer" 
                   src={item.image} 
                   alt={item.name} 
                   className="w-16 h-16 object-cover rounded-xl bg-slate-100 dark:bg-slate-900" 

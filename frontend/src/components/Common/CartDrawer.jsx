@@ -84,7 +84,7 @@ export const CartDrawer = () => {
                   key={item.productId}
                   className="p-3.5 rounded-2xl border border-slate-100 dark:border-darkBorder/60 bg-white/50 dark:bg-darkCard/40 flex items-center gap-3.5 hover:border-emerald-500/20 dark:hover:border-emerald-500/20 transition-all duration-300 group"
                 >
-                  <img 
+                  <img referrerPolicy="no-referrer" 
                     src={item.image} 
                     alt={item.name} 
                     className="w-14 h-14 object-cover rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200/40 dark:border-darkBorder/40" 

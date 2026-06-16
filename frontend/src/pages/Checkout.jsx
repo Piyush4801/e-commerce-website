@@ -402,7 +402,7 @@ export const Checkout = () => {
             <div className="flex flex-col gap-4.5 max-h-[500px] overflow-y-auto pr-1">
               {cart.map(item => (
                 <div key={item.productId} className="flex gap-3 items-center py-2.5 border-b border-slate-100 dark:border-darkBorder/20 last:border-none">
-                  <img 
+                  <img referrerPolicy="no-referrer" 
                     src={item.image || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'} 
                     alt={item.name} 
                     className="w-12 h-12 object-cover rounded-xl bg-slate-100 shrink-0" 

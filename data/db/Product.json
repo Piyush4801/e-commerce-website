@@ -1,1 +1,252 @@
-[]
+[
+  {
+    "_id": "prod_piyush_100",
+    "name": "Quantum Chrono Smartwatch",
+    "description": "Next-gen smartwatch with AMOLED display, heart rate tracker, and 7-day battery life.",
+    "price": 12999,
+    "category": "Electronics",
+    "stock": 50,
+    "sellerId": "seller_piyush_001",
+    "sellerName": "Piyush Elite Merchant",
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+    ],
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
+    "imageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
+    "thumbnail": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
+    "rating": 4.8,
+    "reviewCount": 15,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.5,
+      "carbonFootprint": 1.5
+    },
+    "createdAt": "2026-06-16T22:54:57.675Z",
+    "updatedAt": "2026-06-16T22:54:57.675Z"
+  },
+  {
+    "_id": "prod_piyush_101",
+    "name": "AuraSound Active ANC Earbuds",
+    "description": "Hi-Fi sound wireless earbuds with active noise cancellation and ergonomic fit.",
+    "price": 5499,
+    "category": "Electronics",
+    "stock": 60,
+    "sellerId": "seller_piyush_001",
+    "sellerName": "Piyush Elite Merchant",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+    ],
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500",
+    "thumbnail": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500",
+    "rating": 4.6,
+    "reviewCount": 18,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 3.8,
+      "carbonFootprint": 2.3
+    },
+    "createdAt": "2026-06-16T22:54:57.675Z",
+    "updatedAt": "2026-06-16T22:54:57.675Z"
+  },
+  {
+    "_id": "prod_piyush_102",
+    "name": "Nomad Canvas Travel Backpack",
+    "description": "Durable, weather-resistant canvas backpack with dedicated 16-inch laptop sleeve.",
+    "price": 3499,
+    "category": "Fashion",
+    "stock": 70,
+    "sellerId": "seller_piyush_001",
+    "sellerName": "Piyush Elite Merchant",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+    ],
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
+    "thumbnail": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
+    "rating": 4.5,
+    "reviewCount": 21,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.5,
+      "carbonFootprint": 3.1
+    },
+    "createdAt": "2026-06-16T22:54:57.676Z",
+    "updatedAt": "2026-06-16T22:54:57.676Z"
+  },
+  {
+    "_id": "prod_piyush_103",
+    "name": "Full-Grain Leather Minimalist Wallet",
+    "description": "Handcrafted slim leather wallet with RFID blocking and 6 card slots.",
+    "price": 1899,
+    "category": "Fashion",
+    "stock": 80,
+    "sellerId": "seller_piyush_001",
+    "sellerName": "Piyush Elite Merchant",
+    "images": [
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500"
+    ],
+    "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500",
+    "imageUrl": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500",
+    "thumbnail": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500",
+    "rating": 4.7,
+    "reviewCount": 24,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 3.8,
+      "carbonFootprint": 3.9000000000000004
+    },
+    "createdAt": "2026-06-16T22:54:57.676Z",
+    "updatedAt": "2026-06-16T22:54:57.676Z"
+  },
+  {
+    "_id": "prod_piyush_104",
+    "name": "AeroGlide Wireless Gaming Mouse",
+    "description": "Ultra-lightweight gaming mouse with 20K DPI sensor and customizable RGB lighting.",
+    "price": 2999,
+    "category": "Electronics",
+    "stock": 90,
+    "sellerId": "seller_piyush_001",
+    "sellerName": "Piyush Elite Merchant",
+    "images": [
+      "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=500"
+    ],
+    "image": "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=500",
+    "imageUrl": "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=500",
+    "thumbnail": "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=500",
+    "rating": 4.4,
+    "reviewCount": 27,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 3,
+      "carbonFootprint": 4.7
+    },
+    "createdAt": "2026-06-16T22:54:57.676Z",
+    "updatedAt": "2026-06-16T22:54:57.676Z"
+  },
+  {
+    "_id": "prod_piyush_105",
+    "name": "ThermoShield Insulated Mug",
+    "description": "Double-wall stainless steel travel mug that keeps drinks hot for 12 hours.",
+    "price": 1299,
+    "category": "Home & Kitchen",
+    "stock": 100,
+    "sellerId": "seller_piyush_001",
+    "sellerName": "Piyush Elite Merchant",
+    "images": [
+      "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500"
+    ],
+    "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500",
+    "imageUrl": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500",
+    "thumbnail": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500",
+    "rating": 4.9,
+    "reviewCount": 30,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.5,
+      "carbonFootprint": 5.5
+    },
+    "createdAt": "2026-06-16T22:54:57.676Z",
+    "updatedAt": "2026-06-16T22:54:57.676Z"
+  },
+  {
+    "_id": "prod_piyush_106",
+    "name": "Lumina RGB Mechanical Keyboard",
+    "description": "Tenkeyless mechanical keyboard with hot-swappable brown switches.",
+    "price": 7999,
+    "category": "Electronics",
+    "stock": 110,
+    "sellerId": "seller_piyush_001",
+    "sellerName": "Piyush Elite Merchant",
+    "images": [
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500"
+    ],
+    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500",
+    "imageUrl": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500",
+    "thumbnail": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500",
+    "rating": 4.7,
+    "reviewCount": 33,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 3,
+      "carbonFootprint": 6.300000000000001
+    },
+    "createdAt": "2026-06-16T22:54:57.676Z",
+    "updatedAt": "2026-06-16T22:54:57.676Z"
+  },
+  {
+    "_id": "prod_piyush_107",
+    "name": "Verdant Ceramic Succulent Pot",
+    "description": "Handcrafted ceramic planter pot complete with drainage hole and bamboo saucer.",
+    "price": 899,
+    "category": "Home & Kitchen",
+    "stock": 120,
+    "sellerId": "seller_piyush_001",
+    "sellerName": "Piyush Elite Merchant",
+    "images": [
+      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500"
+    ],
+    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500",
+    "imageUrl": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500",
+    "thumbnail": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500",
+    "rating": 4.3,
+    "reviewCount": 36,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.5,
+      "carbonFootprint": 7.1000000000000005
+    },
+    "createdAt": "2026-06-16T22:54:57.676Z",
+    "updatedAt": "2026-06-16T22:54:57.676Z"
+  },
+  {
+    "_id": "prod_piyush_108",
+    "name": "PureEssence Organic Facial Serum",
+    "description": "Natural hyaluronic acid and vitamin C serum for glowing skin.",
+    "price": 2499,
+    "category": "Beauty & Personal Care",
+    "stock": 130,
+    "sellerId": "seller_piyush_001",
+    "sellerName": "Piyush Elite Merchant",
+    "images": [
+      "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500"
+    ],
+    "image": "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500",
+    "imageUrl": "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500",
+    "thumbnail": "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500",
+    "rating": 4.8,
+    "reviewCount": 39,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.5,
+      "carbonFootprint": 7.9
+    },
+    "createdAt": "2026-06-16T22:54:57.676Z",
+    "updatedAt": "2026-06-16T22:54:57.676Z"
+  },
+  {
+    "_id": "prod_piyush_109",
+    "name": "RetroCam Polaroid Instant Camera",
+    "description": "Vintage style instant print camera with automatic exposure and built-in flash.",
+    "price": 9999,
+    "category": "Electronics",
+    "stock": 140,
+    "sellerId": "seller_piyush_001",
+    "sellerName": "Piyush Elite Merchant",
+    "images": [
+      "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=500"
+    ],
+    "image": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=500",
+    "imageUrl": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=500",
+    "thumbnail": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=500",
+    "rating": 4.5,
+    "reviewCount": 42,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 3,
+      "carbonFootprint": 8.7
+    },
+    "createdAt": "2026-06-16T22:54:57.676Z",
+    "updatedAt": "2026-06-16T22:54:57.676Z"
+  }
+]

@@ -13,5 +13,30 @@
     "isVerifiedSeller": false,
     "createdAt": "2026-06-16T22:44:19.273Z",
     "updatedAt": "2026-06-16T22:44:19.275Z"
+  },
+  {
+    "_id": "seller_piyush_001",
+    "name": "Piyush Elite Merchant",
+    "email": "seller_piyush@gmail.com",
+    "password": "$2a$12$sTKw1GGgMTEiLHc8BbC25.c0iQggr0Enz4.aME3ppmFUeP0xvbw5S",
+    "phone": "+919876543210",
+    "mobile": "+919876543210",
+    "role": "seller",
+    "status": "active",
+    "isVerifiedSeller": true,
+    "addresses": [
+      {
+        "street": "45 Tech Boulevard",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "zipCode": "411001",
+        "country": "India",
+        "isDefault": true
+      }
+    ],
+    "rewardPoints": 100,
+    "tier": "Silver",
+    "createdAt": "2026-06-16T22:54:57.669Z",
+    "updatedAt": "2026-06-16T22:54:57.671Z"
   }
 ]

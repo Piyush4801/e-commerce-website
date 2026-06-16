@@ -50,7 +50,7 @@ const authLimiter = rateLimit({
   },
   skip: (req, res) => {
     // Skip rate limiter for admin demo credentials during development
-    if (process.env.NODE_ENV !== 'production' && req.body && req.body.emailOrMobile === 'admin@smartcart.com') {
+    if (process.env.NODE_ENV !== 'production' && req.body && req.body.emailOrMobile === 'piyush24@gmail.com') {
       console.log('⚡ [Rate Limit Bypass]: Skipping rate limiter for Admin demo login in development.');
       return true;
     }
@@ -199,54 +199,25 @@ const ensureDefaultAccounts = async () => {
     const bcrypt = require('bcryptjs');
 
     // 1. Ensure Default Admin
-    const adminEmail = 'admin@smartcart.com';
+    const adminEmail = 'piyush24@gmail.com';
     let admin = await User.findOne({ email: adminEmail });
-    const hashedAdminPassword = bcrypt.hashSync('Admin@123', 10);
+    const hashedAdminPassword = bcrypt.hashSync('Piyush4801@#$', 12);
     if (!admin) {
       admin = await User.create({
-        name: 'System Admin',
+        name: 'Piyush Admin',
         email: adminEmail,
         password: hashedAdminPassword,
-        phone: '+15550100',
+        phone: '+919999999999',
         role: 'admin',
         status: 'active',
         addresses: [],
         rewardPoints: 0,
         tier: 'Platinum'
       });
-      console.log('🌱 [Auto Seed]: Default Admin account created successfully.');
+      console.log('🌱 [Auto Seed]: Admin account piyush24@gmail.com created successfully.');
     } else {
       await User.findByIdAndUpdate(admin._id || admin.id, { $set: { password: hashedAdminPassword } });
-      console.log('🌱 [Auto Seed]: Default Admin account verified and password reset to Admin@123.');
-    }
-
-    // 2. Ensure Default Seller
-    const sellerEmail = 'seller@smartcart.com';
-    let seller = await User.findOne({ email: sellerEmail });
-    const hashedSellerPassword = bcrypt.hashSync('Seller@123', 10);
-    if (!seller) {
-      seller = await User.create({
-        name: 'Vendor Elite 1',
-        email: sellerEmail,
-        password: hashedSellerPassword,
-        phone: '+91987654320',
-        role: 'seller',
-        status: 'active',
-        addresses: [{
-          street: '12 Industrial Estate',
-          city: 'Mumbai',
-          state: 'Maharashtra',
-          zipCode: '400001',
-          country: 'India',
-          isDefault: true
-        }],
-        rewardPoints: 100,
-        tier: 'Silver'
-      });
-      console.log('🌱 [Auto Seed]: Default Seller account created successfully.');
-    } else {
-      await User.findByIdAndUpdate(seller._id || seller.id, { $set: { password: hashedSellerPassword } });
-      console.log('🌱 [Auto Seed]: Default Seller account verified and password reset to Seller@123.');
+      console.log('🌱 [Auto Seed]: Admin account piyush24@gmail.com verified.');
     }
   } catch (err) {
     console.error('❌ [Auto Seed Failed]:', err.message);
@@ -259,7 +230,9 @@ const startServer = async () => {
   await connectDB();
 
   // Run database seed
-  await seedDatabase();
+  if (process.env.SEED_DATABASE === 'true') {
+    await seedDatabase();
+  }
 
   // Ensure Admin and Seller exist with correct credentials
   await ensureDefaultAccounts();

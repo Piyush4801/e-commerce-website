@@ -24,7 +24,19 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 // Basic Middlewares
-app.use(helmet());
+app.use(helmet({
+  crossOriginResourcePolicy: false,
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+      styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+      fontSrc: ["'self'", "https://fonts.gstatic.com"],
+      imgSrc: ["'self'", "data:", "blob:", "https://images.unsplash.com", "https://plus.unsplash.com", "https://source.unsplash.com", "https://*.unsplash.com", "*"],
+      connectSrc: ["'self'", "ws:", "wss:", "http:", "https:"],
+    },
+  },
+}));
 app.use(xssClean());
 app.use(cookieParser());
 

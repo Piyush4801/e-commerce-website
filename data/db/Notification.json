@@ -1,8 +1,18 @@
 [
   {
+    "_id": "notif_1",
+    "createdAt": "2026-06-16T20:50:03.125Z",
+    "updatedAt": "2026-06-16T20:50:03.125Z",
+    "userId": "admin_id",
+    "title": "System Setup Complete",
+    "message": "SmartCart AI initialized with 100+ items.",
+    "type": "success",
+    "isRead": true
+  },
+  {
     "_id": "notif_2",
-    "createdAt": "2026-06-16T14:11:55.633Z",
-    "updatedAt": "2026-06-16T14:11:55.633Z",
+    "createdAt": "2026-06-16T20:50:03.126Z",
+    "updatedAt": "2026-06-16T20:50:03.126Z",
     "userId": "seller_1",
     "title": "Low Stock Alert",
     "message": "SmartCart Quantum Laptop is running low (3 left).",
@@ -10,190 +20,29 @@
     "isRead": false
   },
   {
-    "_id": "kdmlekrbr",
-    "createdAt": "2026-06-16T18:28:15.848Z",
-    "updatedAt": "2026-06-16T18:28:15.848Z",
-    "userId": "seller_1",
-    "title": "🔔 New Order Received",
-    "message": "Order #6UGMEL of ₹2,700 has been placed.",
-    "type": "success"
+    "_id": "notif_3",
+    "createdAt": "2026-06-16T20:50:03.126Z",
+    "updatedAt": "2026-06-16T20:50:03.126Z",
+    "userId": "all",
+    "title": "Carbon Offset Launch",
+    "message": "You can now offset your delivery footprint during checkout.",
+    "type": "info",
+    "isRead": false
   },
   {
-    "_id": "w98l3ttlo",
-    "createdAt": "2026-06-16T18:28:15.848Z",
-    "updatedAt": "2026-06-16T18:28:15.848Z",
-    "userId": "seller_5",
-    "title": "🔔 New Order Received",
-    "message": "Order #6UGMEL of ₹2,700 has been placed.",
-    "type": "success"
-  },
-  {
-    "_id": "vhsq1cwou",
-    "createdAt": "2026-06-16T18:28:15.849Z",
-    "updatedAt": "2026-06-16T18:28:15.849Z",
-    "userId": "customer_1",
-    "title": "📦 Order Confirmed!",
-    "message": "Your order for ₹2,700 has been confirmed. You earned 270 reward points!",
-    "type": "success"
-  },
-  {
-    "_id": "ramud7506",
-    "createdAt": "2026-06-16T18:39:57.619Z",
-    "updatedAt": "2026-06-16T18:39:57.619Z",
-    "userId": "hzdnbywqt",
-    "title": "Welcome to SmartCart AI! 🎉",
-    "message": "Earn reward points on every purchase and unlock tiers for flat discounts!",
-    "type": "success"
-  },
-  {
-    "_id": "tkmswfamn",
-    "createdAt": "2026-06-16T18:41:52.453Z",
-    "updatedAt": "2026-06-16T18:41:52.453Z",
-    "userId": "to51n2d7w",
-    "title": "Welcome to SmartCart AI! 🎉",
-    "message": "Earn reward points on every purchase and unlock tiers for flat discounts!",
-    "type": "success"
-  },
-  {
-    "_id": "2wydsk4xb",
-    "createdAt": "2026-06-16T18:46:50.014Z",
-    "updatedAt": "2026-06-16T18:46:50.014Z",
-    "userId": "seller_10",
-    "title": "💼 Account Status Update",
-    "message": "Congratulations! Your seller application has been approved. You can now list products.",
-    "type": "success"
-  },
-  {
-    "_id": "ibg7tk3ch",
-    "createdAt": "2026-06-16T18:46:57.431Z",
-    "updatedAt": "2026-06-16T18:46:57.431Z",
-    "userId": "customer_8",
-    "title": "✅ Transaction Cleared",
-    "message": "Your transaction has passed verification. Your order #rder_7 is now active.",
-    "type": "success"
-  },
-  {
-    "_id": "97bb258r2",
-    "createdAt": "2026-06-16T18:46:59.332Z",
-    "updatedAt": "2026-06-16T18:46:59.332Z",
-    "userId": "customer_12",
-    "title": "✅ Transaction Cleared",
-    "message": "Your transaction has passed verification. Your order #der_11 is now active.",
-    "type": "success"
-  },
-  {
-    "_id": "d9c424umf",
-    "createdAt": "2026-06-16T18:47:00.215Z",
-    "updatedAt": "2026-06-16T18:47:00.215Z",
-    "userId": "customer_4",
-    "title": "✅ Transaction Cleared",
-    "message": "Your transaction has passed verification. Your order #der_23 is now active.",
-    "type": "success"
-  },
-  {
-    "_id": "8a2rjbtfa",
-    "createdAt": "2026-06-16T18:47:01.081Z",
-    "updatedAt": "2026-06-16T18:47:01.081Z",
-    "userId": "customer_16",
-    "title": "✅ Transaction Cleared",
-    "message": "Your transaction has passed verification. Your order #der_35 is now active.",
-    "type": "success"
-  },
-  {
-    "_id": "ymu1j9nky",
-    "createdAt": "2026-06-16T18:48:14.916Z",
-    "updatedAt": "2026-06-16T18:48:14.916Z",
-    "userId": "seller_5",
-    "title": "🔔 New Order Received",
-    "message": "Order #CP2UMX of ₹6,349 has been placed.",
-    "type": "success"
-  },
-  {
-    "_id": "ptomgv569",
-    "createdAt": "2026-06-16T18:48:14.916Z",
-    "updatedAt": "2026-06-16T18:48:14.916Z",
-    "userId": "seller_7",
-    "title": "🔔 New Order Received",
-    "message": "Order #CP2UMX of ₹6,349 has been placed.",
-    "type": "success"
-  },
-  {
-    "_id": "t3mh1xx87",
-    "createdAt": "2026-06-16T18:48:14.917Z",
-    "updatedAt": "2026-06-16T18:48:14.917Z",
-    "userId": "customer_1",
-    "title": "📦 Order Confirmed!",
-    "message": "Your order for ₹6,349 has been confirmed. You earned 634 reward points!",
-    "type": "success"
-  },
-  {
-    "_id": "3vqenayoa",
-    "createdAt": "2026-06-16T19:47:33.405Z",
-    "updatedAt": "2026-06-16T19:47:33.405Z",
+    "_id": "c15fcr6fq",
+    "createdAt": "2026-06-16T20:51:43.796Z",
+    "updatedAt": "2026-06-16T20:51:43.796Z",
     "userId": "admin",
     "title": "🔑 Admin Login Detected",
     "message": "Admin logged in from ::1 using Unknown Browser on Unknown Device.",
     "type": "info"
   },
   {
-    "_id": "l5a23a7if",
-    "createdAt": "2026-06-16T20:11:58.677Z",
-    "updatedAt": "2026-06-16T20:11:58.677Z",
-    "userId": "o1zg1cvh5",
-    "title": "Welcome to SmartCart AI! 🎉",
-    "message": "Earn reward points on every purchase and unlock tiers for flat discounts!",
-    "type": "success"
-  },
-  {
-    "_id": "uduxaf1re",
-    "createdAt": "2026-06-16T20:20:39.641Z",
-    "updatedAt": "2026-06-16T20:20:39.641Z",
-    "userId": "c97wk1sk9",
-    "title": "Welcome to SmartCart AI! 🎉",
-    "message": "Earn reward points on every purchase and unlock tiers for flat discounts!",
-    "type": "success"
-  },
-  {
-    "_id": "41a868tke",
-    "createdAt": "2026-06-16T20:26:34.239Z",
-    "updatedAt": "2026-06-16T20:26:34.239Z",
-    "userId": "admin",
-    "title": "🔑 Admin Login Detected",
-    "message": "Admin logged in from ::1 using Unknown Browser on Unknown Device.",
-    "type": "info"
-  },
-  {
-    "_id": "adovb415e",
-    "createdAt": "2026-06-16T20:40:59.381Z",
-    "updatedAt": "2026-06-16T20:40:59.381Z",
-    "userId": "rx0fwf078",
-    "title": "Welcome to SmartCart AI! 🎉",
-    "message": "Earn reward points on every purchase and unlock tiers for flat discounts!",
-    "type": "success"
-  },
-  {
-    "_id": "sqbpwiawv",
-    "createdAt": "2026-06-16T20:41:03.564Z",
-    "updatedAt": "2026-06-16T20:41:03.564Z",
-    "userId": "admin",
-    "title": "🔑 Admin Login Detected",
-    "message": "Admin logged in from ::1 using Unknown Browser on Unknown Device.",
-    "type": "info"
-  },
-  {
-    "_id": "5bksr5yww",
-    "createdAt": "2026-06-16T20:41:21.599Z",
-    "updatedAt": "2026-06-16T20:41:21.599Z",
-    "userId": "xjr69kfy6",
-    "title": "Welcome to SmartCart AI! 🎉",
-    "message": "Earn reward points on every purchase and unlock tiers for flat discounts!",
-    "type": "success"
-  },
-  {
-    "_id": "1enei7cee",
-    "createdAt": "2026-06-16T20:43:17.077Z",
-    "updatedAt": "2026-06-16T20:43:17.077Z",
-    "userId": "ovl9ny4mj",
+    "_id": "jjcaoenuh",
+    "createdAt": "2026-06-16T20:51:50.664Z",
+    "updatedAt": "2026-06-16T20:51:50.664Z",
+    "userId": "bhoeix8zf",
     "title": "Welcome to SmartCart AI! 🎉",
     "message": "Earn reward points on every purchase and unlock tiers for flat discounts!",
     "type": "success"

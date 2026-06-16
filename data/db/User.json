@@ -1,0 +1,1450 @@
+[
+  {
+    "_id": "admin_id",
+    "createdAt": "2026-05-17T14:11:52.211Z",
+    "updatedAt": "2026-06-16T20:41:15.532Z",
+    "name": "System Admin",
+    "email": "admin@smartcart.com",
+    "password": "$2a$10$vPydIarSPzxibzWuqeQsSewyspsiDBhCO.Q0V6F1sxIzprTntJQ2K",
+    "phone": "+15550100",
+    "role": "admin",
+    "status": "active",
+    "addresses": [],
+    "rewardPoints": 0,
+    "tier": "Platinum",
+    "failedLoginAttempts": 0,
+    "lockUntil": null,
+    "lastLogin": "2026-06-16T20:41:03.562Z",
+    "loginHistory": [
+      {
+        "device": "Mac",
+        "browser": "Chrome",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T18:27:17.947Z"
+      },
+      {
+        "device": "Mac",
+        "browser": "Chrome",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T18:46:41.697Z"
+      },
+      {
+        "device": "Unknown Device",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T19:47:33.403Z"
+      },
+      {
+        "device": "Unknown Device",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T20:26:34.234Z"
+      },
+      {
+        "device": "Unknown Device",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T20:41:03.562Z"
+      }
+    ],
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluX2lkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzgxNjQyNDYzLCJleHAiOjE3ODIyNDcyNjN9.C4GCpKwPzTy4jFbE74EUqICmu-spD5jKg93Zw1IrS4c",
+    "securityAlerts": [
+      {
+        "title": "Suspicious Login Detected",
+        "message": "New login detected from device: Unknown Device and browser: Unknown Browser.",
+        "severity": "warning",
+        "createdAt": "2026-06-16T19:47:33.402Z"
+      }
+    ]
+  },
+  {
+    "_id": "seller_1",
+    "createdAt": "2026-05-22T14:11:52.324Z",
+    "updatedAt": "2026-06-16T20:41:15.645Z",
+    "name": "Vendor Elite 1",
+    "email": "seller@smartcart.com",
+    "password": "$2a$10$Nb6Js.JLTxRCFE9DSWwcWe1g3n60kcKCxw7w1XaRNrcUIUugIX6Ae",
+    "phone": "+91987654320",
+    "role": "seller",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "12 Industrial Estate",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "zipCode": "400001",
+        "country": "India",
+        "isDefault": true
+      }
+    ],
+    "rewardPoints": 100,
+    "tier": "Silver",
+    "failedLoginAttempts": 0,
+    "lockUntil": null,
+    "lastLogin": "2026-06-16T20:41:03.680Z",
+    "loginHistory": [
+      {
+        "device": "Mac",
+        "browser": "Chrome",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T18:46:17.234Z"
+      },
+      {
+        "device": "Unknown Device",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T19:47:33.532Z"
+      },
+      {
+        "device": "Unknown Device",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T20:26:34.357Z"
+      },
+      {
+        "device": "Unknown Device",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T20:41:03.680Z"
+      }
+    ],
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InNlbGxlcl8xIiwicm9sZSI6InNlbGxlciIsImlhdCI6MTc4MTY0MjQ2MywiZXhwIjoxNzgyMjQ3MjYzfQ.Wx8EcltGJPwI3WEYH1k_DnJBMMBNaBYEoT9OvFUTc_M",
+    "securityAlerts": [
+      {
+        "title": "Suspicious Login Detected",
+        "message": "New login detected from device: Unknown Device and browser: Unknown Browser.",
+        "severity": "warning",
+        "createdAt": "2026-06-16T19:47:33.531Z"
+      }
+    ]
+  },
+  {
+    "_id": "seller_2",
+    "createdAt": "2026-05-22T14:11:52.435Z",
+    "updatedAt": "2026-06-16T14:11:55.541Z",
+    "name": "Vendor Elite 2",
+    "email": "seller2@smartcart.com",
+    "password": "$2a$10$b3Yua66.JXPhU9NnFUKByeNe8e6mzfmv/3wxhDmS6wc.WvIRVkblu",
+    "phone": "+91987654321",
+    "role": "seller",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "24 Industrial Estate",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "zipCode": "400001",
+        "country": "India",
+        "isDefault": true
+      }
+    ],
+    "rewardPoints": 200,
+    "tier": "Silver"
+  },
+  {
+    "_id": "seller_3",
+    "createdAt": "2026-05-22T14:11:52.546Z",
+    "updatedAt": "2026-06-16T14:11:55.542Z",
+    "name": "Vendor Elite 3",
+    "email": "seller3@smartcart.com",
+    "password": "$2a$10$6i/zs8.uCE8im0W/UXow8uSMmTPpjAnRhu4Dp60yaXBSRUMIPe8Cq",
+    "phone": "+91987654322",
+    "role": "seller",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "36 Industrial Estate",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "zipCode": "400001",
+        "country": "India",
+        "isDefault": true
+      }
+    ],
+    "rewardPoints": 300,
+    "tier": "Silver"
+  },
+  {
+    "_id": "seller_4",
+    "createdAt": "2026-05-22T14:11:52.656Z",
+    "updatedAt": "2026-06-16T14:11:55.542Z",
+    "name": "Vendor Elite 4",
+    "email": "seller4@smartcart.com",
+    "password": "$2a$10$YDgbOAd1EZnIroiytkkcMO8bWaFkT29CbymqgMYw7g03ICwWU9K0C",
+    "phone": "+91987654323",
+    "role": "seller",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "48 Industrial Estate",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "zipCode": "400001",
+        "country": "India",
+        "isDefault": true
+      }
+    ],
+    "rewardPoints": 400,
+    "tier": "Silver"
+  },
+  {
+    "_id": "seller_5",
+    "createdAt": "2026-05-22T14:11:52.767Z",
+    "updatedAt": "2026-06-16T14:11:55.542Z",
+    "name": "Vendor Elite 5",
+    "email": "seller5@smartcart.com",
+    "password": "$2a$10$R2/eqtjmz7F4ayJ17wgFNOA0ayiw90tGrKvzpF9gBHpjQ4Px8sJz6",
+    "phone": "+91987654324",
+    "role": "seller",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "60 Industrial Estate",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "zipCode": "400001",
+        "country": "India",
+        "isDefault": true
+      }
+    ],
+    "rewardPoints": 500,
+    "tier": "Silver"
+  },
+  {
+    "_id": "seller_6",
+    "createdAt": "2026-05-22T14:11:52.877Z",
+    "updatedAt": "2026-06-16T14:11:55.542Z",
+    "name": "Vendor Elite 6",
+    "email": "seller6@smartcart.com",
+    "password": "$2a$10$Dw2NE2H.qMRRySV2F9Wzcuz1223dxDSaLVuVXflLRX7KBbMsI4UWe",
+    "phone": "+91987654325",
+    "role": "seller",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "72 Industrial Estate",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "zipCode": "400001",
+        "country": "India",
+        "isDefault": true
+      }
+    ],
+    "rewardPoints": 600,
+    "tier": "Silver"
+  },
+  {
+    "_id": "seller_7",
+    "createdAt": "2026-05-22T14:11:52.988Z",
+    "updatedAt": "2026-06-16T14:11:55.542Z",
+    "name": "Vendor Elite 7",
+    "email": "seller7@smartcart.com",
+    "password": "$2a$10$LOY.p9U3SsxrWvsy.13pnewYB40jmsw7bOZulqywXenCtWlRO0xvi",
+    "phone": "+91987654326",
+    "role": "seller",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "84 Industrial Estate",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "zipCode": "400001",
+        "country": "India",
+        "isDefault": true
+      }
+    ],
+    "rewardPoints": 700,
+    "tier": "Silver"
+  },
+  {
+    "_id": "seller_8",
+    "createdAt": "2026-05-22T14:11:53.098Z",
+    "updatedAt": "2026-06-16T14:11:55.542Z",
+    "name": "Vendor Elite 8",
+    "email": "seller8@smartcart.com",
+    "password": "$2a$10$E1t7KX6XHtDTsBAJkdYnoeIprHvVkpwm8kwcRRb/PrZHxohJ7bdYG",
+    "phone": "+91987654327",
+    "role": "seller",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "96 Industrial Estate",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "zipCode": "400001",
+        "country": "India",
+        "isDefault": true
+      }
+    ],
+    "rewardPoints": 800,
+    "tier": "Gold"
+  },
+  {
+    "_id": "seller_9",
+    "createdAt": "2026-05-22T14:11:53.209Z",
+    "updatedAt": "2026-06-16T14:11:55.543Z",
+    "name": "Vendor Elite 9",
+    "email": "seller9@smartcart.com",
+    "password": "$2a$10$LFtZbeTYkxRsuUQRVc2GCehqqkpgSbDHV4Pyg7QacGVv4TIPrPDbi",
+    "phone": "+91987654328",
+    "role": "seller",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "108 Industrial Estate",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "zipCode": "400001",
+        "country": "India",
+        "isDefault": true
+      }
+    ],
+    "rewardPoints": 900,
+    "tier": "Gold"
+  },
+  {
+    "_id": "seller_10",
+    "createdAt": "2026-05-22T14:11:53.320Z",
+    "updatedAt": "2026-06-16T18:46:50.013Z",
+    "name": "Vendor Elite 10",
+    "email": "seller10@smartcart.com",
+    "password": "$2a$10$eq.s.vcXhmWO8K7CM7brE.A.uv7RcZYAg4i5fcKzDARJ7YuYhU/NW",
+    "phone": "+91987654329",
+    "role": "seller",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "120 Industrial Estate",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "zipCode": "400001",
+        "country": "India",
+        "isDefault": true
+      }
+    ],
+    "rewardPoints": 1000,
+    "tier": "Gold",
+    "failedLoginAttempts": 0,
+    "lockUntil": null
+  },
+  {
+    "_id": "customer_1",
+    "createdAt": "2026-05-27T14:11:53.431Z",
+    "updatedAt": "2026-06-16T20:41:03.799Z",
+    "name": "Shopper Name 1",
+    "email": "customer@smartcart.com",
+    "password": "$2a$10$gjYfGYRe7aIiaJsb11qt5.nelOCOxa.m6o9Ekm4CqVqRP3UubIEka",
+    "phone": "+919998887701",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "101 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 1B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Mastercard",
+        "lastFour": "4322",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 1"
+      }
+    ],
+    "rewardPoints": 1054,
+    "tier": "Silver",
+    "referralCode": "SMART_REF_1",
+    "failedLoginAttempts": 0,
+    "lockUntil": null,
+    "lastLogin": "2026-06-16T20:41:03.797Z",
+    "loginHistory": [
+      {
+        "device": "Desktop",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T14:13:54.113Z"
+      },
+      {
+        "device": "Mac",
+        "browser": "Chrome",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T14:41:27.700Z"
+      },
+      {
+        "device": "Mac",
+        "browser": "Chrome",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T18:27:59.281Z"
+      },
+      {
+        "device": "Mac",
+        "browser": "Chrome",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T18:45:36.249Z"
+      },
+      {
+        "device": "Mac",
+        "browser": "Chrome",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T18:48:03.370Z"
+      },
+      {
+        "device": "Mac",
+        "browser": "Chrome",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T19:35:58.289Z"
+      },
+      {
+        "device": "Unknown Device",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T19:47:33.646Z"
+      },
+      {
+        "device": "Unknown Device",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T20:26:34.471Z"
+      },
+      {
+        "device": "Unknown Device",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "success",
+        "loginTime": "2026-06-16T20:41:03.797Z"
+      }
+    ],
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImN1c3RvbWVyXzEiLCJyb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3ODE2NDI0NjMsImV4cCI6MTc4MjI0NzI2M30.R1YnXT_sqKd79xv1S30SImNNE6UKcVeA6dhHmKZKU9E",
+    "profileImage": "/uploads/file-1781619234123-231984886.png",
+    "securityAlerts": [
+      {
+        "title": "Suspicious Login Detected",
+        "message": "New login detected from device: Mac and browser: Chrome.",
+        "severity": "warning",
+        "createdAt": "2026-06-16T14:41:27.698Z"
+      },
+      {
+        "title": "Suspicious Login Detected",
+        "message": "New login detected from device: Unknown Device and browser: Unknown Browser.",
+        "severity": "warning",
+        "createdAt": "2026-06-16T19:47:33.645Z"
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Silver Loyalty Unlocked!",
+        "description": "Upgraded to Silver tier. Enjoy custom multipliers!"
+      }
+    ]
+  },
+  {
+    "_id": "customer_2",
+    "createdAt": "2026-05-27T14:11:53.542Z",
+    "updatedAt": "2026-06-16T18:39:01.900Z",
+    "name": "Shopper Name 2",
+    "email": "customer2@smartcart.com",
+    "password": "$2a$10$GEUINKq9NqoplQ01FA.q4eWizKrV3Kutc75.8NQxTfOcNIQlX9QFy",
+    "phone": "+919998887702",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "201 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 2B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Visa",
+        "lastFour": "4323",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 2"
+      }
+    ],
+    "rewardPoints": 300,
+    "tier": "Bronze",
+    "referralCode": "SMART_REF_2",
+    "failedLoginAttempts": 0,
+    "loginHistory": [
+      {
+        "device": "Desktop",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "failed",
+        "loginTime": "2026-06-16T14:13:53.542Z"
+      },
+      {
+        "device": "Desktop",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "failed",
+        "loginTime": "2026-06-16T14:13:53.657Z"
+      },
+      {
+        "device": "Desktop",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "failed",
+        "loginTime": "2026-06-16T14:13:53.771Z"
+      },
+      {
+        "device": "Desktop",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "failed",
+        "loginTime": "2026-06-16T14:13:53.885Z"
+      },
+      {
+        "device": "Desktop",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "locked",
+        "loginTime": "2026-06-16T14:13:53.997Z"
+      },
+      {
+        "device": "Unknown Device",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "failed",
+        "loginTime": "2026-06-16T18:26:20.207Z"
+      },
+      {
+        "device": "Unknown Device",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "failed",
+        "loginTime": "2026-06-16T18:26:20.320Z"
+      },
+      {
+        "device": "Unknown Device",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "failed",
+        "loginTime": "2026-06-16T18:26:20.432Z"
+      },
+      {
+        "device": "Unknown Device",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "failed",
+        "loginTime": "2026-06-16T18:26:20.544Z"
+      },
+      {
+        "device": "Unknown Device",
+        "browser": "Unknown Browser",
+        "ipAddress": "::1",
+        "status": "locked",
+        "loginTime": "2026-06-16T18:26:20.656Z"
+      }
+    ],
+    "lockUntil": null,
+    "securityAlerts": [
+      {
+        "title": "Account Locked",
+        "message": "Account was temporarily locked for 15 minutes due to 5 consecutive failed login attempts.",
+        "severity": "high",
+        "createdAt": "2026-06-16T14:13:53.997Z"
+      },
+      {
+        "title": "Account Locked",
+        "message": "Account was temporarily locked for 15 minutes due to 5 consecutive failed login attempts.",
+        "severity": "high",
+        "createdAt": "2026-06-16T18:26:20.656Z"
+      }
+    ]
+  },
+  {
+    "_id": "customer_3",
+    "createdAt": "2026-05-27T14:11:53.652Z",
+    "updatedAt": "2026-06-16T14:11:55.543Z",
+    "name": "Shopper Name 3",
+    "email": "customer3@smartcart.com",
+    "password": "$2a$10$1PLJGfu0wwgh/g59E08L5eXNF5ehkpAW4jnO0PaplrD37jAp1Oxpe",
+    "phone": "+919998887703",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "301 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 3B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Mastercard",
+        "lastFour": "4324",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 3"
+      }
+    ],
+    "rewardPoints": 450,
+    "tier": "Bronze",
+    "referralCode": "SMART_REF_3"
+  },
+  {
+    "_id": "customer_4",
+    "createdAt": "2026-05-27T14:11:53.763Z",
+    "updatedAt": "2026-06-16T14:11:55.544Z",
+    "name": "Shopper Name 4",
+    "email": "customer4@smartcart.com",
+    "password": "$2a$10$ZxNv2iGgiYA59VM/1nKZ0OrHoVTYoOftZRs7TBqzTiUAyaY7ypwum",
+    "phone": "+919998887704",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "401 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 4B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Visa",
+        "lastFour": "4325",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 4"
+      }
+    ],
+    "rewardPoints": 600,
+    "tier": "Silver",
+    "referralCode": "SMART_REF_4"
+  },
+  {
+    "_id": "customer_5",
+    "createdAt": "2026-05-27T14:11:53.873Z",
+    "updatedAt": "2026-06-16T14:11:55.544Z",
+    "name": "Shopper Name 5",
+    "email": "customer5@smartcart.com",
+    "password": "$2a$10$Vm5hOmAdbO0.NSn8GoDeA.mNe4Quqp0S4i76UB01miNdWsbYaDvBW",
+    "phone": "+919998887705",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "501 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 5B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Mastercard",
+        "lastFour": "4326",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 5"
+      }
+    ],
+    "rewardPoints": 750,
+    "tier": "Silver",
+    "referralCode": "SMART_REF_5"
+  },
+  {
+    "_id": "customer_6",
+    "createdAt": "2026-05-27T14:11:53.984Z",
+    "updatedAt": "2026-06-16T14:11:55.544Z",
+    "name": "Shopper Name 6",
+    "email": "customer6@smartcart.com",
+    "password": "$2a$10$W2TXFGM8SxfGGwO0rUwJ0Ozo7G.w5a/EOoa3zf6Pkdh1xJgH76mc6",
+    "phone": "+919998887706",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "601 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 6B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Visa",
+        "lastFour": "4327",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 6"
+      }
+    ],
+    "rewardPoints": 900,
+    "tier": "Silver",
+    "referralCode": "SMART_REF_6"
+  },
+  {
+    "_id": "customer_7",
+    "createdAt": "2026-05-27T14:11:54.094Z",
+    "updatedAt": "2026-06-16T14:11:55.544Z",
+    "name": "Shopper Name 7",
+    "email": "customer7@smartcart.com",
+    "password": "$2a$10$VNIWdr3oK9vM7Z46eK2DtuVVzQvl3LqeAiwTaeuBL6uzxzWY3x.Bq",
+    "phone": "+919998887707",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "701 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 7B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Mastercard",
+        "lastFour": "4328",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 7"
+      }
+    ],
+    "rewardPoints": 1050,
+    "tier": "Silver",
+    "referralCode": "SMART_REF_7"
+  },
+  {
+    "_id": "customer_8",
+    "createdAt": "2026-05-27T14:11:54.205Z",
+    "updatedAt": "2026-06-16T14:11:55.545Z",
+    "name": "Shopper Name 8",
+    "email": "customer8@smartcart.com",
+    "password": "$2a$10$3pMW9PhGQzAMyIY62bv1MOTESA4Zey3.rTDzLx0EeWUcnJelEFGom",
+    "phone": "+919998887708",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "801 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 8B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Visa",
+        "lastFour": "4329",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 8"
+      }
+    ],
+    "rewardPoints": 1200,
+    "tier": "Silver",
+    "referralCode": "SMART_REF_8"
+  },
+  {
+    "_id": "customer_9",
+    "createdAt": "2026-05-27T14:11:54.315Z",
+    "updatedAt": "2026-06-16T14:11:55.545Z",
+    "name": "Shopper Name 9",
+    "email": "customer9@smartcart.com",
+    "password": "$2a$10$DPceTa8lfyXGHVM7QNF.1eb2il2mkjrFDLzfAeZp2JTbj72D/LbuG",
+    "phone": "+919998887709",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "901 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 9B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Mastercard",
+        "lastFour": "4330",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 9"
+      }
+    ],
+    "rewardPoints": 1350,
+    "tier": "Silver",
+    "referralCode": "SMART_REF_9"
+  },
+  {
+    "_id": "customer_10",
+    "createdAt": "2026-05-27T14:11:54.426Z",
+    "updatedAt": "2026-06-16T14:11:55.545Z",
+    "name": "Shopper Name 10",
+    "email": "customer10@smartcart.com",
+    "password": "$2a$10$cP2HcGdSs0h7sX8WC6f95eTNWgbUfrKIAm2W8K.VNdQGxhboJK3US",
+    "phone": "+919998887710",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "1001 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 10B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Visa",
+        "lastFour": "4331",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 10"
+      }
+    ],
+    "rewardPoints": 1500,
+    "tier": "Silver",
+    "referralCode": "SMART_REF_10"
+  },
+  {
+    "_id": "customer_11",
+    "createdAt": "2026-05-27T14:11:54.536Z",
+    "updatedAt": "2026-06-16T14:11:55.545Z",
+    "name": "Shopper Name 11",
+    "email": "customer11@smartcart.com",
+    "password": "$2a$10$7V9PzKjrBmC3rA/LYrf.OeipRM/fPzx5sibt0u78KQ7ggA3XGmvdW",
+    "phone": "+919998887711",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "1101 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 11B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Mastercard",
+        "lastFour": "4332",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 11"
+      }
+    ],
+    "rewardPoints": 1650,
+    "tier": "Gold",
+    "referralCode": "SMART_REF_11"
+  },
+  {
+    "_id": "customer_12",
+    "createdAt": "2026-05-27T14:11:54.647Z",
+    "updatedAt": "2026-06-16T14:11:55.545Z",
+    "name": "Shopper Name 12",
+    "email": "customer12@smartcart.com",
+    "password": "$2a$10$r9Ugq7jfu5RYP0rWVoA.AuutBnWVQB6DFjLdgVMt1pWe0oNzW1nem",
+    "phone": "+919998887712",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "1201 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 12B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Visa",
+        "lastFour": "4333",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 12"
+      }
+    ],
+    "rewardPoints": 1800,
+    "tier": "Gold",
+    "referralCode": "SMART_REF_12"
+  },
+  {
+    "_id": "customer_13",
+    "createdAt": "2026-05-27T14:11:54.760Z",
+    "updatedAt": "2026-06-16T14:11:55.546Z",
+    "name": "Shopper Name 13",
+    "email": "customer13@smartcart.com",
+    "password": "$2a$10$ST2BXEaUdJGV6v7mNRCEOesVvtXvx6/89uP1M6AbKpDhD0/6x6DTa",
+    "phone": "+919998887713",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "1301 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 13B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Mastercard",
+        "lastFour": "4334",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 13"
+      }
+    ],
+    "rewardPoints": 1950,
+    "tier": "Gold",
+    "referralCode": "SMART_REF_13"
+  },
+  {
+    "_id": "customer_14",
+    "createdAt": "2026-05-27T14:11:54.871Z",
+    "updatedAt": "2026-06-16T14:11:55.546Z",
+    "name": "Shopper Name 14",
+    "email": "customer14@smartcart.com",
+    "password": "$2a$10$/95A9agvzW9HvC.0/FZRv.iuFjeAAQYivEBub3ZiAzPxSWYF1FIqG",
+    "phone": "+919998887714",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "1401 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 14B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Visa",
+        "lastFour": "4335",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 14"
+      }
+    ],
+    "rewardPoints": 2100,
+    "tier": "Gold",
+    "referralCode": "SMART_REF_14"
+  },
+  {
+    "_id": "customer_15",
+    "createdAt": "2026-05-27T14:11:54.984Z",
+    "updatedAt": "2026-06-16T14:11:55.546Z",
+    "name": "Shopper Name 15",
+    "email": "customer15@smartcart.com",
+    "password": "$2a$10$SPadt3rru4i45ZR1.K.TmO1KzIBzks12JUiK.B7cWCRM1mSiPrygu",
+    "phone": "+919998887715",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "1501 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 15B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Mastercard",
+        "lastFour": "4336",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 15"
+      }
+    ],
+    "rewardPoints": 2250,
+    "tier": "Gold",
+    "referralCode": "SMART_REF_15"
+  },
+  {
+    "_id": "customer_16",
+    "createdAt": "2026-05-27T14:11:55.097Z",
+    "updatedAt": "2026-06-16T14:11:55.546Z",
+    "name": "Shopper Name 16",
+    "email": "customer16@smartcart.com",
+    "password": "$2a$10$kKum2PoK36WDVEA8Mbnc/uPVMEyDl0ZeSmciOmvTyppVkXh.n8O.2",
+    "phone": "+919998887716",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "1601 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 16B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Visa",
+        "lastFour": "4337",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 16"
+      }
+    ],
+    "rewardPoints": 2400,
+    "tier": "Gold",
+    "referralCode": "SMART_REF_16"
+  },
+  {
+    "_id": "customer_17",
+    "createdAt": "2026-05-27T14:11:55.208Z",
+    "updatedAt": "2026-06-16T14:11:55.547Z",
+    "name": "Shopper Name 17",
+    "email": "customer17@smartcart.com",
+    "password": "$2a$10$ZpL4/INgvv5WU0Gc0R3gHuVZ7WDZ.N4/WrfTMO9zLs8RhK7IaHcKS",
+    "phone": "+919998887717",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "1701 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 17B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Mastercard",
+        "lastFour": "4338",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 17"
+      }
+    ],
+    "rewardPoints": 2550,
+    "tier": "Gold",
+    "referralCode": "SMART_REF_17"
+  },
+  {
+    "_id": "customer_18",
+    "createdAt": "2026-05-27T14:11:55.318Z",
+    "updatedAt": "2026-06-16T14:11:55.547Z",
+    "name": "Shopper Name 18",
+    "email": "customer18@smartcart.com",
+    "password": "$2a$10$jrB7u7DnwNH5WekTzxAhIeMDOQvL0VGfB3FRRG6mvSnu.MDbLS0V2",
+    "phone": "+919998887718",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "1801 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 18B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Visa",
+        "lastFour": "4339",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 18"
+      }
+    ],
+    "rewardPoints": 2700,
+    "tier": "Gold",
+    "referralCode": "SMART_REF_18"
+  },
+  {
+    "_id": "customer_19",
+    "createdAt": "2026-05-27T14:11:55.429Z",
+    "updatedAt": "2026-06-16T14:11:55.547Z",
+    "name": "Shopper Name 19",
+    "email": "customer19@smartcart.com",
+    "password": "$2a$10$/1P6bQ8Cqi39Y5JuJCWqT.oLguy1tKd5kjYRFUxCyfWPp.jRiOC8y",
+    "phone": "+919998887719",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "1901 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 19B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Mastercard",
+        "lastFour": "4340",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 19"
+      }
+    ],
+    "rewardPoints": 2850,
+    "tier": "Gold",
+    "referralCode": "SMART_REF_19"
+  },
+  {
+    "_id": "customer_20",
+    "createdAt": "2026-05-27T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.547Z",
+    "name": "Shopper Name 20",
+    "email": "customer20@smartcart.com",
+    "password": "$2a$10$thgW0vRVtS/0Bz8h6PjC.epD.A4DEb/dPYfM1tvYa3itj05McoK66",
+    "phone": "+919998887720",
+    "role": "customer",
+    "status": "active",
+    "addresses": [
+      {
+        "street": "2001 Park Avenue",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zipCode": "560001",
+        "country": "India",
+        "isDefault": true
+      },
+      {
+        "street": "Flat 20B, Sky Towers",
+        "city": "Delhi",
+        "state": "NCR",
+        "zipCode": "110001",
+        "country": "India",
+        "isDefault": false
+      }
+    ],
+    "paymentMethods": [
+      {
+        "cardType": "Visa",
+        "lastFour": "4341",
+        "expiryDate": "12/28",
+        "cardHolder": "Shopper Name 20"
+      }
+    ],
+    "rewardPoints": 3000,
+    "tier": "Gold",
+    "referralCode": "SMART_REF_20"
+  },
+  {
+    "_id": "hzdnbywqt",
+    "createdAt": "2026-06-16T18:39:57.615Z",
+    "updatedAt": "2026-06-16T18:39:57.619Z",
+    "name": "Test",
+    "email": "ratelimitcheckonly@test.com",
+    "password": "$2a$12$T0e99nv2ovdxZpOKaMGlmOPg3anOFBB2vJEcFDD0BypQPC5em6fDi",
+    "phone": "9000000001",
+    "mobile": "9000000001",
+    "role": "customer",
+    "status": "active",
+    "rewardPoints": 0,
+    "tier": "Bronze",
+    "referralCode": "SC_TEST_6838",
+    "referredBy": "",
+    "loginHistory": [],
+    "securityAlerts": [],
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Imh6ZG5ieXdxdCIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc4MTYzNTE5NywiZXhwIjoxNzgyMjM5OTk3fQ.JkexmXvfcfkD5W6loa8os_weNSfeWy42gF5pAGpyMP4"
+  },
+  {
+    "_id": "to51n2d7w",
+    "createdAt": "2026-06-16T18:41:52.452Z",
+    "updatedAt": "2026-06-16T18:41:59.150Z",
+    "name": "Piyush",
+    "email": "adsljhk@gmail.com",
+    "password": "$2a$12$qjJqW7ERAAxQP3z/41zjXuJ77ScIGQhCwUDmkft/H4Ia3xF6O1dTW",
+    "phone": "8999204080",
+    "mobile": "8999204080",
+    "role": "customer",
+    "status": "active",
+    "rewardPoints": 0,
+    "tier": "Bronze",
+    "referralCode": "SC_PIYU_5291",
+    "referredBy": "",
+    "loginHistory": [],
+    "securityAlerts": [],
+    "refreshToken": null
+  },
+  {
+    "_id": "o1zg1cvh5",
+    "createdAt": "2026-06-16T20:11:58.674Z",
+    "updatedAt": "2026-06-16T20:42:28.898Z",
+    "name": "piyush",
+    "email": "asjkdbh@gmail.com",
+    "password": "$2a$12$joI926JKC1Rzehm37tDWuOfP4Gf7uh5JvfjyMUAljz.YAjE99vV.O",
+    "phone": "89999204080",
+    "mobile": "89999204080",
+    "role": "customer",
+    "status": "active",
+    "rewardPoints": 0,
+    "tier": "Bronze",
+    "referralCode": "SC_PIYU_7361",
+    "referredBy": "",
+    "loginHistory": [],
+    "securityAlerts": [],
+    "refreshToken": null
+  },
+  {
+    "_id": "c97wk1sk9",
+    "createdAt": "2026-06-16T20:20:39.636Z",
+    "updatedAt": "2026-06-16T20:20:39.640Z",
+    "name": "Test Customer",
+    "email": "customer4924@smartcart.com",
+    "password": "$2a$12$3aneiGDtD.WWdnVumwu7H.u9oJOLi2CUGkDYNgyW/G2ps8363YQIW",
+    "phone": "+919999914924",
+    "mobile": "+919999914924",
+    "role": "customer",
+    "status": "active",
+    "rewardPoints": 0,
+    "tier": "Bronze",
+    "referralCode": "SC_TEST_4287",
+    "referredBy": "",
+    "loginHistory": [],
+    "securityAlerts": [],
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImM5N3drMXNrOSIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc4MTY0MTIzOSwiZXhwIjoxNzgyMjQ2MDM5fQ.IcTVWEJfWc1sWf6N1rBwv1KkQ0aK3_sPxVyfP10v9oo"
+  },
+  {
+    "_id": "rx0fwf078",
+    "createdAt": "2026-06-16T20:40:59.376Z",
+    "updatedAt": "2026-06-16T20:40:59.380Z",
+    "name": "Test Customer",
+    "email": "customer6674@smartcart.com",
+    "password": "$2a$12$VAbMnk7vmJk64THnb9.qlOlA32W271aaziSL/Nbm1rrY4uCiMGjMq",
+    "phone": "+919999916674",
+    "mobile": "+919999916674",
+    "role": "customer",
+    "status": "active",
+    "rewardPoints": 0,
+    "tier": "Bronze",
+    "referralCode": "SC_TEST_8370",
+    "referredBy": "",
+    "loginHistory": [],
+    "securityAlerts": [],
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InJ4MGZ3ZjA3OCIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc4MTY0MjQ1OSwiZXhwIjoxNzgyMjQ3MjU5fQ.RBxbnoVgecTb8jYa7gxn57m__LQq8Dd2eEoGKzkQuoE"
+  },
+  {
+    "_id": "xjr69kfy6",
+    "createdAt": "2026-06-16T20:41:21.595Z",
+    "updatedAt": "2026-06-16T20:41:21.599Z",
+    "name": "Test Customer",
+    "email": "customer2171@smartcart.com",
+    "password": "$2a$12$q5.goZ3ZUCEH3aetEqKuhegxp51OCeIjA/YC9Ze21TxNdxFUUUpGu",
+    "phone": "+919999912171",
+    "mobile": "+919999912171",
+    "role": "customer",
+    "status": "active",
+    "rewardPoints": 0,
+    "tier": "Bronze",
+    "referralCode": "SC_TEST_3912",
+    "referredBy": "",
+    "loginHistory": [],
+    "securityAlerts": [],
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InhqcjY5a2Z5NiIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc4MTY0MjQ4MSwiZXhwIjoxNzgyMjQ3MjgxfQ.NGbezcQRGNxYm8M2oAudEoWSfjLtpabPBGci7BgdZHU"
+  },
+  {
+    "_id": "ovl9ny4mj",
+    "createdAt": "2026-06-16T20:43:17.076Z",
+    "updatedAt": "2026-06-16T20:43:20.965Z",
+    "name": "Aditya",
+    "email": "jbhjbh@gmail.com",
+    "password": "$2a$12$RLrSTStl8WCcrIUmVZE41ejYdpkyVCFQHFHdTDPUvDsPRRe6x1q/i",
+    "phone": "9960223500",
+    "mobile": "9960223500",
+    "role": "customer",
+    "status": "active",
+    "rewardPoints": 0,
+    "tier": "Bronze",
+    "referralCode": "SC_ADIT_8970",
+    "referredBy": "",
+    "loginHistory": [],
+    "securityAlerts": [],
+    "refreshToken": null
+  }
+]

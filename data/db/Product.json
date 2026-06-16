@@ -1,0 +1,2417 @@
+[
+  {
+    "_id": "prod_1",
+    "createdAt": "2026-06-15T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.548Z",
+    "name": "SmartCart Quantum Laptop",
+    "description": "High performance gaming and coding laptop with 16GB RAM, 1TB SSD. Perfect for home or office setups. Highly certified design.",
+    "price": 75099,
+    "category": "Electronics",
+    "stock": 21,
+    "sellerId": "seller_2",
+    "sellerName": "Vendor Elite 2",
+    "images": [
+      "https://images.unsplash.com/photo-1496181130204-7552cc14ac1a?w=400",
+      "https://images.unsplash.com/photo-1496181130204-7552cc14ac1a?w=500"
+    ],
+    "rating": 4.1,
+    "reviewCount": 11,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 3.5,
+      "carbonFootprint": 85.6
+    }
+  },
+  {
+    "_id": "prod_2",
+    "createdAt": "2026-06-14T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.548Z",
+    "name": "Premium Leather Smart Watch",
+    "description": "Elegant time piece with fitness trackers and brown leather strap. Perfect for home or office setups. Highly certified design.",
+    "price": 13199,
+    "category": "Fashion",
+    "stock": 22,
+    "sellerId": "seller_3",
+    "sellerName": "Vendor Elite 3",
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+    ],
+    "rating": 4.2,
+    "reviewCount": 12,
+    "sustainability": {
+      "ecoScore": "D",
+      "ecoRating": 2.5,
+      "carbonFootprint": 18.6
+    }
+  },
+  {
+    "_id": "prod_3",
+    "createdAt": "2026-06-13T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.548Z",
+    "name": "The Silent Code: Sci-Fi Novel",
+    "description": "Bestselling space opera thriller. Perfect for home or office setups. Highly certified design.",
+    "price": 1099,
+    "category": "Books",
+    "stock": 23,
+    "sellerId": "seller_4",
+    "sellerName": "Vendor Elite 4",
+    "images": [
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400",
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500"
+    ],
+    "rating": 4.3,
+    "reviewCount": 13,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.2,
+      "carbonFootprint": 1.1
+    }
+  },
+  {
+    "_id": "prod_4",
+    "createdAt": "2026-06-12T14:11:55.539Z",
+    "updatedAt": "2026-06-16T18:48:14.905Z",
+    "name": "Organic Honey Raw Wildflower Plus v2",
+    "description": "Unprocessed honey gathered from high-altitude meadows. Perfect for home or office setups. Highly certified design.",
+    "price": 1150,
+    "category": "Grocery",
+    "stock": 22,
+    "sellerId": "seller_5",
+    "sellerName": "Vendor Elite 5",
+    "images": [
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=400",
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=500"
+    ],
+    "rating": 4.4,
+    "reviewCount": 14,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 1
+    }
+  },
+  {
+    "_id": "prod_5",
+    "createdAt": "2026-06-11T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.548Z",
+    "name": "Mineral Sunscreen SPF 50 Plus v2",
+    "description": "Reef-safe biodegradable physical sunscreen block. Perfect for home or office setups. Highly certified design.",
+    "price": 1450,
+    "category": "Beauty",
+    "stock": 25,
+    "sellerId": "seller_6",
+    "sellerName": "Vendor Elite 6",
+    "images": [
+      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=400",
+      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500"
+    ],
+    "rating": 4.5,
+    "reviewCount": 15,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.7,
+      "carbonFootprint": 0.8
+    }
+  },
+  {
+    "_id": "prod_6",
+    "createdAt": "2026-06-10T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.548Z",
+    "name": "Ergonomic Sports Water Bottle Plus v2",
+    "description": "Insulated stainless steel travel flask. Perfect for home or office setups. Highly certified design.",
+    "price": 2099,
+    "category": "Sports",
+    "stock": 26,
+    "sellerId": "seller_7",
+    "sellerName": "Vendor Elite 7",
+    "images": [
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400",
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500"
+    ],
+    "rating": 4.6,
+    "reviewCount": 16,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 1.3
+    }
+  },
+  {
+    "_id": "prod_7",
+    "createdAt": "2026-06-09T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.549Z",
+    "name": "EcoShield Cast Iron Skillet Plus v3",
+    "description": "Pre-seasoned durable pan that lasts a lifetime. Perfect for home or office setups. Highly certified design.",
+    "price": 1799,
+    "category": "Home & Kitchen",
+    "stock": 27,
+    "sellerId": "seller_8",
+    "sellerName": "Vendor Elite 8",
+    "images": [
+      "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=400",
+      "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=500"
+    ],
+    "rating": 4.7,
+    "reviewCount": 17,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.7,
+      "carbonFootprint": 15.2
+    }
+  },
+  {
+    "_id": "prod_8",
+    "createdAt": "2026-06-08T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.549Z",
+    "name": "Titan Phone 5G Plus v2",
+    "description": "6.5-inch OLED display, dual camera, 5000mAh battery. Perfect for home or office setups. Highly certified design.",
+    "price": 29999,
+    "category": "Electronics",
+    "stock": 28,
+    "sellerId": "seller_9",
+    "sellerName": "Vendor Elite 9",
+    "images": [
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400",
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500"
+    ],
+    "rating": 4.8,
+    "reviewCount": 18,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4,
+      "carbonFootprint": 36.2
+    }
+  },
+  {
+    "_id": "prod_9",
+    "createdAt": "2026-06-07T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.549Z",
+    "name": "Velocity Running Sneakers Plus v2",
+    "description": "Lightweight breathable sneakers for training. Perfect for home or office setups. Highly certified design.",
+    "price": 4900,
+    "category": "Fashion",
+    "stock": 29,
+    "sellerId": "seller_1",
+    "sellerName": "Vendor Elite 1",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+    ],
+    "rating": 4.9,
+    "reviewCount": 19,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 3.8,
+      "carbonFootprint": 10.2
+    }
+  },
+  {
+    "_id": "prod_10",
+    "createdAt": "2026-06-06T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.549Z",
+    "name": "Mastering JavaScript & Node.js Plus v4",
+    "description": "Comprehensive guide for backend web development. Perfect for home or office setups. Highly certified design.",
+    "price": 1399,
+    "category": "Books",
+    "stock": 30,
+    "sellerId": "seller_2",
+    "sellerName": "Vendor Elite 2",
+    "images": [
+      "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400",
+      "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500"
+    ],
+    "rating": 5,
+    "reviewCount": 20,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 0.5
+    }
+  },
+  {
+    "_id": "prod_11",
+    "createdAt": "2026-06-05T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.549Z",
+    "name": "Gluten-Free Almond Oats Plus v4",
+    "description": "Perfect breakfast cereal rich in fibers. Perfect for home or office setups. Highly certified design.",
+    "price": 920,
+    "category": "Grocery",
+    "stock": 31,
+    "sellerId": "seller_3",
+    "sellerName": "Vendor Elite 3",
+    "images": [
+      "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400",
+      "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=500"
+    ],
+    "rating": 4,
+    "reviewCount": 21,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.7,
+      "carbonFootprint": 0.8
+    }
+  },
+  {
+    "_id": "prod_12",
+    "createdAt": "2026-06-04T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.549Z",
+    "name": "Shea Butter Moisture Balm Plus v4",
+    "description": "Intense hydration for dry lips and elbows. Perfect for home or office setups. Highly certified design.",
+    "price": 1420,
+    "category": "Beauty",
+    "stock": 3,
+    "sellerId": "seller_4",
+    "sellerName": "Vendor Elite 4",
+    "images": [
+      "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400",
+      "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=500"
+    ],
+    "rating": 4.1,
+    "reviewCount": 22,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.5,
+      "carbonFootprint": 1.1
+    }
+  },
+  {
+    "_id": "prod_13",
+    "createdAt": "2026-06-03T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.550Z",
+    "name": "High-Density Yoga Mat Plus v5",
+    "description": "TPE biodegradable yoga cushion with alignment lines. Perfect for home or office setups. Highly certified design.",
+    "price": 2699,
+    "category": "Sports",
+    "stock": 33,
+    "sellerId": "seller_5",
+    "sellerName": "Vendor Elite 5",
+    "images": [
+      "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=400",
+      "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=500"
+    ],
+    "rating": 4.2,
+    "reviewCount": 23,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 2.1
+    }
+  },
+  {
+    "_id": "prod_14",
+    "createdAt": "2026-06-02T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.550Z",
+    "name": "Automatic Smart Air Fryer Plus v5",
+    "description": "High speed convection oven utilizing 80% less oil. Perfect for home or office setups. Highly certified design.",
+    "price": 6799,
+    "category": "Home & Kitchen",
+    "stock": 34,
+    "sellerId": "seller_6",
+    "sellerName": "Vendor Elite 6",
+    "images": [
+      "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=400",
+      "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=500"
+    ],
+    "rating": 4.3,
+    "reviewCount": 24,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 4.4,
+      "carbonFootprint": 25
+    }
+  },
+  {
+    "_id": "prod_15",
+    "createdAt": "2026-06-16T14:11:55.539Z",
+    "updatedAt": "2026-06-16T18:48:14.907Z",
+    "name": "EcoSound Solar Earbuds Plus v3",
+    "description": "Wireless earbuds with a solar-powered case charging. Perfect for home or office setups. Highly certified design.",
+    "price": 5199,
+    "category": "Electronics",
+    "stock": 34,
+    "sellerId": "seller_7",
+    "sellerName": "Vendor Elite 7",
+    "images": [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400",
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+    ],
+    "rating": 4.4,
+    "reviewCount": 25,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 3.8
+    }
+  },
+  {
+    "_id": "prod_16",
+    "createdAt": "2026-06-15T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.550Z",
+    "name": "Recycled Fiber Denim Jeans Plus v4",
+    "description": "Comfortable denim made from 100% recycled cotton. Perfect for home or office setups. Highly certified design.",
+    "price": 2799,
+    "category": "Fashion",
+    "stock": 36,
+    "sellerId": "seller_8",
+    "sellerName": "Vendor Elite 8",
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=500"
+    ],
+    "rating": 4.5,
+    "reviewCount": 26,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.7,
+      "carbonFootprint": 4.4
+    }
+  },
+  {
+    "_id": "prod_17",
+    "createdAt": "2026-06-14T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.550Z",
+    "name": "Green Growth: Building the Future Plus v6",
+    "description": "A handbook on sustainable startup practices. Perfect for home or office setups. Highly certified design.",
+    "price": 999,
+    "category": "Books",
+    "stock": 37,
+    "sellerId": "seller_9",
+    "sellerName": "Vendor Elite 9",
+    "images": [
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500"
+    ],
+    "rating": 4.6,
+    "reviewCount": 27,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 0.8
+    }
+  },
+  {
+    "_id": "prod_18",
+    "createdAt": "2026-06-13T14:11:55.539Z",
+    "updatedAt": "2026-06-16T18:28:15.837Z",
+    "name": "Single Origin Dark Roast Coffee Beans Plus v6",
+    "description": "Fairtrade certified organic arabica coffee beans. Perfect for home or office setups. Highly certified design.",
+    "price": 1550,
+    "category": "Grocery",
+    "stock": 37,
+    "sellerId": "seller_1",
+    "sellerName": "Vendor Elite 1",
+    "images": [
+      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400",
+      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=500"
+    ],
+    "rating": 4.7,
+    "reviewCount": 28,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 1.5
+    }
+  },
+  {
+    "_id": "prod_19",
+    "createdAt": "2026-06-12T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.551Z",
+    "name": "Hydrating Aloe Face Wash Plus v7",
+    "description": "Gentle facial wash infused with natural aloe gel. Perfect for home or office setups. Highly certified design.",
+    "price": 1250,
+    "category": "Beauty",
+    "stock": 39,
+    "sellerId": "seller_2",
+    "sellerName": "Vendor Elite 2",
+    "images": [
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400",
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500"
+    ],
+    "rating": 4.8,
+    "reviewCount": 29,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.3,
+      "carbonFootprint": 1.9
+    }
+  },
+  {
+    "_id": "prod_20",
+    "createdAt": "2026-06-11T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.551Z",
+    "name": "Iron Dumbbells (Set of 2 - 10kg) Plus v7",
+    "description": "Hexagonal non-slip vinyl dumbbells. Perfect for home or office setups. Highly certified design.",
+    "price": 3499,
+    "category": "Sports",
+    "stock": 40,
+    "sellerId": "seller_3",
+    "sellerName": "Vendor Elite 3",
+    "images": [
+      "https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=400",
+      "https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=500"
+    ],
+    "rating": 4.9,
+    "reviewCount": 30,
+    "sustainability": {
+      "ecoScore": "D",
+      "ecoRating": 3,
+      "carbonFootprint": 28.5
+    }
+  },
+  {
+    "_id": "prod_21",
+    "createdAt": "2026-06-10T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.551Z",
+    "name": "Bamboo Fiber Dinnerware (16pc) Plus v7",
+    "description": "Eco-friendly plates and bowls made from crop waste. Perfect for home or office setups. Highly certified design.",
+    "price": 2999,
+    "category": "Home & Kitchen",
+    "stock": 41,
+    "sellerId": "seller_4",
+    "sellerName": "Vendor Elite 4",
+    "images": [
+      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400",
+      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=500"
+    ],
+    "rating": 5,
+    "reviewCount": 31,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 2.1
+    }
+  },
+  {
+    "_id": "prod_22",
+    "createdAt": "2026-06-09T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.551Z",
+    "name": "EcoBook Air Ultra Slim Plus v5",
+    "description": "Environmentally-friendly coding notebook built from recycled plastics. Perfect for home or office setups. Highly certified design.",
+    "price": 59099,
+    "category": "Electronics",
+    "stock": 42,
+    "sellerId": "seller_5",
+    "sellerName": "Vendor Elite 5",
+    "images": [
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500"
+    ],
+    "rating": 4,
+    "reviewCount": 32,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 22.5
+    }
+  },
+  {
+    "_id": "prod_23",
+    "createdAt": "2026-06-08T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.552Z",
+    "name": "EcoLoop Organic Cotton Hoodie Plus v5",
+    "description": "Soft organic hoodie dyed with natural plant extracts. Perfect for home or office setups. Highly certified design.",
+    "price": 2199,
+    "category": "Fashion",
+    "stock": 43,
+    "sellerId": "seller_6",
+    "sellerName": "Vendor Elite 6",
+    "images": [
+      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400",
+      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500"
+    ],
+    "rating": 4.1,
+    "reviewCount": 33,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.6,
+      "carbonFootprint": 2.7
+    }
+  },
+  {
+    "_id": "prod_24",
+    "createdAt": "2026-06-07T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.552Z",
+    "name": "The Silent Code: Sci-Fi Novel Plus v8",
+    "description": "Bestselling space opera thriller. Perfect for home or office setups. Highly certified design.",
+    "price": 1099,
+    "category": "Books",
+    "stock": 3,
+    "sellerId": "seller_7",
+    "sellerName": "Vendor Elite 7",
+    "images": [
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400",
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500"
+    ],
+    "rating": 4.2,
+    "reviewCount": 34,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.2,
+      "carbonFootprint": 1.3
+    }
+  },
+  {
+    "_id": "prod_25",
+    "createdAt": "2026-06-06T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.552Z",
+    "name": "Organic Honey Raw Wildflower Plus v9",
+    "description": "Unprocessed honey gathered from high-altitude meadows. Perfect for home or office setups. Highly certified design.",
+    "price": 1150,
+    "category": "Grocery",
+    "stock": 45,
+    "sellerId": "seller_8",
+    "sellerName": "Vendor Elite 8",
+    "images": [
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=400",
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=500"
+    ],
+    "rating": 4.3,
+    "reviewCount": 35,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 0.2
+    }
+  },
+  {
+    "_id": "prod_26",
+    "createdAt": "2026-06-05T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.552Z",
+    "name": "Mineral Sunscreen SPF 50 Plus v9",
+    "description": "Reef-safe biodegradable physical sunscreen block. Perfect for home or office setups. Highly certified design.",
+    "price": 1450,
+    "category": "Beauty",
+    "stock": 46,
+    "sellerId": "seller_9",
+    "sellerName": "Vendor Elite 9",
+    "images": [
+      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=400",
+      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500"
+    ],
+    "rating": 4.4,
+    "reviewCount": 36,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.7,
+      "carbonFootprint": 1
+    }
+  },
+  {
+    "_id": "prod_27",
+    "createdAt": "2026-06-04T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.552Z",
+    "name": "Ergonomic Sports Water Bottle Plus v9",
+    "description": "Insulated stainless steel travel flask. Perfect for home or office setups. Highly certified design.",
+    "price": 2099,
+    "category": "Sports",
+    "stock": 47,
+    "sellerId": "seller_1",
+    "sellerName": "Vendor Elite 1",
+    "images": [
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400",
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500"
+    ],
+    "rating": 4.5,
+    "reviewCount": 37,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 1.5
+    }
+  },
+  {
+    "_id": "prod_28",
+    "createdAt": "2026-06-03T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.553Z",
+    "name": "EcoShield Cast Iron Skillet Plus v10",
+    "description": "Pre-seasoned durable pan that lasts a lifetime. Perfect for home or office setups. Highly certified design.",
+    "price": 1799,
+    "category": "Home & Kitchen",
+    "stock": 48,
+    "sellerId": "seller_2",
+    "sellerName": "Vendor Elite 2",
+    "images": [
+      "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=400",
+      "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=500"
+    ],
+    "rating": 4.6,
+    "reviewCount": 38,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.7,
+      "carbonFootprint": 15.4
+    }
+  },
+  {
+    "_id": "prod_29",
+    "createdAt": "2026-06-02T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.553Z",
+    "name": "SoundAura Noise Cancelling Headphones Plus v6",
+    "description": "Active noise cancelling headphones with deep bass. Perfect for home or office setups. Highly certified design.",
+    "price": 9999,
+    "category": "Electronics",
+    "stock": 49,
+    "sellerId": "seller_3",
+    "sellerName": "Vendor Elite 3",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+    ],
+    "rating": 4.7,
+    "reviewCount": 39,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 3.2,
+      "carbonFootprint": 13.3
+    }
+  },
+  {
+    "_id": "prod_30",
+    "createdAt": "2026-06-16T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.553Z",
+    "name": "Bamboo Rayon Crew Socks (5-Pack) Plus v6",
+    "description": "Super soft bamboo material socks, biodegradable. Perfect for home or office setups. Highly certified design.",
+    "price": 1199,
+    "category": "Fashion",
+    "stock": 50,
+    "sellerId": "seller_4",
+    "sellerName": "Vendor Elite 4",
+    "images": [
+      "https://images.unsplash.com/photo-1582966772680-860e372bb558?w=400",
+      "https://images.unsplash.com/photo-1582966772680-860e372bb558?w=500"
+    ],
+    "rating": 4.8,
+    "reviewCount": 40,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 0.8
+    }
+  },
+  {
+    "_id": "prod_31",
+    "createdAt": "2026-06-15T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.553Z",
+    "name": "Mastering JavaScript & Node.js Plus v11",
+    "description": "Comprehensive guide for backend web development. Perfect for home or office setups. Highly certified design.",
+    "price": 1399,
+    "category": "Books",
+    "stock": 51,
+    "sellerId": "seller_5",
+    "sellerName": "Vendor Elite 5",
+    "images": [
+      "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400",
+      "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500"
+    ],
+    "rating": 4.9,
+    "reviewCount": 41,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 0.7
+    }
+  },
+  {
+    "_id": "prod_32",
+    "createdAt": "2026-06-14T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.554Z",
+    "name": "Gluten-Free Almond Oats Plus v11",
+    "description": "Perfect breakfast cereal rich in fibers. Perfect for home or office setups. Highly certified design.",
+    "price": 920,
+    "category": "Grocery",
+    "stock": 52,
+    "sellerId": "seller_6",
+    "sellerName": "Vendor Elite 6",
+    "images": [
+      "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400",
+      "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=500"
+    ],
+    "rating": 5,
+    "reviewCount": 42,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.7,
+      "carbonFootprint": 1
+    }
+  },
+  {
+    "_id": "prod_33",
+    "createdAt": "2026-06-13T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.554Z",
+    "name": "Shea Butter Moisture Balm Plus v11",
+    "description": "Intense hydration for dry lips and elbows. Perfect for home or office setups. Highly certified design.",
+    "price": 1420,
+    "category": "Beauty",
+    "stock": 53,
+    "sellerId": "seller_7",
+    "sellerName": "Vendor Elite 7",
+    "images": [
+      "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400",
+      "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=500"
+    ],
+    "rating": 4,
+    "reviewCount": 43,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.5,
+      "carbonFootprint": 1.3
+    }
+  },
+  {
+    "_id": "prod_34",
+    "createdAt": "2026-06-12T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.554Z",
+    "name": "High-Density Yoga Mat Plus v12",
+    "description": "TPE biodegradable yoga cushion with alignment lines. Perfect for home or office setups. Highly certified design.",
+    "price": 2699,
+    "category": "Sports",
+    "stock": 54,
+    "sellerId": "seller_8",
+    "sellerName": "Vendor Elite 8",
+    "images": [
+      "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=400",
+      "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=500"
+    ],
+    "rating": 4.1,
+    "reviewCount": 44,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 2.3
+    }
+  },
+  {
+    "_id": "prod_35",
+    "createdAt": "2026-06-11T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.554Z",
+    "name": "Automatic Smart Air Fryer Plus v12",
+    "description": "High speed convection oven utilizing 80% less oil. Perfect for home or office setups. Highly certified design.",
+    "price": 6799,
+    "category": "Home & Kitchen",
+    "stock": 55,
+    "sellerId": "seller_9",
+    "sellerName": "Vendor Elite 9",
+    "images": [
+      "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=400",
+      "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=500"
+    ],
+    "rating": 4.2,
+    "reviewCount": 45,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 4.4,
+      "carbonFootprint": 24.2
+    }
+  },
+  {
+    "_id": "prod_36",
+    "createdAt": "2026-06-10T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.555Z",
+    "name": "SmartCart Quantum Laptop Plus v8",
+    "description": "High performance gaming and coding laptop with 16GB RAM, 1TB SSD. Perfect for home or office setups. Highly certified design.",
+    "price": 75199,
+    "category": "Electronics",
+    "stock": 3,
+    "sellerId": "seller_1",
+    "sellerName": "Vendor Elite 1",
+    "images": [
+      "https://images.unsplash.com/photo-1496181130204-7552cc14ac1a?w=400",
+      "https://images.unsplash.com/photo-1496181130204-7552cc14ac1a?w=500"
+    ],
+    "rating": 4.3,
+    "reviewCount": 46,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 3.5,
+      "carbonFootprint": 85.6
+    }
+  },
+  {
+    "_id": "prod_37",
+    "createdAt": "2026-06-09T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.555Z",
+    "name": "Premium Leather Smart Watch Plus v8",
+    "description": "Elegant time piece with fitness trackers and brown leather strap. Perfect for home or office setups. Highly certified design.",
+    "price": 13299,
+    "category": "Fashion",
+    "stock": 57,
+    "sellerId": "seller_2",
+    "sellerName": "Vendor Elite 2",
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+    ],
+    "rating": 4.4,
+    "reviewCount": 47,
+    "sustainability": {
+      "ecoScore": "D",
+      "ecoRating": 2.5,
+      "carbonFootprint": 18.6
+    }
+  },
+  {
+    "_id": "prod_38",
+    "createdAt": "2026-06-08T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.555Z",
+    "name": "Green Growth: Building the Future Plus v13",
+    "description": "A handbook on sustainable startup practices. Perfect for home or office setups. Highly certified design.",
+    "price": 999,
+    "category": "Books",
+    "stock": 58,
+    "sellerId": "seller_3",
+    "sellerName": "Vendor Elite 3",
+    "images": [
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500"
+    ],
+    "rating": 4.5,
+    "reviewCount": 48,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 1
+    }
+  },
+  {
+    "_id": "prod_39",
+    "createdAt": "2026-06-07T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.556Z",
+    "name": "Single Origin Dark Roast Coffee Beans Plus v13",
+    "description": "Fairtrade certified organic arabica coffee beans. Perfect for home or office setups. Highly certified design.",
+    "price": 1550,
+    "category": "Grocery",
+    "stock": 59,
+    "sellerId": "seller_4",
+    "sellerName": "Vendor Elite 4",
+    "images": [
+      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400",
+      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=500"
+    ],
+    "rating": 4.6,
+    "reviewCount": 49,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 1.7
+    }
+  },
+  {
+    "_id": "prod_40",
+    "createdAt": "2026-06-06T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.556Z",
+    "name": "Hydrating Aloe Face Wash Plus v14",
+    "description": "Gentle facial wash infused with natural aloe gel. Perfect for home or office setups. Highly certified design.",
+    "price": 1250,
+    "category": "Beauty",
+    "stock": 20,
+    "sellerId": "seller_5",
+    "sellerName": "Vendor Elite 5",
+    "images": [
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400",
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500"
+    ],
+    "rating": 4.7,
+    "reviewCount": 50,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.3,
+      "carbonFootprint": 1.1
+    }
+  },
+  {
+    "_id": "prod_41",
+    "createdAt": "2026-06-05T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.556Z",
+    "name": "Iron Dumbbells (Set of 2 - 10kg) Plus v14",
+    "description": "Hexagonal non-slip vinyl dumbbells. Perfect for home or office setups. Highly certified design.",
+    "price": 3499,
+    "category": "Sports",
+    "stock": 21,
+    "sellerId": "seller_6",
+    "sellerName": "Vendor Elite 6",
+    "images": [
+      "https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=400",
+      "https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=500"
+    ],
+    "rating": 4.8,
+    "reviewCount": 51,
+    "sustainability": {
+      "ecoScore": "D",
+      "ecoRating": 3,
+      "carbonFootprint": 28.7
+    }
+  },
+  {
+    "_id": "prod_42",
+    "createdAt": "2026-06-04T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.556Z",
+    "name": "Bamboo Fiber Dinnerware (16pc) Plus v14",
+    "description": "Eco-friendly plates and bowls made from crop waste. Perfect for home or office setups. Highly certified design.",
+    "price": 2999,
+    "category": "Home & Kitchen",
+    "stock": 22,
+    "sellerId": "seller_7",
+    "sellerName": "Vendor Elite 7",
+    "images": [
+      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400",
+      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=500"
+    ],
+    "rating": 4.9,
+    "reviewCount": 52,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 2.3
+    }
+  },
+  {
+    "_id": "prod_43",
+    "createdAt": "2026-06-03T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.557Z",
+    "name": "Titan Phone 5G Plus v9",
+    "description": "6.5-inch OLED display, dual camera, 5000mAh battery. Perfect for home or office setups. Highly certified design.",
+    "price": 30099,
+    "category": "Electronics",
+    "stock": 23,
+    "sellerId": "seller_8",
+    "sellerName": "Vendor Elite 8",
+    "images": [
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400",
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500"
+    ],
+    "rating": 5,
+    "reviewCount": 53,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4,
+      "carbonFootprint": 36.2
+    }
+  },
+  {
+    "_id": "prod_44",
+    "createdAt": "2026-06-02T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.557Z",
+    "name": "Velocity Running Sneakers Plus v9",
+    "description": "Lightweight breathable sneakers for training. Perfect for home or office setups. Highly certified design.",
+    "price": 4700,
+    "category": "Fashion",
+    "stock": 24,
+    "sellerId": "seller_9",
+    "sellerName": "Vendor Elite 9",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+    ],
+    "rating": 4,
+    "reviewCount": 54,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 3.8,
+      "carbonFootprint": 10.2
+    }
+  },
+  {
+    "_id": "prod_45",
+    "createdAt": "2026-06-16T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.557Z",
+    "name": "The Silent Code: Sci-Fi Novel Plus v15",
+    "description": "Bestselling space opera thriller. Perfect for home or office setups. Highly certified design.",
+    "price": 1099,
+    "category": "Books",
+    "stock": 25,
+    "sellerId": "seller_1",
+    "sellerName": "Vendor Elite 1",
+    "images": [
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400",
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500"
+    ],
+    "rating": 4.1,
+    "reviewCount": 10,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.2,
+      "carbonFootprint": 0.5
+    }
+  },
+  {
+    "_id": "prod_46",
+    "createdAt": "2026-06-15T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.558Z",
+    "name": "Organic Honey Raw Wildflower Plus v16",
+    "description": "Unprocessed honey gathered from high-altitude meadows. Perfect for home or office setups. Highly certified design.",
+    "price": 1150,
+    "category": "Grocery",
+    "stock": 26,
+    "sellerId": "seller_2",
+    "sellerName": "Vendor Elite 2",
+    "images": [
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=400",
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=500"
+    ],
+    "rating": 4.2,
+    "reviewCount": 11,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 0.4
+    }
+  },
+  {
+    "_id": "prod_47",
+    "createdAt": "2026-06-14T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.558Z",
+    "name": "Mineral Sunscreen SPF 50 Plus v16",
+    "description": "Reef-safe biodegradable physical sunscreen block. Perfect for home or office setups. Highly certified design.",
+    "price": 1450,
+    "category": "Beauty",
+    "stock": 27,
+    "sellerId": "seller_3",
+    "sellerName": "Vendor Elite 3",
+    "images": [
+      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=400",
+      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500"
+    ],
+    "rating": 4.3,
+    "reviewCount": 12,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.7,
+      "carbonFootprint": 1.2
+    }
+  },
+  {
+    "_id": "prod_48",
+    "createdAt": "2026-06-13T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.558Z",
+    "name": "Ergonomic Sports Water Bottle Plus v16",
+    "description": "Insulated stainless steel travel flask. Perfect for home or office setups. Highly certified design.",
+    "price": 2099,
+    "category": "Sports",
+    "stock": 3,
+    "sellerId": "seller_4",
+    "sellerName": "Vendor Elite 4",
+    "images": [
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400",
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500"
+    ],
+    "rating": 4.4,
+    "reviewCount": 13,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 1.7
+    }
+  },
+  {
+    "_id": "prod_49",
+    "createdAt": "2026-06-12T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.558Z",
+    "name": "EcoShield Cast Iron Skillet Plus v17",
+    "description": "Pre-seasoned durable pan that lasts a lifetime. Perfect for home or office setups. Highly certified design.",
+    "price": 1799,
+    "category": "Home & Kitchen",
+    "stock": 29,
+    "sellerId": "seller_5",
+    "sellerName": "Vendor Elite 5",
+    "images": [
+      "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=400",
+      "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=500"
+    ],
+    "rating": 4.5,
+    "reviewCount": 14,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.7,
+      "carbonFootprint": 15.6
+    }
+  },
+  {
+    "_id": "prod_50",
+    "createdAt": "2026-06-11T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.559Z",
+    "name": "EcoSound Solar Earbuds Plus v10",
+    "description": "Wireless earbuds with a solar-powered case charging. Perfect for home or office setups. Highly certified design.",
+    "price": 4999,
+    "category": "Electronics",
+    "stock": 30,
+    "sellerId": "seller_6",
+    "sellerName": "Vendor Elite 6",
+    "images": [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400",
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+    ],
+    "rating": 4.6,
+    "reviewCount": 15,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 3.8
+    }
+  },
+  {
+    "_id": "prod_51",
+    "createdAt": "2026-06-10T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.559Z",
+    "name": "Recycled Fiber Denim Jeans Plus v11",
+    "description": "Comfortable denim made from 100% recycled cotton. Perfect for home or office setups. Highly certified design.",
+    "price": 2899,
+    "category": "Fashion",
+    "stock": 31,
+    "sellerId": "seller_7",
+    "sellerName": "Vendor Elite 7",
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=500"
+    ],
+    "rating": 4.7,
+    "reviewCount": 16,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.7,
+      "carbonFootprint": 4.4
+    }
+  },
+  {
+    "_id": "prod_52",
+    "createdAt": "2026-06-09T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.559Z",
+    "name": "Mastering JavaScript & Node.js Plus v18",
+    "description": "Comprehensive guide for backend web development. Perfect for home or office setups. Highly certified design.",
+    "price": 1399,
+    "category": "Books",
+    "stock": 32,
+    "sellerId": "seller_8",
+    "sellerName": "Vendor Elite 8",
+    "images": [
+      "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400",
+      "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500"
+    ],
+    "rating": 4.8,
+    "reviewCount": 17,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 0.9
+    }
+  },
+  {
+    "_id": "prod_53",
+    "createdAt": "2026-06-08T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.560Z",
+    "name": "Gluten-Free Almond Oats Plus v18",
+    "description": "Perfect breakfast cereal rich in fibers. Perfect for home or office setups. Highly certified design.",
+    "price": 920,
+    "category": "Grocery",
+    "stock": 33,
+    "sellerId": "seller_9",
+    "sellerName": "Vendor Elite 9",
+    "images": [
+      "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400",
+      "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=500"
+    ],
+    "rating": 4.9,
+    "reviewCount": 18,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.7,
+      "carbonFootprint": 1.2
+    }
+  },
+  {
+    "_id": "prod_54",
+    "createdAt": "2026-06-07T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.560Z",
+    "name": "Shea Butter Moisture Balm Plus v18",
+    "description": "Intense hydration for dry lips and elbows. Perfect for home or office setups. Highly certified design.",
+    "price": 1420,
+    "category": "Beauty",
+    "stock": 34,
+    "sellerId": "seller_1",
+    "sellerName": "Vendor Elite 1",
+    "images": [
+      "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400",
+      "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=500"
+    ],
+    "rating": 5,
+    "reviewCount": 19,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.5,
+      "carbonFootprint": 1.5
+    }
+  },
+  {
+    "_id": "prod_55",
+    "createdAt": "2026-06-06T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.560Z",
+    "name": "High-Density Yoga Mat Plus v19",
+    "description": "TPE biodegradable yoga cushion with alignment lines. Perfect for home or office setups. Highly certified design.",
+    "price": 2699,
+    "category": "Sports",
+    "stock": 35,
+    "sellerId": "seller_2",
+    "sellerName": "Vendor Elite 2",
+    "images": [
+      "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=400",
+      "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=500"
+    ],
+    "rating": 4,
+    "reviewCount": 20,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 1.5
+    }
+  },
+  {
+    "_id": "prod_56",
+    "createdAt": "2026-06-05T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.561Z",
+    "name": "Automatic Smart Air Fryer Plus v19",
+    "description": "High speed convection oven utilizing 80% less oil. Perfect for home or office setups. Highly certified design.",
+    "price": 6799,
+    "category": "Home & Kitchen",
+    "stock": 36,
+    "sellerId": "seller_3",
+    "sellerName": "Vendor Elite 3",
+    "images": [
+      "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=400",
+      "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=500"
+    ],
+    "rating": 4.1,
+    "reviewCount": 21,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 4.4,
+      "carbonFootprint": 24.4
+    }
+  },
+  {
+    "_id": "prod_57",
+    "createdAt": "2026-06-04T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.561Z",
+    "name": "EcoBook Air Ultra Slim Plus v12",
+    "description": "Environmentally-friendly coding notebook built from recycled plastics. Perfect for home or office setups. Highly certified design.",
+    "price": 59199,
+    "category": "Electronics",
+    "stock": 37,
+    "sellerId": "seller_4",
+    "sellerName": "Vendor Elite 4",
+    "images": [
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500"
+    ],
+    "rating": 4.2,
+    "reviewCount": 22,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 22.5
+    }
+  },
+  {
+    "_id": "prod_58",
+    "createdAt": "2026-06-03T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.561Z",
+    "name": "EcoLoop Organic Cotton Hoodie Plus v12",
+    "description": "Soft organic hoodie dyed with natural plant extracts. Perfect for home or office setups. Highly certified design.",
+    "price": 2299,
+    "category": "Fashion",
+    "stock": 38,
+    "sellerId": "seller_5",
+    "sellerName": "Vendor Elite 5",
+    "images": [
+      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400",
+      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500"
+    ],
+    "rating": 4.3,
+    "reviewCount": 23,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.6,
+      "carbonFootprint": 2.7
+    }
+  },
+  {
+    "_id": "prod_59",
+    "createdAt": "2026-06-02T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.562Z",
+    "name": "Green Growth: Building the Future Plus v20",
+    "description": "A handbook on sustainable startup practices. Perfect for home or office setups. Highly certified design.",
+    "price": 999,
+    "category": "Books",
+    "stock": 39,
+    "sellerId": "seller_6",
+    "sellerName": "Vendor Elite 6",
+    "images": [
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500"
+    ],
+    "rating": 4.4,
+    "reviewCount": 24,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 1.2
+    }
+  },
+  {
+    "_id": "prod_60",
+    "createdAt": "2026-06-16T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.562Z",
+    "name": "Single Origin Dark Roast Coffee Beans Plus v20",
+    "description": "Fairtrade certified organic arabica coffee beans. Perfect for home or office setups. Highly certified design.",
+    "price": 1550,
+    "category": "Grocery",
+    "stock": 3,
+    "sellerId": "seller_7",
+    "sellerName": "Vendor Elite 7",
+    "images": [
+      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400",
+      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=500"
+    ],
+    "rating": 4.5,
+    "reviewCount": 25,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 0.9
+    }
+  },
+  {
+    "_id": "prod_61",
+    "createdAt": "2026-06-15T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.563Z",
+    "name": "Hydrating Aloe Face Wash Plus v21",
+    "description": "Gentle facial wash infused with natural aloe gel. Perfect for home or office setups. Highly certified design.",
+    "price": 1250,
+    "category": "Beauty",
+    "stock": 41,
+    "sellerId": "seller_8",
+    "sellerName": "Vendor Elite 8",
+    "images": [
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400",
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500"
+    ],
+    "rating": 4.6,
+    "reviewCount": 26,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.3,
+      "carbonFootprint": 1.3
+    }
+  },
+  {
+    "_id": "prod_62",
+    "createdAt": "2026-06-14T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.563Z",
+    "name": "Iron Dumbbells (Set of 2 - 10kg) Plus v21",
+    "description": "Hexagonal non-slip vinyl dumbbells. Perfect for home or office setups. Highly certified design.",
+    "price": 3499,
+    "category": "Sports",
+    "stock": 42,
+    "sellerId": "seller_9",
+    "sellerName": "Vendor Elite 9",
+    "images": [
+      "https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=400",
+      "https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=500"
+    ],
+    "rating": 4.7,
+    "reviewCount": 27,
+    "sustainability": {
+      "ecoScore": "D",
+      "ecoRating": 3,
+      "carbonFootprint": 28.9
+    }
+  },
+  {
+    "_id": "prod_63",
+    "createdAt": "2026-06-13T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.563Z",
+    "name": "Bamboo Fiber Dinnerware (16pc) Plus v21",
+    "description": "Eco-friendly plates and bowls made from crop waste. Perfect for home or office setups. Highly certified design.",
+    "price": 2999,
+    "category": "Home & Kitchen",
+    "stock": 43,
+    "sellerId": "seller_1",
+    "sellerName": "Vendor Elite 1",
+    "images": [
+      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400",
+      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=500"
+    ],
+    "rating": 4.8,
+    "reviewCount": 28,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 2.5
+    }
+  },
+  {
+    "_id": "prod_64",
+    "createdAt": "2026-06-12T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.564Z",
+    "name": "SoundAura Noise Cancelling Headphones Plus v13",
+    "description": "Active noise cancelling headphones with deep bass. Perfect for home or office setups. Highly certified design.",
+    "price": 10099,
+    "category": "Electronics",
+    "stock": 44,
+    "sellerId": "seller_2",
+    "sellerName": "Vendor Elite 2",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+    ],
+    "rating": 4.9,
+    "reviewCount": 29,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 3.2,
+      "carbonFootprint": 13.3
+    }
+  },
+  {
+    "_id": "prod_65",
+    "createdAt": "2026-06-11T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.564Z",
+    "name": "Bamboo Rayon Crew Socks (5-Pack) Plus v13",
+    "description": "Super soft bamboo material socks, biodegradable. Perfect for home or office setups. Highly certified design.",
+    "price": 999,
+    "category": "Fashion",
+    "stock": 45,
+    "sellerId": "seller_3",
+    "sellerName": "Vendor Elite 3",
+    "images": [
+      "https://images.unsplash.com/photo-1582966772680-860e372bb558?w=400",
+      "https://images.unsplash.com/photo-1582966772680-860e372bb558?w=500"
+    ],
+    "rating": 5,
+    "reviewCount": 30,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 0.8
+    }
+  },
+  {
+    "_id": "prod_66",
+    "createdAt": "2026-06-10T14:11:55.539Z",
+    "updatedAt": "2026-06-16T14:11:55.564Z",
+    "name": "The Silent Code: Sci-Fi Novel Plus v22",
+    "description": "Bestselling space opera thriller. Perfect for home or office setups. Highly certified design.",
+    "price": 1099,
+    "category": "Books",
+    "stock": 46,
+    "sellerId": "seller_4",
+    "sellerName": "Vendor Elite 4",
+    "images": [
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400",
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500"
+    ],
+    "rating": 4,
+    "reviewCount": 31,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.2,
+      "carbonFootprint": 0.7
+    }
+  },
+  {
+    "_id": "prod_67",
+    "createdAt": "2026-06-09T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.565Z",
+    "name": "Organic Honey Raw Wildflower Plus v23",
+    "description": "Unprocessed honey gathered from high-altitude meadows. Perfect for home or office setups. Highly certified design.",
+    "price": 1150,
+    "category": "Grocery",
+    "stock": 47,
+    "sellerId": "seller_5",
+    "sellerName": "Vendor Elite 5",
+    "images": [
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=400",
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=500"
+    ],
+    "rating": 4.1,
+    "reviewCount": 32,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 0.6
+    }
+  },
+  {
+    "_id": "prod_68",
+    "createdAt": "2026-06-08T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.565Z",
+    "name": "Mineral Sunscreen SPF 50 Plus v23",
+    "description": "Reef-safe biodegradable physical sunscreen block. Perfect for home or office setups. Highly certified design.",
+    "price": 1450,
+    "category": "Beauty",
+    "stock": 48,
+    "sellerId": "seller_6",
+    "sellerName": "Vendor Elite 6",
+    "images": [
+      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=400",
+      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500"
+    ],
+    "rating": 4.2,
+    "reviewCount": 33,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.7,
+      "carbonFootprint": 1.4
+    }
+  },
+  {
+    "_id": "prod_69",
+    "createdAt": "2026-06-07T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.565Z",
+    "name": "Ergonomic Sports Water Bottle Plus v23",
+    "description": "Insulated stainless steel travel flask. Perfect for home or office setups. Highly certified design.",
+    "price": 2099,
+    "category": "Sports",
+    "stock": 49,
+    "sellerId": "seller_7",
+    "sellerName": "Vendor Elite 7",
+    "images": [
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400",
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500"
+    ],
+    "rating": 4.3,
+    "reviewCount": 34,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 1.9
+    }
+  },
+  {
+    "_id": "prod_70",
+    "createdAt": "2026-06-06T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.567Z",
+    "name": "EcoShield Cast Iron Skillet Plus v24",
+    "description": "Pre-seasoned durable pan that lasts a lifetime. Perfect for home or office setups. Highly certified design.",
+    "price": 1799,
+    "category": "Home & Kitchen",
+    "stock": 50,
+    "sellerId": "seller_8",
+    "sellerName": "Vendor Elite 8",
+    "images": [
+      "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=400",
+      "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=500"
+    ],
+    "rating": 4.4,
+    "reviewCount": 35,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.7,
+      "carbonFootprint": 14.8
+    }
+  },
+  {
+    "_id": "prod_71",
+    "createdAt": "2026-06-05T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.567Z",
+    "name": "SmartCart Quantum Laptop Plus v15",
+    "description": "High performance gaming and coding laptop with 16GB RAM, 1TB SSD. Perfect for home or office setups. Highly certified design.",
+    "price": 74999,
+    "category": "Electronics",
+    "stock": 51,
+    "sellerId": "seller_9",
+    "sellerName": "Vendor Elite 9",
+    "images": [
+      "https://images.unsplash.com/photo-1496181130204-7552cc14ac1a?w=400",
+      "https://images.unsplash.com/photo-1496181130204-7552cc14ac1a?w=500"
+    ],
+    "rating": 4.5,
+    "reviewCount": 36,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 3.5,
+      "carbonFootprint": 85.6
+    }
+  },
+  {
+    "_id": "prod_72",
+    "createdAt": "2026-06-04T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.567Z",
+    "name": "Premium Leather Smart Watch Plus v15",
+    "description": "Elegant time piece with fitness trackers and brown leather strap. Perfect for home or office setups. Highly certified design.",
+    "price": 13399,
+    "category": "Fashion",
+    "stock": 3,
+    "sellerId": "seller_1",
+    "sellerName": "Vendor Elite 1",
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+    ],
+    "rating": 4.6,
+    "reviewCount": 37,
+    "sustainability": {
+      "ecoScore": "D",
+      "ecoRating": 2.5,
+      "carbonFootprint": 18.6
+    }
+  },
+  {
+    "_id": "prod_73",
+    "createdAt": "2026-06-03T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.568Z",
+    "name": "Mastering JavaScript & Node.js Plus v25",
+    "description": "Comprehensive guide for backend web development. Perfect for home or office setups. Highly certified design.",
+    "price": 1399,
+    "category": "Books",
+    "stock": 53,
+    "sellerId": "seller_2",
+    "sellerName": "Vendor Elite 2",
+    "images": [
+      "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400",
+      "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500"
+    ],
+    "rating": 4.7,
+    "reviewCount": 38,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 1.1
+    }
+  },
+  {
+    "_id": "prod_74",
+    "createdAt": "2026-06-02T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.568Z",
+    "name": "Gluten-Free Almond Oats Plus v25",
+    "description": "Perfect breakfast cereal rich in fibers. Perfect for home or office setups. Highly certified design.",
+    "price": 920,
+    "category": "Grocery",
+    "stock": 54,
+    "sellerId": "seller_3",
+    "sellerName": "Vendor Elite 3",
+    "images": [
+      "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400",
+      "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=500"
+    ],
+    "rating": 4.8,
+    "reviewCount": 39,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.7,
+      "carbonFootprint": 1.4
+    }
+  },
+  {
+    "_id": "prod_75",
+    "createdAt": "2026-06-16T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.569Z",
+    "name": "Shea Butter Moisture Balm Plus v25",
+    "description": "Intense hydration for dry lips and elbows. Perfect for home or office setups. Highly certified design.",
+    "price": 1420,
+    "category": "Beauty",
+    "stock": 55,
+    "sellerId": "seller_4",
+    "sellerName": "Vendor Elite 4",
+    "images": [
+      "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400",
+      "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=500"
+    ],
+    "rating": 4.9,
+    "reviewCount": 40,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.5,
+      "carbonFootprint": 0.7
+    }
+  },
+  {
+    "_id": "prod_76",
+    "createdAt": "2026-06-15T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.569Z",
+    "name": "High-Density Yoga Mat Plus v26",
+    "description": "TPE biodegradable yoga cushion with alignment lines. Perfect for home or office setups. Highly certified design.",
+    "price": 2699,
+    "category": "Sports",
+    "stock": 56,
+    "sellerId": "seller_5",
+    "sellerName": "Vendor Elite 5",
+    "images": [
+      "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=400",
+      "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=500"
+    ],
+    "rating": 5,
+    "reviewCount": 41,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 1.7
+    }
+  },
+  {
+    "_id": "prod_77",
+    "createdAt": "2026-06-14T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.569Z",
+    "name": "Automatic Smart Air Fryer Plus v26",
+    "description": "High speed convection oven utilizing 80% less oil. Perfect for home or office setups. Highly certified design.",
+    "price": 6799,
+    "category": "Home & Kitchen",
+    "stock": 57,
+    "sellerId": "seller_6",
+    "sellerName": "Vendor Elite 6",
+    "images": [
+      "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=400",
+      "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=500"
+    ],
+    "rating": 4,
+    "reviewCount": 42,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 4.4,
+      "carbonFootprint": 24.6
+    }
+  },
+  {
+    "_id": "prod_78",
+    "createdAt": "2026-06-13T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.570Z",
+    "name": "Titan Phone 5G Plus v16",
+    "description": "6.5-inch OLED display, dual camera, 5000mAh battery. Perfect for home or office setups. Highly certified design.",
+    "price": 30199,
+    "category": "Electronics",
+    "stock": 58,
+    "sellerId": "seller_7",
+    "sellerName": "Vendor Elite 7",
+    "images": [
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400",
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500"
+    ],
+    "rating": 4.1,
+    "reviewCount": 43,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4,
+      "carbonFootprint": 36.2
+    }
+  },
+  {
+    "_id": "prod_79",
+    "createdAt": "2026-06-12T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.570Z",
+    "name": "Velocity Running Sneakers Plus v16",
+    "description": "Lightweight breathable sneakers for training. Perfect for home or office setups. Highly certified design.",
+    "price": 4800,
+    "category": "Fashion",
+    "stock": 59,
+    "sellerId": "seller_8",
+    "sellerName": "Vendor Elite 8",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+    ],
+    "rating": 4.2,
+    "reviewCount": 44,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 3.8,
+      "carbonFootprint": 10.2
+    }
+  },
+  {
+    "_id": "prod_80",
+    "createdAt": "2026-06-11T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.571Z",
+    "name": "Green Growth: Building the Future Plus v27",
+    "description": "A handbook on sustainable startup practices. Perfect for home or office setups. Highly certified design.",
+    "price": 999,
+    "category": "Books",
+    "stock": 20,
+    "sellerId": "seller_9",
+    "sellerName": "Vendor Elite 9",
+    "images": [
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500"
+    ],
+    "rating": 4.3,
+    "reviewCount": 45,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 0.4
+    }
+  },
+  {
+    "_id": "prod_81",
+    "createdAt": "2026-06-10T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.571Z",
+    "name": "Single Origin Dark Roast Coffee Beans Plus v27",
+    "description": "Fairtrade certified organic arabica coffee beans. Perfect for home or office setups. Highly certified design.",
+    "price": 1550,
+    "category": "Grocery",
+    "stock": 21,
+    "sellerId": "seller_1",
+    "sellerName": "Vendor Elite 1",
+    "images": [
+      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400",
+      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=500"
+    ],
+    "rating": 4.4,
+    "reviewCount": 46,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 1.1
+    }
+  },
+  {
+    "_id": "prod_82",
+    "createdAt": "2026-06-09T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.571Z",
+    "name": "Hydrating Aloe Face Wash Plus v28",
+    "description": "Gentle facial wash infused with natural aloe gel. Perfect for home or office setups. Highly certified design.",
+    "price": 1250,
+    "category": "Beauty",
+    "stock": 22,
+    "sellerId": "seller_2",
+    "sellerName": "Vendor Elite 2",
+    "images": [
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400",
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500"
+    ],
+    "rating": 4.5,
+    "reviewCount": 47,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.3,
+      "carbonFootprint": 1.5
+    }
+  },
+  {
+    "_id": "prod_83",
+    "createdAt": "2026-06-08T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.572Z",
+    "name": "Iron Dumbbells (Set of 2 - 10kg) Plus v28",
+    "description": "Hexagonal non-slip vinyl dumbbells. Perfect for home or office setups. Highly certified design.",
+    "price": 3499,
+    "category": "Sports",
+    "stock": 23,
+    "sellerId": "seller_3",
+    "sellerName": "Vendor Elite 3",
+    "images": [
+      "https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=400",
+      "https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=500"
+    ],
+    "rating": 4.6,
+    "reviewCount": 48,
+    "sustainability": {
+      "ecoScore": "D",
+      "ecoRating": 3,
+      "carbonFootprint": 29.1
+    }
+  },
+  {
+    "_id": "prod_84",
+    "createdAt": "2026-06-07T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.572Z",
+    "name": "Bamboo Fiber Dinnerware (16pc) Plus v28",
+    "description": "Eco-friendly plates and bowls made from crop waste. Perfect for home or office setups. Highly certified design.",
+    "price": 2999,
+    "category": "Home & Kitchen",
+    "stock": 3,
+    "sellerId": "seller_4",
+    "sellerName": "Vendor Elite 4",
+    "images": [
+      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400",
+      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=500"
+    ],
+    "rating": 4.7,
+    "reviewCount": 49,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 2.7
+    }
+  },
+  {
+    "_id": "prod_85",
+    "createdAt": "2026-06-06T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.573Z",
+    "name": "EcoSound Solar Earbuds Plus v17",
+    "description": "Wireless earbuds with a solar-powered case charging. Perfect for home or office setups. Highly certified design.",
+    "price": 5099,
+    "category": "Electronics",
+    "stock": 25,
+    "sellerId": "seller_5",
+    "sellerName": "Vendor Elite 5",
+    "images": [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400",
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+    ],
+    "rating": 4.8,
+    "reviewCount": 50,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 3.8
+    }
+  },
+  {
+    "_id": "prod_86",
+    "createdAt": "2026-06-05T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.573Z",
+    "name": "Recycled Fiber Denim Jeans Plus v18",
+    "description": "Comfortable denim made from 100% recycled cotton. Perfect for home or office setups. Highly certified design.",
+    "price": 2699,
+    "category": "Fashion",
+    "stock": 26,
+    "sellerId": "seller_6",
+    "sellerName": "Vendor Elite 6",
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=500"
+    ],
+    "rating": 4.9,
+    "reviewCount": 51,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.7,
+      "carbonFootprint": 4.4
+    }
+  },
+  {
+    "_id": "prod_87",
+    "createdAt": "2026-06-04T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.574Z",
+    "name": "The Silent Code: Sci-Fi Novel Plus v29",
+    "description": "Bestselling space opera thriller. Perfect for home or office setups. Highly certified design.",
+    "price": 1099,
+    "category": "Books",
+    "stock": 27,
+    "sellerId": "seller_7",
+    "sellerName": "Vendor Elite 7",
+    "images": [
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400",
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500"
+    ],
+    "rating": 5,
+    "reviewCount": 52,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.2,
+      "carbonFootprint": 0.9
+    }
+  },
+  {
+    "_id": "prod_88",
+    "createdAt": "2026-06-03T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.574Z",
+    "name": "Organic Honey Raw Wildflower Plus v30",
+    "description": "Unprocessed honey gathered from high-altitude meadows. Perfect for home or office setups. Highly certified design.",
+    "price": 1150,
+    "category": "Grocery",
+    "stock": 28,
+    "sellerId": "seller_8",
+    "sellerName": "Vendor Elite 8",
+    "images": [
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=400",
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=500"
+    ],
+    "rating": 4,
+    "reviewCount": 53,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 0.8
+    }
+  },
+  {
+    "_id": "prod_89",
+    "createdAt": "2026-06-02T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.574Z",
+    "name": "Mineral Sunscreen SPF 50 Plus v30",
+    "description": "Reef-safe biodegradable physical sunscreen block. Perfect for home or office setups. Highly certified design.",
+    "price": 1450,
+    "category": "Beauty",
+    "stock": 29,
+    "sellerId": "seller_9",
+    "sellerName": "Vendor Elite 9",
+    "images": [
+      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=400",
+      "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500"
+    ],
+    "rating": 4.1,
+    "reviewCount": 54,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.7,
+      "carbonFootprint": 1.6
+    }
+  },
+  {
+    "_id": "prod_90",
+    "createdAt": "2026-06-16T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.575Z",
+    "name": "Ergonomic Sports Water Bottle Plus v30",
+    "description": "Insulated stainless steel travel flask. Perfect for home or office setups. Highly certified design.",
+    "price": 2099,
+    "category": "Sports",
+    "stock": 30,
+    "sellerId": "seller_1",
+    "sellerName": "Vendor Elite 1",
+    "images": [
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400",
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500"
+    ],
+    "rating": 4.2,
+    "reviewCount": 10,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 1.1
+    }
+  },
+  {
+    "_id": "prod_91",
+    "createdAt": "2026-06-15T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.575Z",
+    "name": "EcoShield Cast Iron Skillet Plus v31",
+    "description": "Pre-seasoned durable pan that lasts a lifetime. Perfect for home or office setups. Highly certified design.",
+    "price": 1799,
+    "category": "Home & Kitchen",
+    "stock": 31,
+    "sellerId": "seller_2",
+    "sellerName": "Vendor Elite 2",
+    "images": [
+      "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=400",
+      "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=500"
+    ],
+    "rating": 4.3,
+    "reviewCount": 11,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.7,
+      "carbonFootprint": 15
+    }
+  },
+  {
+    "_id": "prod_92",
+    "createdAt": "2026-06-14T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.576Z",
+    "name": "EcoBook Air Ultra Slim Plus v19",
+    "description": "Environmentally-friendly coding notebook built from recycled plastics. Perfect for home or office setups. Highly certified design.",
+    "price": 58999,
+    "category": "Electronics",
+    "stock": 32,
+    "sellerId": "seller_3",
+    "sellerName": "Vendor Elite 3",
+    "images": [
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500"
+    ],
+    "rating": 4.4,
+    "reviewCount": 12,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 22.5
+    }
+  },
+  {
+    "_id": "prod_93",
+    "createdAt": "2026-06-13T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.576Z",
+    "name": "EcoLoop Organic Cotton Hoodie Plus v19",
+    "description": "Soft organic hoodie dyed with natural plant extracts. Perfect for home or office setups. Highly certified design.",
+    "price": 2399,
+    "category": "Fashion",
+    "stock": 33,
+    "sellerId": "seller_4",
+    "sellerName": "Vendor Elite 4",
+    "images": [
+      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400",
+      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500"
+    ],
+    "rating": 4.5,
+    "reviewCount": 13,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.6,
+      "carbonFootprint": 2.7
+    }
+  },
+  {
+    "_id": "prod_94",
+    "createdAt": "2026-06-12T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.577Z",
+    "name": "Mastering JavaScript & Node.js Plus v32",
+    "description": "Comprehensive guide for backend web development. Perfect for home or office setups. Highly certified design.",
+    "price": 1399,
+    "category": "Books",
+    "stock": 34,
+    "sellerId": "seller_5",
+    "sellerName": "Vendor Elite 5",
+    "images": [
+      "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400",
+      "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500"
+    ],
+    "rating": 4.6,
+    "reviewCount": 14,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 1.3
+    }
+  },
+  {
+    "_id": "prod_95",
+    "createdAt": "2026-06-11T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.577Z",
+    "name": "Gluten-Free Almond Oats Plus v32",
+    "description": "Perfect breakfast cereal rich in fibers. Perfect for home or office setups. Highly certified design.",
+    "price": 920,
+    "category": "Grocery",
+    "stock": 35,
+    "sellerId": "seller_6",
+    "sellerName": "Vendor Elite 6",
+    "images": [
+      "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400",
+      "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=500"
+    ],
+    "rating": 4.7,
+    "reviewCount": 15,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.7,
+      "carbonFootprint": 0.6
+    }
+  },
+  {
+    "_id": "prod_96",
+    "createdAt": "2026-06-10T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.578Z",
+    "name": "Shea Butter Moisture Balm Plus v32",
+    "description": "Intense hydration for dry lips and elbows. Perfect for home or office setups. Highly certified design.",
+    "price": 1420,
+    "category": "Beauty",
+    "stock": 3,
+    "sellerId": "seller_7",
+    "sellerName": "Vendor Elite 7",
+    "images": [
+      "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400",
+      "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=500"
+    ],
+    "rating": 4.8,
+    "reviewCount": 16,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.5,
+      "carbonFootprint": 0.9
+    }
+  },
+  {
+    "_id": "prod_97",
+    "createdAt": "2026-06-09T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.578Z",
+    "name": "High-Density Yoga Mat Plus v33",
+    "description": "TPE biodegradable yoga cushion with alignment lines. Perfect for home or office setups. Highly certified design.",
+    "price": 2699,
+    "category": "Sports",
+    "stock": 37,
+    "sellerId": "seller_8",
+    "sellerName": "Vendor Elite 8",
+    "images": [
+      "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=400",
+      "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=500"
+    ],
+    "rating": 4.9,
+    "reviewCount": 17,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 1.9
+    }
+  },
+  {
+    "_id": "prod_98",
+    "createdAt": "2026-06-08T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.579Z",
+    "name": "Automatic Smart Air Fryer Plus v33",
+    "description": "High speed convection oven utilizing 80% less oil. Perfect for home or office setups. Highly certified design.",
+    "price": 6799,
+    "category": "Home & Kitchen",
+    "stock": 38,
+    "sellerId": "seller_9",
+    "sellerName": "Vendor Elite 9",
+    "images": [
+      "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=400",
+      "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=500"
+    ],
+    "rating": 5,
+    "reviewCount": 18,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 4.4,
+      "carbonFootprint": 24.8
+    }
+  },
+  {
+    "_id": "prod_99",
+    "createdAt": "2026-06-07T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.579Z",
+    "name": "SoundAura Noise Cancelling Headphones Plus v20",
+    "description": "Active noise cancelling headphones with deep bass. Perfect for home or office setups. Highly certified design.",
+    "price": 10199,
+    "category": "Electronics",
+    "stock": 39,
+    "sellerId": "seller_1",
+    "sellerName": "Vendor Elite 1",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+    ],
+    "rating": 4,
+    "reviewCount": 19,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 3.2,
+      "carbonFootprint": 13.3
+    }
+  },
+  {
+    "_id": "prod_100",
+    "createdAt": "2026-06-06T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.580Z",
+    "name": "Bamboo Rayon Crew Socks (5-Pack) Plus v20",
+    "description": "Super soft bamboo material socks, biodegradable. Perfect for home or office setups. Highly certified design.",
+    "price": 1099,
+    "category": "Fashion",
+    "stock": 40,
+    "sellerId": "seller_2",
+    "sellerName": "Vendor Elite 2",
+    "images": [
+      "https://images.unsplash.com/photo-1582966772680-860e372bb558?w=400",
+      "https://images.unsplash.com/photo-1582966772680-860e372bb558?w=500"
+    ],
+    "rating": 4.1,
+    "reviewCount": 20,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 0.8
+    }
+  },
+  {
+    "_id": "prod_101",
+    "createdAt": "2026-06-05T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.581Z",
+    "name": "Green Growth: Building the Future Plus v34",
+    "description": "A handbook on sustainable startup practices. Perfect for home or office setups. Highly certified design.",
+    "price": 999,
+    "category": "Books",
+    "stock": 41,
+    "sellerId": "seller_3",
+    "sellerName": "Vendor Elite 3",
+    "images": [
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500"
+    ],
+    "rating": 4.2,
+    "reviewCount": 21,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 0.6
+    }
+  },
+  {
+    "_id": "prod_102",
+    "createdAt": "2026-06-04T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.581Z",
+    "name": "Single Origin Dark Roast Coffee Beans Plus v34",
+    "description": "Fairtrade certified organic arabica coffee beans. Perfect for home or office setups. Highly certified design.",
+    "price": 1550,
+    "category": "Grocery",
+    "stock": 42,
+    "sellerId": "seller_4",
+    "sellerName": "Vendor Elite 4",
+    "images": [
+      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400",
+      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=500"
+    ],
+    "rating": 4.3,
+    "reviewCount": 22,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.8,
+      "carbonFootprint": 1.3
+    }
+  },
+  {
+    "_id": "prod_103",
+    "createdAt": "2026-06-03T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.582Z",
+    "name": "Hydrating Aloe Face Wash Plus v35",
+    "description": "Gentle facial wash infused with natural aloe gel. Perfect for home or office setups. Highly certified design.",
+    "price": 1250,
+    "category": "Beauty",
+    "stock": 43,
+    "sellerId": "seller_5",
+    "sellerName": "Vendor Elite 5",
+    "images": [
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400",
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500"
+    ],
+    "rating": 4.4,
+    "reviewCount": 23,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 4.3,
+      "carbonFootprint": 1.7
+    }
+  },
+  {
+    "_id": "prod_104",
+    "createdAt": "2026-06-02T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.583Z",
+    "name": "Iron Dumbbells (Set of 2 - 10kg) Plus v35",
+    "description": "Hexagonal non-slip vinyl dumbbells. Perfect for home or office setups. Highly certified design.",
+    "price": 3499,
+    "category": "Sports",
+    "stock": 44,
+    "sellerId": "seller_6",
+    "sellerName": "Vendor Elite 6",
+    "images": [
+      "https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=400",
+      "https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=500"
+    ],
+    "rating": 4.5,
+    "reviewCount": 24,
+    "sustainability": {
+      "ecoScore": "D",
+      "ecoRating": 3,
+      "carbonFootprint": 29.3
+    }
+  },
+  {
+    "_id": "prod_105",
+    "createdAt": "2026-06-16T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.583Z",
+    "name": "Bamboo Fiber Dinnerware (16pc) Plus v35",
+    "description": "Eco-friendly plates and bowls made from crop waste. Perfect for home or office setups. Highly certified design.",
+    "price": 2999,
+    "category": "Home & Kitchen",
+    "stock": 45,
+    "sellerId": "seller_7",
+    "sellerName": "Vendor Elite 7",
+    "images": [
+      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400",
+      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=500"
+    ],
+    "rating": 4.6,
+    "reviewCount": 25,
+    "sustainability": {
+      "ecoScore": "A",
+      "ecoRating": 4.9,
+      "carbonFootprint": 1.9
+    }
+  }
+]

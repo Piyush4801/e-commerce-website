@@ -1,0 +1,142 @@
+[
+  {
+    "_id": "fraud_7",
+    "createdAt": "2026-06-14T14:11:55.540Z",
+    "updatedAt": "2026-06-16T18:46:57.431Z",
+    "orderId": "order_7",
+    "customerId": "customer_8",
+    "customerEmail": "customer8@smartcart.com",
+    "totalAmount": 122596,
+    "riskScore": 85,
+    "triggers": [
+      "HIGH_VALUE_TRANSACTION",
+      "CRITICAL_LIMIT_EXCEEDED"
+    ],
+    "status": "resolved",
+    "actionTaken": "approved"
+  },
+  {
+    "_id": "fraud_11",
+    "createdAt": "2026-06-15T14:11:55.540Z",
+    "updatedAt": "2026-06-16T18:46:59.331Z",
+    "orderId": "order_11",
+    "customerId": "customer_12",
+    "customerEmail": "customer12@smartcart.com",
+    "totalAmount": 169394,
+    "riskScore": 85,
+    "triggers": [
+      "HIGH_VALUE_TRANSACTION",
+      "CRITICAL_LIMIT_EXCEEDED"
+    ],
+    "status": "resolved",
+    "actionTaken": "approved"
+  },
+  {
+    "_id": "fraud_15",
+    "createdAt": "2026-06-16T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.633Z",
+    "orderId": "order_15",
+    "customerId": "customer_16",
+    "customerEmail": "customer16@smartcart.com",
+    "totalAmount": 2200,
+    "riskScore": 55,
+    "triggers": [
+      "HIGH_VALUE_TRANSACTION"
+    ],
+    "status": "reviewed",
+    "actionTaken": "approved"
+  },
+  {
+    "_id": "fraud_23",
+    "createdAt": "2026-06-13T14:11:55.540Z",
+    "updatedAt": "2026-06-16T18:47:00.214Z",
+    "orderId": "order_23",
+    "customerId": "customer_4",
+    "customerEmail": "customer4@smartcart.com",
+    "totalAmount": 180394,
+    "riskScore": 85,
+    "triggers": [
+      "HIGH_VALUE_TRANSACTION",
+      "CRITICAL_LIMIT_EXCEEDED"
+    ],
+    "status": "resolved",
+    "actionTaken": "approved"
+  },
+  {
+    "_id": "fraud_35",
+    "createdAt": "2026-06-16T14:11:55.540Z",
+    "updatedAt": "2026-06-16T18:47:01.080Z",
+    "orderId": "order_35",
+    "customerId": "customer_16",
+    "customerEmail": "customer16@smartcart.com",
+    "totalAmount": 178694,
+    "riskScore": 85,
+    "triggers": [
+      "HIGH_VALUE_TRANSACTION",
+      "CRITICAL_LIMIT_EXCEEDED"
+    ],
+    "status": "resolved",
+    "actionTaken": "approved"
+  },
+  {
+    "_id": "fraud_37",
+    "createdAt": "2026-06-14T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.634Z",
+    "orderId": "order_37",
+    "customerId": "customer_18",
+    "customerEmail": "customer18@smartcart.com",
+    "totalAmount": 63596,
+    "riskScore": 55,
+    "triggers": [
+      "HIGH_VALUE_TRANSACTION"
+    ],
+    "status": "pending",
+    "actionTaken": "none"
+  },
+  {
+    "_id": "fraud_42",
+    "createdAt": "2026-06-14T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.634Z",
+    "orderId": "order_42",
+    "customerId": "customer_3",
+    "customerEmail": "customer3@smartcart.com",
+    "totalAmount": 59114,
+    "riskScore": 55,
+    "triggers": [
+      "HIGH_VALUE_TRANSACTION"
+    ],
+    "status": "pending",
+    "actionTaken": "none"
+  },
+  {
+    "_id": "fraud_49",
+    "createdAt": "2026-06-12T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.634Z",
+    "orderId": "order_49",
+    "customerId": "customer_10",
+    "customerEmail": "customer10@smartcart.com",
+    "totalAmount": 69598,
+    "riskScore": 55,
+    "triggers": [
+      "HIGH_VALUE_TRANSACTION"
+    ],
+    "status": "pending",
+    "actionTaken": "none"
+  },
+  {
+    "_id": "fraud_53",
+    "createdAt": "2026-06-13T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.634Z",
+    "orderId": "order_53",
+    "customerId": "customer_14",
+    "customerEmail": "customer14@smartcart.com",
+    "totalAmount": 137394,
+    "riskScore": 85,
+    "triggers": [
+      "HIGH_VALUE_TRANSACTION",
+      "CRITICAL_LIMIT_EXCEEDED"
+    ],
+    "status": "pending",
+    "actionTaken": "none"
+  }
+]

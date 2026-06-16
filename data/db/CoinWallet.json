@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "u69yyf68t",
+    "createdAt": "2026-06-16T14:41:27.744Z",
+    "updatedAt": "2026-06-16T18:48:14.909Z",
+    "userId": "customer_1",
+    "balance": 1020
+  },
+  {
+    "_id": "s301p4p2q",
+    "createdAt": "2026-06-16T18:27:17.984Z",
+    "updatedAt": "2026-06-16T18:27:17.984Z",
+    "userId": "admin_id",
+    "balance": 100
+  },
+  {
+    "_id": "lmdxq96pi",
+    "createdAt": "2026-06-16T18:41:52.489Z",
+    "updatedAt": "2026-06-16T18:41:52.489Z",
+    "userId": "to51n2d7w",
+    "balance": 100
+  },
+  {
+    "_id": "i1c27uy84",
+    "createdAt": "2026-06-16T18:46:17.273Z",
+    "updatedAt": "2026-06-16T18:46:17.273Z",
+    "userId": "seller_1",
+    "balance": 100
+  },
+  {
+    "_id": "omdabw42m",
+    "createdAt": "2026-06-16T20:11:58.716Z",
+    "updatedAt": "2026-06-16T20:11:58.716Z",
+    "userId": "o1zg1cvh5",
+    "balance": 100
+  },
+  {
+    "_id": "mi6e3h3eg",
+    "createdAt": "2026-06-16T20:40:59.382Z",
+    "updatedAt": "2026-06-16T20:40:59.382Z",
+    "userId": "rx0fwf078",
+    "balance": 100
+  },
+  {
+    "_id": "yuca5irya",
+    "createdAt": "2026-06-16T20:41:21.600Z",
+    "updatedAt": "2026-06-16T20:41:21.600Z",
+    "userId": "xjr69kfy6",
+    "balance": 100
+  },
+  {
+    "_id": "q2s71rdbq",
+    "createdAt": "2026-06-16T20:43:17.078Z",
+    "updatedAt": "2026-06-16T20:43:17.078Z",
+    "userId": "ovl9ny4mj",
+    "balance": 100
+  }
+]

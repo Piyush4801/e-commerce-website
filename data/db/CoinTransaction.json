@@ -1,0 +1,139 @@
+[
+  {
+    "_id": "lif2utpku",
+    "createdAt": "2026-06-16T14:41:27.744Z",
+    "updatedAt": "2026-06-16T14:41:27.744Z",
+    "userId": "customer_1",
+    "amount": 100,
+    "type": "earn",
+    "reason": "Welcome bonus for registration"
+  },
+  {
+    "_id": "o3269n8hy",
+    "createdAt": "2026-06-16T14:42:07.570Z",
+    "updatedAt": "2026-06-16T14:42:07.570Z",
+    "userId": "customer_1",
+    "amount": 20,
+    "type": "earn",
+    "reason": "Lucky Spin Wheel Game reward"
+  },
+  {
+    "_id": "4wjzfzrdm",
+    "createdAt": "2026-06-16T18:27:17.984Z",
+    "updatedAt": "2026-06-16T18:27:17.984Z",
+    "userId": "admin_id",
+    "amount": 100,
+    "type": "earn",
+    "reason": "Welcome bonus for registration"
+  },
+  {
+    "_id": "053qd0ptz",
+    "createdAt": "2026-06-16T18:28:15.842Z",
+    "updatedAt": "2026-06-16T18:28:15.842Z",
+    "userId": "customer_1",
+    "amount": 270,
+    "type": "earn",
+    "reason": "Order purchase rewards for order #6UGMEL",
+    "orderId": "ms96ugmel"
+  },
+  {
+    "_id": "5440n2zzm",
+    "createdAt": "2026-06-16T18:39:57.620Z",
+    "updatedAt": "2026-06-16T18:39:57.620Z",
+    "userId": "hzdnbywqt",
+    "amount": 100,
+    "type": "earn",
+    "reason": "Welcome bonus for registration"
+  },
+  {
+    "_id": "z67z9nbu1",
+    "createdAt": "2026-06-16T18:41:52.454Z",
+    "updatedAt": "2026-06-16T18:41:52.454Z",
+    "userId": "to51n2d7w",
+    "amount": 100,
+    "type": "earn",
+    "reason": "Welcome bonus for registration"
+  },
+  {
+    "_id": "ap31xd3an",
+    "createdAt": "2026-06-16T18:41:52.489Z",
+    "updatedAt": "2026-06-16T18:41:52.489Z",
+    "userId": "to51n2d7w",
+    "amount": 100,
+    "type": "earn",
+    "reason": "Welcome bonus for registration"
+  },
+  {
+    "_id": "1mpts9dp6",
+    "createdAt": "2026-06-16T18:46:17.273Z",
+    "updatedAt": "2026-06-16T18:46:17.273Z",
+    "userId": "seller_1",
+    "amount": 100,
+    "type": "earn",
+    "reason": "Welcome bonus for registration"
+  },
+  {
+    "_id": "v0idzwezn",
+    "createdAt": "2026-06-16T18:48:14.910Z",
+    "updatedAt": "2026-06-16T18:48:14.910Z",
+    "userId": "customer_1",
+    "amount": 630,
+    "type": "earn",
+    "reason": "Order purchase rewards for order #CP2UMX",
+    "orderId": "5pecp2umx"
+  },
+  {
+    "_id": "9v0xuj4nv",
+    "createdAt": "2026-06-16T20:11:58.678Z",
+    "updatedAt": "2026-06-16T20:11:58.678Z",
+    "userId": "o1zg1cvh5",
+    "amount": 100,
+    "type": "earn",
+    "reason": "Welcome bonus for registration"
+  },
+  {
+    "_id": "lnq1u13ch",
+    "createdAt": "2026-06-16T20:11:58.717Z",
+    "updatedAt": "2026-06-16T20:11:58.717Z",
+    "userId": "o1zg1cvh5",
+    "amount": 100,
+    "type": "earn",
+    "reason": "Welcome bonus for registration"
+  },
+  {
+    "_id": "jt7zxudq1",
+    "createdAt": "2026-06-16T20:20:39.642Z",
+    "updatedAt": "2026-06-16T20:20:39.642Z",
+    "userId": "c97wk1sk9",
+    "amount": 100,
+    "type": "earn",
+    "reason": "Welcome bonus for registration"
+  },
+  {
+    "_id": "kruvgkkce",
+    "createdAt": "2026-06-16T20:40:59.382Z",
+    "updatedAt": "2026-06-16T20:40:59.382Z",
+    "userId": "rx0fwf078",
+    "amount": 100,
+    "type": "earn",
+    "reason": "Welcome bonus for registration"
+  },
+  {
+    "_id": "kv33xt7kc",
+    "createdAt": "2026-06-16T20:41:21.600Z",
+    "updatedAt": "2026-06-16T20:41:21.600Z",
+    "userId": "xjr69kfy6",
+    "amount": 100,
+    "type": "earn",
+    "reason": "Welcome bonus for registration"
+  },
+  {
+    "_id": "gdxi9w3yj",
+    "createdAt": "2026-06-16T20:43:17.078Z",
+    "updatedAt": "2026-06-16T20:43:17.078Z",
+    "userId": "ovl9ny4mj",
+    "amount": 100,
+    "type": "earn",
+    "reason": "Welcome bonus for registration"
+  }
+]

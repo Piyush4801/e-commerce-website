@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "ttrf4e4eb",
+    "createdAt": "2026-06-16T14:11:55.584Z",
+    "updatedAt": "2026-06-16T14:11:55.584Z",
+    "code": "WELCOME100",
+    "type": "flat",
+    "value": 100,
+    "minPurchase": 500,
+    "isActive": true,
+    "expiryDate": "2026-07-16T14:11:55.540Z"
+  },
+  {
+    "_id": "uu0yhuksn",
+    "createdAt": "2026-06-16T14:11:55.584Z",
+    "updatedAt": "2026-06-16T14:11:55.584Z",
+    "code": "FESTIVAL20",
+    "type": "percentage",
+    "value": 20,
+    "minPurchase": 1500,
+    "isActive": true,
+    "expiryDate": "2026-07-01T14:11:55.540Z"
+  },
+  {
+    "_id": "nqmg5pcf7",
+    "createdAt": "2026-06-16T14:11:55.584Z",
+    "updatedAt": "2026-06-16T14:11:55.584Z",
+    "code": "GREENSAVE",
+    "type": "flat",
+    "value": 150,
+    "minPurchase": 1000,
+    "isActive": true,
+    "expiryDate": "2026-07-31T14:11:55.540Z"
+  },
+  {
+    "_id": "7847o5v0l",
+    "createdAt": "2026-06-16T14:11:55.584Z",
+    "updatedAt": "2026-06-16T14:11:55.584Z",
+    "code": "SUPER50",
+    "type": "percentage",
+    "value": 50,
+    "minPurchase": 10000,
+    "isActive": true,
+    "expiryDate": "2026-06-26T14:11:55.540Z"
+  },
+  {
+    "_id": "aqcki80qq",
+    "createdAt": "2026-06-16T14:11:55.584Z",
+    "updatedAt": "2026-06-16T14:11:55.584Z",
+    "code": "EXPIRED10",
+    "type": "percentage",
+    "value": 10,
+    "minPurchase": 100,
+    "isActive": false,
+    "expiryDate": "2026-06-11T14:11:55.540Z"
+  }
+]

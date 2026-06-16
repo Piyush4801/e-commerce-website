@@ -1,0 +1,4093 @@
+[
+  {
+    "_id": "order_1",
+    "createdAt": "2026-06-15T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.607Z",
+    "customerId": "customer_2",
+    "customerName": "Shopper Name 2",
+    "customerEmail": "customer2@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_4",
+        "name": "Organic Honey Raw Wildflower Plus v2",
+        "price": 1150,
+        "quantity": 2,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_5",
+        "name": "Mineral Sunscreen SPF 50 Plus v2",
+        "price": 1450,
+        "quantity": 2,
+        "sellerId": "seller_6",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 5200,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 5200,
+    "couponCode": "",
+    "paymentMethod": "upi",
+    "paymentStatus": "failed",
+    "orderStatus": "pending",
+    "shippingAddress": {
+      "street": "201 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_2",
+    "createdAt": "2026-06-14T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.607Z",
+    "customerId": "customer_3",
+    "customerName": "Shopper Name 3",
+    "customerEmail": "customer3@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_7",
+        "name": "EcoShield Cast Iron Skillet Plus v3",
+        "price": 1799,
+        "quantity": 1,
+        "sellerId": "seller_8",
+        "ecoScore": "B"
+      },
+      {
+        "productId": "prod_8",
+        "name": "Titan Phone 5G Plus v2",
+        "price": 29999,
+        "quantity": 1,
+        "sellerId": "seller_9",
+        "ecoScore": "B"
+      },
+      {
+        "productId": "prod_9",
+        "name": "Velocity Running Sneakers Plus v2",
+        "price": 4900,
+        "quantity": 1,
+        "sellerId": "seller_1",
+        "ecoScore": "C"
+      }
+    ],
+    "totalAmount": 36698,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 36713,
+    "couponCode": "",
+    "paymentMethod": "wallet",
+    "paymentStatus": "paid",
+    "orderStatus": "pending",
+    "shippingAddress": {
+      "street": "301 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_3",
+    "createdAt": "2026-06-13T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.607Z",
+    "customerId": "customer_4",
+    "customerName": "Shopper Name 4",
+    "customerEmail": "customer4@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_10",
+        "name": "Mastering JavaScript & Node.js Plus v4",
+        "price": 1399,
+        "quantity": 2,
+        "sellerId": "seller_2",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 2798,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 2798,
+    "couponCode": "",
+    "paymentMethod": "netbanking",
+    "paymentStatus": "paid",
+    "orderStatus": "pending",
+    "shippingAddress": {
+      "street": "401 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_4",
+    "createdAt": "2026-06-12T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.608Z",
+    "customerId": "customer_5",
+    "customerName": "Shopper Name 5",
+    "customerEmail": "customer5@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_13",
+        "name": "High-Density Yoga Mat Plus v5",
+        "price": 2699,
+        "quantity": 1,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_14",
+        "name": "Automatic Smart Air Fryer Plus v5",
+        "price": 6799,
+        "quantity": 1,
+        "sellerId": "seller_6",
+        "ecoScore": "C"
+      }
+    ],
+    "totalAmount": 9498,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 9513,
+    "couponCode": "",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "orderStatus": "pending",
+    "shippingAddress": {
+      "street": "501 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_5",
+    "createdAt": "2026-06-11T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.608Z",
+    "customerId": "customer_6",
+    "customerName": "Shopper Name 6",
+    "customerEmail": "customer6@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_16",
+        "name": "Recycled Fiber Denim Jeans Plus v4",
+        "price": 2799,
+        "quantity": 2,
+        "sellerId": "seller_8",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_17",
+        "name": "Green Growth: Building the Future Plus v6",
+        "price": 999,
+        "quantity": 2,
+        "sellerId": "seller_9",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_18",
+        "name": "Single Origin Dark Roast Coffee Beans Plus v6",
+        "price": 1550,
+        "quantity": 2,
+        "sellerId": "seller_1",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 10696,
+    "discountAmount": 100,
+    "carbonOffsetFee": 0,
+    "netAmount": 10596,
+    "couponCode": "WELCOME100",
+    "paymentMethod": "upi",
+    "paymentStatus": "paid",
+    "orderStatus": "pending",
+    "shippingAddress": {
+      "street": "601 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_6",
+    "createdAt": "2026-06-10T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.608Z",
+    "customerId": "customer_7",
+    "customerName": "Shopper Name 7",
+    "customerEmail": "customer7@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_19",
+        "name": "Hydrating Aloe Face Wash Plus v7",
+        "price": 1250,
+        "quantity": 1,
+        "sellerId": "seller_2",
+        "ecoScore": "B"
+      }
+    ],
+    "totalAmount": 1250,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 1265,
+    "couponCode": "",
+    "paymentMethod": "wallet",
+    "paymentStatus": "paid",
+    "orderStatus": "processing",
+    "shippingAddress": {
+      "street": "701 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_7",
+    "createdAt": "2026-06-09T14:11:55.540Z",
+    "updatedAt": "2026-06-16T18:46:57.429Z",
+    "customerId": "customer_8",
+    "customerName": "Shopper Name 8",
+    "customerEmail": "customer8@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_22",
+        "name": "EcoBook Air Ultra Slim Plus v5",
+        "price": 59099,
+        "quantity": 2,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_23",
+        "name": "EcoLoop Organic Cotton Hoodie Plus v5",
+        "price": 2199,
+        "quantity": 2,
+        "sellerId": "seller_6",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 122596,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 122596,
+    "couponCode": "",
+    "paymentMethod": "netbanking",
+    "paymentStatus": "paid",
+    "orderStatus": "confirmed",
+    "shippingAddress": {
+      "street": "801 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 85,
+    "isFlagged": false,
+    "fraudTriggers": [
+      "HIGH_VALUE_TRANSACTION",
+      "CRITICAL_LIMIT_EXCEEDED"
+    ]
+  },
+  {
+    "_id": "order_8",
+    "createdAt": "2026-06-08T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.608Z",
+    "customerId": "customer_9",
+    "customerName": "Shopper Name 9",
+    "customerEmail": "customer9@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_25",
+        "name": "Organic Honey Raw Wildflower Plus v9",
+        "price": 1150,
+        "quantity": 1,
+        "sellerId": "seller_8",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_26",
+        "name": "Mineral Sunscreen SPF 50 Plus v9",
+        "price": 1450,
+        "quantity": 1,
+        "sellerId": "seller_9",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_27",
+        "name": "Ergonomic Sports Water Bottle Plus v9",
+        "price": 2099,
+        "quantity": 1,
+        "sellerId": "seller_1",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 4699,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 4714,
+    "couponCode": "",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "orderStatus": "processing",
+    "shippingAddress": {
+      "street": "901 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_9",
+    "createdAt": "2026-06-07T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.609Z",
+    "customerId": "customer_10",
+    "customerName": "Shopper Name 10",
+    "customerEmail": "customer10@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_28",
+        "name": "EcoShield Cast Iron Skillet Plus v10",
+        "price": 1799,
+        "quantity": 2,
+        "sellerId": "seller_2",
+        "ecoScore": "B"
+      }
+    ],
+    "totalAmount": 3598,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 3598,
+    "couponCode": "",
+    "paymentMethod": "upi",
+    "paymentStatus": "paid",
+    "orderStatus": "processing",
+    "shippingAddress": {
+      "street": "1001 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_10",
+    "createdAt": "2026-06-16T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.609Z",
+    "customerId": "customer_11",
+    "customerName": "Shopper Name 11",
+    "customerEmail": "customer11@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_31",
+        "name": "Mastering JavaScript & Node.js Plus v11",
+        "price": 1399,
+        "quantity": 1,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_32",
+        "name": "Gluten-Free Almond Oats Plus v11",
+        "price": 920,
+        "quantity": 1,
+        "sellerId": "seller_6",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 2319,
+    "discountAmount": 100,
+    "carbonOffsetFee": 15,
+    "netAmount": 2234,
+    "couponCode": "WELCOME100",
+    "paymentMethod": "wallet",
+    "paymentStatus": "paid",
+    "orderStatus": "processing",
+    "shippingAddress": {
+      "street": "1101 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_11",
+    "createdAt": "2026-06-15T14:11:55.540Z",
+    "updatedAt": "2026-06-16T18:46:59.330Z",
+    "customerId": "customer_12",
+    "customerName": "Shopper Name 12",
+    "customerEmail": "customer12@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_34",
+        "name": "High-Density Yoga Mat Plus v12",
+        "price": 2699,
+        "quantity": 2,
+        "sellerId": "seller_8",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_35",
+        "name": "Automatic Smart Air Fryer Plus v12",
+        "price": 6799,
+        "quantity": 2,
+        "sellerId": "seller_9",
+        "ecoScore": "C"
+      },
+      {
+        "productId": "prod_36",
+        "name": "SmartCart Quantum Laptop Plus v8",
+        "price": 75199,
+        "quantity": 2,
+        "sellerId": "seller_1",
+        "ecoScore": "C"
+      }
+    ],
+    "totalAmount": 169394,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 169394,
+    "couponCode": "",
+    "paymentMethod": "netbanking",
+    "paymentStatus": "paid",
+    "orderStatus": "confirmed",
+    "shippingAddress": {
+      "street": "1201 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 85,
+    "isFlagged": false,
+    "fraudTriggers": [
+      "HIGH_VALUE_TRANSACTION",
+      "CRITICAL_LIMIT_EXCEEDED"
+    ]
+  },
+  {
+    "_id": "order_12",
+    "createdAt": "2026-06-14T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.610Z",
+    "customerId": "customer_13",
+    "customerName": "Shopper Name 13",
+    "customerEmail": "customer13@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_37",
+        "name": "Premium Leather Smart Watch Plus v8",
+        "price": 13299,
+        "quantity": 1,
+        "sellerId": "seller_2",
+        "ecoScore": "D"
+      }
+    ],
+    "totalAmount": 13299,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 13314,
+    "couponCode": "",
+    "paymentMethod": "card",
+    "paymentStatus": "pending",
+    "orderStatus": "shipped",
+    "shippingAddress": {
+      "street": "1301 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_13",
+    "createdAt": "2026-06-13T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.610Z",
+    "customerId": "customer_14",
+    "customerName": "Shopper Name 14",
+    "customerEmail": "customer14@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_40",
+        "name": "Hydrating Aloe Face Wash Plus v14",
+        "price": 1250,
+        "quantity": 2,
+        "sellerId": "seller_5",
+        "ecoScore": "B"
+      },
+      {
+        "productId": "prod_41",
+        "name": "Iron Dumbbells (Set of 2 - 10kg) Plus v14",
+        "price": 3499,
+        "quantity": 2,
+        "sellerId": "seller_6",
+        "ecoScore": "D"
+      }
+    ],
+    "totalAmount": 9498,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 9498,
+    "couponCode": "",
+    "paymentMethod": "upi",
+    "paymentStatus": "paid",
+    "orderStatus": "shipped",
+    "shippingAddress": {
+      "street": "1401 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_14",
+    "createdAt": "2026-06-12T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.610Z",
+    "customerId": "customer_15",
+    "customerName": "Shopper Name 15",
+    "customerEmail": "customer15@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_43",
+        "name": "Titan Phone 5G Plus v9",
+        "price": 30099,
+        "quantity": 1,
+        "sellerId": "seller_8",
+        "ecoScore": "B"
+      },
+      {
+        "productId": "prod_44",
+        "name": "Velocity Running Sneakers Plus v9",
+        "price": 4700,
+        "quantity": 1,
+        "sellerId": "seller_9",
+        "ecoScore": "C"
+      },
+      {
+        "productId": "prod_45",
+        "name": "The Silent Code: Sci-Fi Novel Plus v15",
+        "price": 1099,
+        "quantity": 1,
+        "sellerId": "seller_1",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 35898,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 35913,
+    "couponCode": "",
+    "paymentMethod": "wallet",
+    "paymentStatus": "paid",
+    "orderStatus": "shipped",
+    "shippingAddress": {
+      "street": "1501 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_15",
+    "createdAt": "2026-06-11T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.610Z",
+    "customerId": "customer_16",
+    "customerName": "Shopper Name 16",
+    "customerEmail": "customer16@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_46",
+        "name": "Organic Honey Raw Wildflower Plus v16",
+        "price": 1150,
+        "quantity": 2,
+        "sellerId": "seller_2",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 2300,
+    "discountAmount": 100,
+    "carbonOffsetFee": 0,
+    "netAmount": 2200,
+    "couponCode": "WELCOME100",
+    "paymentMethod": "netbanking",
+    "paymentStatus": "paid",
+    "orderStatus": "shipped",
+    "shippingAddress": {
+      "street": "1601 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 55,
+    "isFlagged": true,
+    "fraudTriggers": [
+      "HIGH_VALUE_TRANSACTION"
+    ]
+  },
+  {
+    "_id": "order_16",
+    "createdAt": "2026-06-10T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.611Z",
+    "customerId": "customer_17",
+    "customerName": "Shopper Name 17",
+    "customerEmail": "customer17@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_49",
+        "name": "EcoShield Cast Iron Skillet Plus v17",
+        "price": 1799,
+        "quantity": 1,
+        "sellerId": "seller_5",
+        "ecoScore": "B"
+      },
+      {
+        "productId": "prod_50",
+        "name": "EcoSound Solar Earbuds Plus v10",
+        "price": 4999,
+        "quantity": 1,
+        "sellerId": "seller_6",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 6798,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 6813,
+    "couponCode": "",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "orderStatus": "out_for_delivery",
+    "shippingAddress": {
+      "street": "1701 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_17",
+    "createdAt": "2026-06-09T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.611Z",
+    "customerId": "customer_18",
+    "customerName": "Shopper Name 18",
+    "customerEmail": "customer18@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_52",
+        "name": "Mastering JavaScript & Node.js Plus v18",
+        "price": 1399,
+        "quantity": 2,
+        "sellerId": "seller_8",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_53",
+        "name": "Gluten-Free Almond Oats Plus v18",
+        "price": 920,
+        "quantity": 2,
+        "sellerId": "seller_9",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_54",
+        "name": "Shea Butter Moisture Balm Plus v18",
+        "price": 1420,
+        "quantity": 2,
+        "sellerId": "seller_1",
+        "ecoScore": "B"
+      }
+    ],
+    "totalAmount": 7478,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 7478,
+    "couponCode": "",
+    "paymentMethod": "upi",
+    "paymentStatus": "paid",
+    "orderStatus": "out_for_delivery",
+    "shippingAddress": {
+      "street": "1801 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_18",
+    "createdAt": "2026-06-08T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.611Z",
+    "customerId": "customer_19",
+    "customerName": "Shopper Name 19",
+    "customerEmail": "customer19@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_55",
+        "name": "High-Density Yoga Mat Plus v19",
+        "price": 2699,
+        "quantity": 1,
+        "sellerId": "seller_2",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 2699,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 2714,
+    "couponCode": "",
+    "paymentMethod": "wallet",
+    "paymentStatus": "paid",
+    "orderStatus": "out_for_delivery",
+    "shippingAddress": {
+      "street": "1901 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_19",
+    "createdAt": "2026-06-07T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.611Z",
+    "customerId": "customer_20",
+    "customerName": "Shopper Name 20",
+    "customerEmail": "customer20@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_58",
+        "name": "EcoLoop Organic Cotton Hoodie Plus v12",
+        "price": 2299,
+        "quantity": 2,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_59",
+        "name": "Green Growth: Building the Future Plus v20",
+        "price": 999,
+        "quantity": 2,
+        "sellerId": "seller_6",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 6596,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 6596,
+    "couponCode": "",
+    "paymentMethod": "netbanking",
+    "paymentStatus": "paid",
+    "orderStatus": "out_for_delivery",
+    "shippingAddress": {
+      "street": "2001 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_20",
+    "createdAt": "2026-06-16T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.612Z",
+    "customerId": "customer_1",
+    "customerName": "Shopper Name 1",
+    "customerEmail": "customer@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_61",
+        "name": "Hydrating Aloe Face Wash Plus v21",
+        "price": 1250,
+        "quantity": 1,
+        "sellerId": "seller_8",
+        "ecoScore": "B"
+      },
+      {
+        "productId": "prod_62",
+        "name": "Iron Dumbbells (Set of 2 - 10kg) Plus v21",
+        "price": 3499,
+        "quantity": 1,
+        "sellerId": "seller_9",
+        "ecoScore": "D"
+      },
+      {
+        "productId": "prod_63",
+        "name": "Bamboo Fiber Dinnerware (16pc) Plus v21",
+        "price": 2999,
+        "quantity": 1,
+        "sellerId": "seller_1",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 7748,
+    "discountAmount": 100,
+    "carbonOffsetFee": 15,
+    "netAmount": 7663,
+    "couponCode": "WELCOME100",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "orderStatus": "out_for_delivery",
+    "shippingAddress": {
+      "street": "101 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_21",
+    "createdAt": "2026-06-15T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.612Z",
+    "customerId": "customer_2",
+    "customerName": "Shopper Name 2",
+    "customerEmail": "customer2@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_64",
+        "name": "SoundAura Noise Cancelling Headphones Plus v13",
+        "price": 10099,
+        "quantity": 2,
+        "sellerId": "seller_2",
+        "ecoScore": "C"
+      }
+    ],
+    "totalAmount": 20198,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 20198,
+    "couponCode": "",
+    "paymentMethod": "upi",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "201 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_22",
+    "createdAt": "2026-06-14T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.612Z",
+    "customerId": "customer_3",
+    "customerName": "Shopper Name 3",
+    "customerEmail": "customer3@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_67",
+        "name": "Organic Honey Raw Wildflower Plus v23",
+        "price": 1150,
+        "quantity": 1,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_68",
+        "name": "Mineral Sunscreen SPF 50 Plus v23",
+        "price": 1450,
+        "quantity": 1,
+        "sellerId": "seller_6",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 2600,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 2615,
+    "couponCode": "",
+    "paymentMethod": "wallet",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "301 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_23",
+    "createdAt": "2026-06-13T14:11:55.540Z",
+    "updatedAt": "2026-06-16T18:47:00.213Z",
+    "customerId": "customer_4",
+    "customerName": "Shopper Name 4",
+    "customerEmail": "customer4@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_70",
+        "name": "EcoShield Cast Iron Skillet Plus v24",
+        "price": 1799,
+        "quantity": 2,
+        "sellerId": "seller_8",
+        "ecoScore": "B"
+      },
+      {
+        "productId": "prod_71",
+        "name": "SmartCart Quantum Laptop Plus v15",
+        "price": 74999,
+        "quantity": 2,
+        "sellerId": "seller_9",
+        "ecoScore": "C"
+      },
+      {
+        "productId": "prod_72",
+        "name": "Premium Leather Smart Watch Plus v15",
+        "price": 13399,
+        "quantity": 2,
+        "sellerId": "seller_1",
+        "ecoScore": "D"
+      }
+    ],
+    "totalAmount": 180394,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 180394,
+    "couponCode": "",
+    "paymentMethod": "netbanking",
+    "paymentStatus": "paid",
+    "orderStatus": "confirmed",
+    "shippingAddress": {
+      "street": "401 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 85,
+    "isFlagged": false,
+    "fraudTriggers": [
+      "HIGH_VALUE_TRANSACTION",
+      "CRITICAL_LIMIT_EXCEEDED"
+    ]
+  },
+  {
+    "_id": "order_24",
+    "createdAt": "2026-06-12T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.613Z",
+    "customerId": "customer_5",
+    "customerName": "Shopper Name 5",
+    "customerEmail": "customer5@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_73",
+        "name": "Mastering JavaScript & Node.js Plus v25",
+        "price": 1399,
+        "quantity": 1,
+        "sellerId": "seller_2",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 1399,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 1414,
+    "couponCode": "",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "501 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_25",
+    "createdAt": "2026-06-11T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.613Z",
+    "customerId": "customer_6",
+    "customerName": "Shopper Name 6",
+    "customerEmail": "customer6@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_76",
+        "name": "High-Density Yoga Mat Plus v26",
+        "price": 2699,
+        "quantity": 2,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_77",
+        "name": "Automatic Smart Air Fryer Plus v26",
+        "price": 6799,
+        "quantity": 2,
+        "sellerId": "seller_6",
+        "ecoScore": "C"
+      }
+    ],
+    "totalAmount": 18996,
+    "discountAmount": 100,
+    "carbonOffsetFee": 0,
+    "netAmount": 18896,
+    "couponCode": "WELCOME100",
+    "paymentMethod": "upi",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "601 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_26",
+    "createdAt": "2026-06-10T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.614Z",
+    "customerId": "customer_7",
+    "customerName": "Shopper Name 7",
+    "customerEmail": "customer7@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_79",
+        "name": "Velocity Running Sneakers Plus v16",
+        "price": 4800,
+        "quantity": 1,
+        "sellerId": "seller_8",
+        "ecoScore": "C"
+      },
+      {
+        "productId": "prod_80",
+        "name": "Green Growth: Building the Future Plus v27",
+        "price": 999,
+        "quantity": 1,
+        "sellerId": "seller_9",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_81",
+        "name": "Single Origin Dark Roast Coffee Beans Plus v27",
+        "price": 1550,
+        "quantity": 1,
+        "sellerId": "seller_1",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 7349,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 7364,
+    "couponCode": "",
+    "paymentMethod": "wallet",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "701 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_27",
+    "createdAt": "2026-06-09T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.614Z",
+    "customerId": "customer_8",
+    "customerName": "Shopper Name 8",
+    "customerEmail": "customer8@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_82",
+        "name": "Hydrating Aloe Face Wash Plus v28",
+        "price": 1250,
+        "quantity": 2,
+        "sellerId": "seller_2",
+        "ecoScore": "B"
+      }
+    ],
+    "totalAmount": 2500,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 2500,
+    "couponCode": "",
+    "paymentMethod": "netbanking",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "801 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_28",
+    "createdAt": "2026-06-08T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.615Z",
+    "customerId": "customer_9",
+    "customerName": "Shopper Name 9",
+    "customerEmail": "customer9@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_85",
+        "name": "EcoSound Solar Earbuds Plus v17",
+        "price": 5099,
+        "quantity": 1,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_86",
+        "name": "Recycled Fiber Denim Jeans Plus v18",
+        "price": 2699,
+        "quantity": 1,
+        "sellerId": "seller_6",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 7798,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 7813,
+    "couponCode": "",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "901 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_29",
+    "createdAt": "2026-06-07T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.616Z",
+    "customerId": "customer_10",
+    "customerName": "Shopper Name 10",
+    "customerEmail": "customer10@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_88",
+        "name": "Organic Honey Raw Wildflower Plus v30",
+        "price": 1150,
+        "quantity": 2,
+        "sellerId": "seller_8",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_89",
+        "name": "Mineral Sunscreen SPF 50 Plus v30",
+        "price": 1450,
+        "quantity": 2,
+        "sellerId": "seller_9",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_90",
+        "name": "Ergonomic Sports Water Bottle Plus v30",
+        "price": 2099,
+        "quantity": 2,
+        "sellerId": "seller_1",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 9398,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 9398,
+    "couponCode": "",
+    "paymentMethod": "upi",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1001 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_30",
+    "createdAt": "2026-06-16T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.616Z",
+    "customerId": "customer_11",
+    "customerName": "Shopper Name 11",
+    "customerEmail": "customer11@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_91",
+        "name": "EcoShield Cast Iron Skillet Plus v31",
+        "price": 1799,
+        "quantity": 1,
+        "sellerId": "seller_2",
+        "ecoScore": "B"
+      }
+    ],
+    "totalAmount": 1799,
+    "discountAmount": 100,
+    "carbonOffsetFee": 15,
+    "netAmount": 1714,
+    "couponCode": "WELCOME100",
+    "paymentMethod": "wallet",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1101 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_31",
+    "createdAt": "2026-06-15T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.616Z",
+    "customerId": "customer_12",
+    "customerName": "Shopper Name 12",
+    "customerEmail": "customer12@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_94",
+        "name": "Mastering JavaScript & Node.js Plus v32",
+        "price": 1399,
+        "quantity": 2,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_95",
+        "name": "Gluten-Free Almond Oats Plus v32",
+        "price": 920,
+        "quantity": 2,
+        "sellerId": "seller_6",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 4638,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 4638,
+    "couponCode": "",
+    "paymentMethod": "netbanking",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1201 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_32",
+    "createdAt": "2026-06-14T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.617Z",
+    "customerId": "customer_13",
+    "customerName": "Shopper Name 13",
+    "customerEmail": "customer13@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_97",
+        "name": "High-Density Yoga Mat Plus v33",
+        "price": 2699,
+        "quantity": 1,
+        "sellerId": "seller_8",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_98",
+        "name": "Automatic Smart Air Fryer Plus v33",
+        "price": 6799,
+        "quantity": 1,
+        "sellerId": "seller_9",
+        "ecoScore": "C"
+      },
+      {
+        "productId": "prod_99",
+        "name": "SoundAura Noise Cancelling Headphones Plus v20",
+        "price": 10199,
+        "quantity": 1,
+        "sellerId": "seller_1",
+        "ecoScore": "C"
+      }
+    ],
+    "totalAmount": 19697,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 19712,
+    "couponCode": "",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1301 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_33",
+    "createdAt": "2026-06-13T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.617Z",
+    "customerId": "customer_14",
+    "customerName": "Shopper Name 14",
+    "customerEmail": "customer14@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_100",
+        "name": "Bamboo Rayon Crew Socks (5-Pack) Plus v20",
+        "price": 1099,
+        "quantity": 2,
+        "sellerId": "seller_2",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 2198,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 2198,
+    "couponCode": "",
+    "paymentMethod": "upi",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1401 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_34",
+    "createdAt": "2026-06-12T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.618Z",
+    "customerId": "customer_15",
+    "customerName": "Shopper Name 15",
+    "customerEmail": "customer15@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_103",
+        "name": "Hydrating Aloe Face Wash Plus v35",
+        "price": 1250,
+        "quantity": 1,
+        "sellerId": "seller_5",
+        "ecoScore": "B"
+      },
+      {
+        "productId": "prod_104",
+        "name": "Iron Dumbbells (Set of 2 - 10kg) Plus v35",
+        "price": 3499,
+        "quantity": 1,
+        "sellerId": "seller_6",
+        "ecoScore": "D"
+      }
+    ],
+    "totalAmount": 4749,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 4764,
+    "couponCode": "",
+    "paymentMethod": "wallet",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1501 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_35",
+    "createdAt": "2026-06-11T14:11:55.540Z",
+    "updatedAt": "2026-06-16T18:47:01.079Z",
+    "customerId": "customer_16",
+    "customerName": "Shopper Name 16",
+    "customerEmail": "customer16@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_1",
+        "name": "SmartCart Quantum Laptop",
+        "price": 75099,
+        "quantity": 2,
+        "sellerId": "seller_2",
+        "ecoScore": "C"
+      },
+      {
+        "productId": "prod_2",
+        "name": "Premium Leather Smart Watch",
+        "price": 13199,
+        "quantity": 2,
+        "sellerId": "seller_3",
+        "ecoScore": "D"
+      },
+      {
+        "productId": "prod_3",
+        "name": "The Silent Code: Sci-Fi Novel",
+        "price": 1099,
+        "quantity": 2,
+        "sellerId": "seller_4",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 178794,
+    "discountAmount": 100,
+    "carbonOffsetFee": 0,
+    "netAmount": 178694,
+    "couponCode": "WELCOME100",
+    "paymentMethod": "netbanking",
+    "paymentStatus": "paid",
+    "orderStatus": "confirmed",
+    "shippingAddress": {
+      "street": "1601 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 85,
+    "isFlagged": false,
+    "fraudTriggers": [
+      "HIGH_VALUE_TRANSACTION",
+      "CRITICAL_LIMIT_EXCEEDED"
+    ]
+  },
+  {
+    "_id": "order_36",
+    "createdAt": "2026-06-10T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.619Z",
+    "customerId": "customer_17",
+    "customerName": "Shopper Name 17",
+    "customerEmail": "customer17@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_4",
+        "name": "Organic Honey Raw Wildflower Plus v2",
+        "price": 1150,
+        "quantity": 1,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 1150,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 1165,
+    "couponCode": "",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1701 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_37",
+    "createdAt": "2026-06-09T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.619Z",
+    "customerId": "customer_18",
+    "customerName": "Shopper Name 18",
+    "customerEmail": "customer18@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_7",
+        "name": "EcoShield Cast Iron Skillet Plus v3",
+        "price": 1799,
+        "quantity": 2,
+        "sellerId": "seller_8",
+        "ecoScore": "B"
+      },
+      {
+        "productId": "prod_8",
+        "name": "Titan Phone 5G Plus v2",
+        "price": 29999,
+        "quantity": 2,
+        "sellerId": "seller_9",
+        "ecoScore": "B"
+      }
+    ],
+    "totalAmount": 63596,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 63596,
+    "couponCode": "",
+    "paymentMethod": "upi",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1801 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 55,
+    "isFlagged": true,
+    "fraudTriggers": [
+      "HIGH_VALUE_TRANSACTION"
+    ]
+  },
+  {
+    "_id": "order_38",
+    "createdAt": "2026-06-08T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.620Z",
+    "customerId": "customer_19",
+    "customerName": "Shopper Name 19",
+    "customerEmail": "customer19@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_10",
+        "name": "Mastering JavaScript & Node.js Plus v4",
+        "price": 1399,
+        "quantity": 1,
+        "sellerId": "seller_2",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_11",
+        "name": "Gluten-Free Almond Oats Plus v4",
+        "price": 920,
+        "quantity": 1,
+        "sellerId": "seller_3",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_12",
+        "name": "Shea Butter Moisture Balm Plus v4",
+        "price": 1420,
+        "quantity": 1,
+        "sellerId": "seller_4",
+        "ecoScore": "B"
+      }
+    ],
+    "totalAmount": 3739,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 3754,
+    "couponCode": "",
+    "paymentMethod": "wallet",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1901 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_39",
+    "createdAt": "2026-06-07T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.620Z",
+    "customerId": "customer_20",
+    "customerName": "Shopper Name 20",
+    "customerEmail": "customer20@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_13",
+        "name": "High-Density Yoga Mat Plus v5",
+        "price": 2699,
+        "quantity": 2,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 5398,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 5398,
+    "couponCode": "",
+    "paymentMethod": "netbanking",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "2001 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_40",
+    "createdAt": "2026-06-16T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.621Z",
+    "customerId": "customer_1",
+    "customerName": "Shopper Name 1",
+    "customerEmail": "customer@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_16",
+        "name": "Recycled Fiber Denim Jeans Plus v4",
+        "price": 2799,
+        "quantity": 1,
+        "sellerId": "seller_8",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_17",
+        "name": "Green Growth: Building the Future Plus v6",
+        "price": 999,
+        "quantity": 1,
+        "sellerId": "seller_9",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 3798,
+    "discountAmount": 100,
+    "carbonOffsetFee": 15,
+    "netAmount": 3713,
+    "couponCode": "WELCOME100",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "101 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_41",
+    "createdAt": "2026-06-15T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.621Z",
+    "customerId": "customer_2",
+    "customerName": "Shopper Name 2",
+    "customerEmail": "customer2@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_19",
+        "name": "Hydrating Aloe Face Wash Plus v7",
+        "price": 1250,
+        "quantity": 2,
+        "sellerId": "seller_2",
+        "ecoScore": "B"
+      },
+      {
+        "productId": "prod_20",
+        "name": "Iron Dumbbells (Set of 2 - 10kg) Plus v7",
+        "price": 3499,
+        "quantity": 2,
+        "sellerId": "seller_3",
+        "ecoScore": "D"
+      },
+      {
+        "productId": "prod_21",
+        "name": "Bamboo Fiber Dinnerware (16pc) Plus v7",
+        "price": 2999,
+        "quantity": 2,
+        "sellerId": "seller_4",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 15496,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 15496,
+    "couponCode": "",
+    "paymentMethod": "upi",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "201 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_42",
+    "createdAt": "2026-06-14T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.623Z",
+    "customerId": "customer_3",
+    "customerName": "Shopper Name 3",
+    "customerEmail": "customer3@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_22",
+        "name": "EcoBook Air Ultra Slim Plus v5",
+        "price": 59099,
+        "quantity": 1,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 59099,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 59114,
+    "couponCode": "",
+    "paymentMethod": "wallet",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "301 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 55,
+    "isFlagged": true,
+    "fraudTriggers": [
+      "HIGH_VALUE_TRANSACTION"
+    ]
+  },
+  {
+    "_id": "order_43",
+    "createdAt": "2026-06-13T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.624Z",
+    "customerId": "customer_4",
+    "customerName": "Shopper Name 4",
+    "customerEmail": "customer4@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_25",
+        "name": "Organic Honey Raw Wildflower Plus v9",
+        "price": 1150,
+        "quantity": 2,
+        "sellerId": "seller_8",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_26",
+        "name": "Mineral Sunscreen SPF 50 Plus v9",
+        "price": 1450,
+        "quantity": 2,
+        "sellerId": "seller_9",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 5200,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 5200,
+    "couponCode": "",
+    "paymentMethod": "netbanking",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "401 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_44",
+    "createdAt": "2026-06-12T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.625Z",
+    "customerId": "customer_5",
+    "customerName": "Shopper Name 5",
+    "customerEmail": "customer5@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_28",
+        "name": "EcoShield Cast Iron Skillet Plus v10",
+        "price": 1799,
+        "quantity": 1,
+        "sellerId": "seller_2",
+        "ecoScore": "B"
+      },
+      {
+        "productId": "prod_29",
+        "name": "SoundAura Noise Cancelling Headphones Plus v6",
+        "price": 9999,
+        "quantity": 1,
+        "sellerId": "seller_3",
+        "ecoScore": "C"
+      },
+      {
+        "productId": "prod_30",
+        "name": "Bamboo Rayon Crew Socks (5-Pack) Plus v6",
+        "price": 1199,
+        "quantity": 1,
+        "sellerId": "seller_4",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 12997,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 13012,
+    "couponCode": "",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "501 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_45",
+    "createdAt": "2026-06-11T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.626Z",
+    "customerId": "customer_6",
+    "customerName": "Shopper Name 6",
+    "customerEmail": "customer6@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_31",
+        "name": "Mastering JavaScript & Node.js Plus v11",
+        "price": 1399,
+        "quantity": 2,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 2798,
+    "discountAmount": 100,
+    "carbonOffsetFee": 0,
+    "netAmount": 2698,
+    "couponCode": "WELCOME100",
+    "paymentMethod": "upi",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "601 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_46",
+    "createdAt": "2026-06-10T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.626Z",
+    "customerId": "customer_7",
+    "customerName": "Shopper Name 7",
+    "customerEmail": "customer7@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_34",
+        "name": "High-Density Yoga Mat Plus v12",
+        "price": 2699,
+        "quantity": 1,
+        "sellerId": "seller_8",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_35",
+        "name": "Automatic Smart Air Fryer Plus v12",
+        "price": 6799,
+        "quantity": 1,
+        "sellerId": "seller_9",
+        "ecoScore": "C"
+      }
+    ],
+    "totalAmount": 9498,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 9513,
+    "couponCode": "",
+    "paymentMethod": "wallet",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "701 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_47",
+    "createdAt": "2026-06-09T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.627Z",
+    "customerId": "customer_8",
+    "customerName": "Shopper Name 8",
+    "customerEmail": "customer8@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_37",
+        "name": "Premium Leather Smart Watch Plus v8",
+        "price": 13299,
+        "quantity": 2,
+        "sellerId": "seller_2",
+        "ecoScore": "D"
+      },
+      {
+        "productId": "prod_38",
+        "name": "Green Growth: Building the Future Plus v13",
+        "price": 999,
+        "quantity": 2,
+        "sellerId": "seller_3",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_39",
+        "name": "Single Origin Dark Roast Coffee Beans Plus v13",
+        "price": 1550,
+        "quantity": 2,
+        "sellerId": "seller_4",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 31696,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 31696,
+    "couponCode": "",
+    "paymentMethod": "netbanking",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "801 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_48",
+    "createdAt": "2026-06-08T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.627Z",
+    "customerId": "customer_9",
+    "customerName": "Shopper Name 9",
+    "customerEmail": "customer9@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_40",
+        "name": "Hydrating Aloe Face Wash Plus v14",
+        "price": 1250,
+        "quantity": 1,
+        "sellerId": "seller_5",
+        "ecoScore": "B"
+      }
+    ],
+    "totalAmount": 1250,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 1265,
+    "couponCode": "",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "901 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_49",
+    "createdAt": "2026-06-07T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.628Z",
+    "customerId": "customer_10",
+    "customerName": "Shopper Name 10",
+    "customerEmail": "customer10@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_43",
+        "name": "Titan Phone 5G Plus v9",
+        "price": 30099,
+        "quantity": 2,
+        "sellerId": "seller_8",
+        "ecoScore": "B"
+      },
+      {
+        "productId": "prod_44",
+        "name": "Velocity Running Sneakers Plus v9",
+        "price": 4700,
+        "quantity": 2,
+        "sellerId": "seller_9",
+        "ecoScore": "C"
+      }
+    ],
+    "totalAmount": 69598,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 69598,
+    "couponCode": "",
+    "paymentMethod": "upi",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1001 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 55,
+    "isFlagged": true,
+    "fraudTriggers": [
+      "HIGH_VALUE_TRANSACTION"
+    ]
+  },
+  {
+    "_id": "order_50",
+    "createdAt": "2026-06-16T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.629Z",
+    "customerId": "customer_11",
+    "customerName": "Shopper Name 11",
+    "customerEmail": "customer11@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_46",
+        "name": "Organic Honey Raw Wildflower Plus v16",
+        "price": 1150,
+        "quantity": 1,
+        "sellerId": "seller_2",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_47",
+        "name": "Mineral Sunscreen SPF 50 Plus v16",
+        "price": 1450,
+        "quantity": 1,
+        "sellerId": "seller_3",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_48",
+        "name": "Ergonomic Sports Water Bottle Plus v16",
+        "price": 2099,
+        "quantity": 1,
+        "sellerId": "seller_4",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 4699,
+    "discountAmount": 100,
+    "carbonOffsetFee": 15,
+    "netAmount": 4614,
+    "couponCode": "WELCOME100",
+    "paymentMethod": "wallet",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1101 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_51",
+    "createdAt": "2026-06-15T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.629Z",
+    "customerId": "customer_12",
+    "customerName": "Shopper Name 12",
+    "customerEmail": "customer12@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_49",
+        "name": "EcoShield Cast Iron Skillet Plus v17",
+        "price": 1799,
+        "quantity": 2,
+        "sellerId": "seller_5",
+        "ecoScore": "B"
+      }
+    ],
+    "totalAmount": 3598,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 3598,
+    "couponCode": "",
+    "paymentMethod": "netbanking",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1201 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_52",
+    "createdAt": "2026-06-14T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.630Z",
+    "customerId": "customer_13",
+    "customerName": "Shopper Name 13",
+    "customerEmail": "customer13@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_52",
+        "name": "Mastering JavaScript & Node.js Plus v18",
+        "price": 1399,
+        "quantity": 1,
+        "sellerId": "seller_8",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_53",
+        "name": "Gluten-Free Almond Oats Plus v18",
+        "price": 920,
+        "quantity": 1,
+        "sellerId": "seller_9",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 2319,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 2334,
+    "couponCode": "",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1301 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_53",
+    "createdAt": "2026-06-13T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.631Z",
+    "customerId": "customer_14",
+    "customerName": "Shopper Name 14",
+    "customerEmail": "customer14@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_55",
+        "name": "High-Density Yoga Mat Plus v19",
+        "price": 2699,
+        "quantity": 2,
+        "sellerId": "seller_2",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_56",
+        "name": "Automatic Smart Air Fryer Plus v19",
+        "price": 6799,
+        "quantity": 2,
+        "sellerId": "seller_3",
+        "ecoScore": "C"
+      },
+      {
+        "productId": "prod_57",
+        "name": "EcoBook Air Ultra Slim Plus v12",
+        "price": 59199,
+        "quantity": 2,
+        "sellerId": "seller_4",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 137394,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 137394,
+    "couponCode": "",
+    "paymentMethod": "upi",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1401 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 85,
+    "isFlagged": true,
+    "fraudTriggers": [
+      "HIGH_VALUE_TRANSACTION",
+      "CRITICAL_LIMIT_EXCEEDED"
+    ]
+  },
+  {
+    "_id": "order_54",
+    "createdAt": "2026-06-12T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.631Z",
+    "customerId": "customer_15",
+    "customerName": "Shopper Name 15",
+    "customerEmail": "customer15@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_58",
+        "name": "EcoLoop Organic Cotton Hoodie Plus v12",
+        "price": 2299,
+        "quantity": 1,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 2299,
+    "discountAmount": 0,
+    "carbonOffsetFee": 15,
+    "netAmount": 2314,
+    "couponCode": "",
+    "paymentMethod": "wallet",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1501 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "order_55",
+    "createdAt": "2026-06-11T14:11:55.540Z",
+    "updatedAt": "2026-06-16T14:11:55.632Z",
+    "customerId": "customer_16",
+    "customerName": "Shopper Name 16",
+    "customerEmail": "customer16@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_61",
+        "name": "Hydrating Aloe Face Wash Plus v21",
+        "price": 1250,
+        "quantity": 2,
+        "sellerId": "seller_8",
+        "ecoScore": "B"
+      },
+      {
+        "productId": "prod_62",
+        "name": "Iron Dumbbells (Set of 2 - 10kg) Plus v21",
+        "price": 3499,
+        "quantity": 2,
+        "sellerId": "seller_9",
+        "ecoScore": "D"
+      }
+    ],
+    "totalAmount": 9498,
+    "discountAmount": 100,
+    "carbonOffsetFee": 0,
+    "netAmount": 9398,
+    "couponCode": "WELCOME100",
+    "paymentMethod": "netbanking",
+    "paymentStatus": "paid",
+    "orderStatus": "delivered",
+    "shippingAddress": {
+      "street": "1601 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "zipCode": "560001",
+      "country": "India",
+      "isDefault": true
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and awaits approval",
+        "timestamp": "2026-06-12T14:11:55.540Z"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed",
+        "timestamp": "2026-06-13T02:11:55.540Z"
+      },
+      {
+        "status": "processing",
+        "description": "Seller packed the items",
+        "timestamp": "2026-06-13T14:11:55.540Z"
+      },
+      {
+        "status": "shipped",
+        "description": "In transit to logistics hub",
+        "timestamp": "2026-06-14T14:11:55.540Z"
+      },
+      {
+        "status": "out_for_delivery",
+        "description": "Out for delivery by local courier",
+        "timestamp": "2026-06-15T14:11:55.540Z"
+      },
+      {
+        "status": "delivered",
+        "description": "Successfully delivered to customer",
+        "timestamp": "2026-06-16T02:11:55.540Z"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "ms96ugmel",
+    "createdAt": "2026-06-16T18:28:15.840Z",
+    "updatedAt": "2026-06-16T18:28:15.840Z",
+    "customerId": "customer_1",
+    "customerName": "Shopper Name 1",
+    "customerEmail": "customer@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_18",
+        "name": "Single Origin Dark Roast Coffee Beans Plus v6",
+        "price": 1550,
+        "quantity": 1,
+        "sellerId": "seller_1",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_4",
+        "name": "Organic Honey Raw Wildflower Plus v2",
+        "price": 1150,
+        "quantity": 1,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 2700,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 2700,
+    "couponCode": "",
+    "paymentMethod": "cod",
+    "paymentStatus": "paid",
+    "orderStatus": "confirmed",
+    "shippingAddress": {
+      "street": "No. 33-34, Vijayshree Layout, Arekere, Village, Begur Bannerghatta Main Road, Uttarahali Hobli",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "zipCode": "560076",
+      "country": "India"
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and pending merchant review"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  },
+  {
+    "_id": "5pecp2umx",
+    "createdAt": "2026-06-16T18:48:14.909Z",
+    "updatedAt": "2026-06-16T18:48:14.909Z",
+    "customerId": "customer_1",
+    "customerName": "Shopper Name 1",
+    "customerEmail": "customer@smartcart.com",
+    "items": [
+      {
+        "productId": "prod_4",
+        "name": "Organic Honey Raw Wildflower Plus v2",
+        "price": 1150,
+        "quantity": 1,
+        "sellerId": "seller_5",
+        "ecoScore": "A"
+      },
+      {
+        "productId": "prod_15",
+        "name": "EcoSound Solar Earbuds Plus v3",
+        "price": 5199,
+        "quantity": 1,
+        "sellerId": "seller_7",
+        "ecoScore": "A"
+      }
+    ],
+    "totalAmount": 6349,
+    "discountAmount": 0,
+    "carbonOffsetFee": 0,
+    "netAmount": 6349,
+    "couponCode": "",
+    "paymentMethod": "cod",
+    "paymentStatus": "paid",
+    "orderStatus": "confirmed",
+    "shippingAddress": {
+      "street": "Vitthal mandir ward dhake galli,Bhusawal.",
+      "city": "JALGAON",
+      "state": "Maharashtra",
+      "zipCode": "425201",
+      "country": "India"
+    },
+    "trackingTimeline": [
+      {
+        "status": "pending",
+        "description": "Order submitted and pending merchant review"
+      },
+      {
+        "status": "confirmed",
+        "description": "Payment verified and order confirmed"
+      }
+    ],
+    "fraudRiskScore": 0,
+    "isFlagged": false,
+    "fraudTriggers": []
+  }
+]

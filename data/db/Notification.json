@@ -1,8 +1,8 @@
 [
   {
     "_id": "notif_1",
-    "createdAt": "2026-06-16T20:50:03.125Z",
-    "updatedAt": "2026-06-16T20:50:03.125Z",
+    "createdAt": "2026-06-16T21:21:29.240Z",
+    "updatedAt": "2026-06-16T21:21:29.240Z",
     "userId": "admin_id",
     "title": "System Setup Complete",
     "message": "SmartCart AI initialized with 100+ items.",
@@ -11,8 +11,8 @@
   },
   {
     "_id": "notif_2",
-    "createdAt": "2026-06-16T20:50:03.126Z",
-    "updatedAt": "2026-06-16T20:50:03.126Z",
+    "createdAt": "2026-06-16T21:21:29.240Z",
+    "updatedAt": "2026-06-16T21:21:29.240Z",
     "userId": "seller_1",
     "title": "Low Stock Alert",
     "message": "SmartCart Quantum Laptop is running low (3 left).",
@@ -21,8 +21,8 @@
   },
   {
     "_id": "notif_3",
-    "createdAt": "2026-06-16T20:50:03.126Z",
-    "updatedAt": "2026-06-16T20:50:03.126Z",
+    "createdAt": "2026-06-16T21:21:29.240Z",
+    "updatedAt": "2026-06-16T21:21:29.240Z",
     "userId": "all",
     "title": "Carbon Offset Launch",
     "message": "You can now offset your delivery footprint during checkout.",
@@ -30,21 +30,39 @@
     "isRead": false
   },
   {
-    "_id": "c15fcr6fq",
-    "createdAt": "2026-06-16T20:51:43.796Z",
-    "updatedAt": "2026-06-16T20:51:43.796Z",
-    "userId": "admin",
-    "title": "🔑 Admin Login Detected",
-    "message": "Admin logged in from ::1 using Unknown Browser on Unknown Device.",
-    "type": "info"
-  },
-  {
-    "_id": "jjcaoenuh",
-    "createdAt": "2026-06-16T20:51:50.664Z",
-    "updatedAt": "2026-06-16T20:51:50.664Z",
-    "userId": "bhoeix8zf",
+    "_id": "eart20h0p",
+    "createdAt": "2026-06-16T21:37:19.799Z",
+    "updatedAt": "2026-06-16T21:37:19.799Z",
+    "userId": "sjtnupsrf",
     "title": "Welcome to SmartCart AI! 🎉",
     "message": "Earn reward points on every purchase and unlock tiers for flat discounts!",
+    "type": "success"
+  },
+  {
+    "_id": "91acooexg",
+    "createdAt": "2026-06-16T21:37:43.937Z",
+    "updatedAt": "2026-06-16T21:37:43.937Z",
+    "userId": "seller_1",
+    "title": "🔔 New Order Received",
+    "message": "Order #R2FWJX of ₹5,098 has been placed.",
+    "type": "success"
+  },
+  {
+    "_id": "jyws2sb1z",
+    "createdAt": "2026-06-16T21:37:43.937Z",
+    "updatedAt": "2026-06-16T21:37:43.937Z",
+    "userId": "seller_7",
+    "title": "🔔 New Order Received",
+    "message": "Order #R2FWJX of ₹5,098 has been placed.",
+    "type": "success"
+  },
+  {
+    "_id": "vbi1wws0k",
+    "createdAt": "2026-06-16T21:37:43.938Z",
+    "updatedAt": "2026-06-16T21:37:43.938Z",
+    "userId": "sjtnupsrf",
+    "title": "📦 Order Confirmed!",
+    "message": "Your order for ₹5,098 has been confirmed. You earned 509 reward points!",
     "type": "success"
   }
 ]

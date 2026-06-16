@@ -243,25 +243,56 @@ class LocalCollection {
   }
 }
 
+const getMongoModel = (name, schema) => {
+  try {
+    return mongoose.model(name);
+  } catch (e) {
+    if (schema) {
+      schema.add({
+        _id: {
+          type: String,
+          default: () => new mongoose.Types.ObjectId().toString()
+        }
+      });
+      return mongoose.model(name, schema);
+    }
+    throw e;
+  }
+};
+
 // Wrapper function to expose Mongoose or Local JSON DB models
 const getModel = (name, mongooseSchema) => {
   const localColl = new LocalCollection(name);
 
-  // Return a proxy that intercepts calls
-  return new Proxy({}, {
-    get: (target, prop) => {
+  // We must return a function proxy so it is constructible (new Model()) and callable
+  const dummyTarget = function() {};
+
+  return new Proxy(dummyTarget, {
+    construct(target, args) {
+      if (useMongo) {
+        const mongoModel = getMongoModel(name, mongooseSchema);
+        return Reflect.construct(mongoModel, args);
+      } else {
+        return args[0] || {};
+      }
+    },
+    get(target, prop) {
       if (useMongo) {
         // Fallback to Mongoose
-        let mongoModel;
-        try {
-          mongoModel = mongoose.model(name);
-        } catch (e) {
-          mongoModel = mongoose.model(name, mongooseSchema);
+        const mongoModel = getMongoModel(name, mongooseSchema);
+        
+        const val = mongoModel[prop];
+        if (typeof val === 'function') {
+          return val.bind(mongoModel);
         }
-        return mongoModel[prop];
+        return val;
       } else {
         // Local JSON collection
-        return localColl[prop].bind(localColl);
+        const val = localColl[prop];
+        if (typeof val === 'function') {
+          return val.bind(localColl);
+        }
+        return val;
       }
     }
   });

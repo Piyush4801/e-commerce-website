@@ -99,6 +99,10 @@ export const Cart = () => {
                   src={item.image} 
                   alt={item.name} 
                   className="w-16 h-16 object-cover rounded-xl bg-slate-100 dark:bg-slate-900" 
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400';
+                  }}
                 />
                 <div className="min-w-0">
                   <h3 className="font-bold text-xs text-slate-800 dark:text-slate-200 line-clamp-1">

@@ -88,6 +88,10 @@ export const CartDrawer = () => {
                     src={item.image} 
                     alt={item.name} 
                     className="w-14 h-14 object-cover rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200/40 dark:border-darkBorder/40" 
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400';
+                    }}
                   />
                   <div className="flex-1 min-w-0 flex flex-col gap-1">
                     <h4 className="font-extrabold text-[11px] text-slate-800 dark:text-slate-200 truncate pr-4">

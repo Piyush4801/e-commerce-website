@@ -10,6 +10,9 @@ const ProductSchema = new mongoose.Schema({
   sellerId: { type: String, required: true }, // Referencing User (role=seller) ID
   sellerName: String,
   images: [{ type: String }],
+  image: { type: String },
+  imageUrl: { type: String },
+  thumbnail: { type: String },
   rating: { type: Number, default: 0 },
   reviewCount: { type: Number, default: 0 },
   

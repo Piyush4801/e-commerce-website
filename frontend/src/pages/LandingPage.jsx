@@ -324,7 +324,15 @@ export const LandingPage = () => {
                   to={`/product/${p._id}`}
                   className="p-3 rounded-xl bg-white/50 dark:bg-darkCard/50 border border-gray-200/50 dark:border-darkBorder/60 hover:border-emerald-500/30 flex gap-3 text-xs items-center transition-all"
                 >
-                  <img src={p.images?.[0]} alt={p.name} className="w-12 h-12 object-cover rounded-lg bg-gray-100" />
+                  <img 
+                    src={p.images?.[0] || p.image || p.imageUrl || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'} 
+                    alt={p.name} 
+                    className="w-12 h-12 object-cover rounded-lg bg-gray-100" 
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400';
+                    }}
+                  />
                   <div className="flex-1 min-w-0">
                     <h5 className="font-bold text-slate-800 dark:text-slate-200 truncate">{p.name}</h5>
                     <span className="text-emerald-500 font-extrabold">₹{p.price.toLocaleString()}</span>

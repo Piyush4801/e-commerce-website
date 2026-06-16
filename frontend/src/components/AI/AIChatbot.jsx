@@ -120,9 +120,13 @@ export const AIChatbot = () => {
                         className="p-2 rounded-lg bg-gray-50 dark:bg-darkBorder/30 border border-gray-200/30 dark:border-darkBorder/30 flex gap-2 text-[10px] items-center hover:bg-gray-100 dark:hover:bg-darkBorder/50 transition-colors"
                       >
                         <img 
-                          src={prod.images?.[0]} 
+                          src={prod.images?.[0] || prod.image || prod.imageUrl || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'} 
                           alt={prod.name} 
                           className="w-10 h-10 object-cover rounded-md bg-gray-100" 
+                          onError={(e) => {
+                            e.target.onerror = null;
+                            e.target.src = 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400';
+                          }}
                         />
                         <div className="flex-1 min-w-0">
                           <Link 

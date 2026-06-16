@@ -104,7 +104,7 @@ const generateDummyData = () => {
   // 4. Generate 105 Products
   const productTemplates = {
     'Electronics': [
-      { name: 'SmartCart Quantum Laptop', price: 74999, desc: 'High performance gaming and coding laptop with 16GB RAM, 1TB SSD.', eco: 'C', ecoRating: 3.5, footprint: 85.4, img: 'https://images.unsplash.com/photo-1496181130204-7552cc14ac1a?w=400' },
+      { name: 'SmartCart Quantum Laptop', price: 74999, desc: 'High performance gaming and coding laptop with 16GB RAM, 1TB SSD.', eco: 'C', ecoRating: 3.5, footprint: 85.4, img: 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400' },
       { name: 'EcoBook Air Ultra Slim', price: 58999, desc: 'Environmentally-friendly coding notebook built from recycled plastics.', eco: 'A', ecoRating: 4.8, footprint: 22.1, img: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400' },
       { name: 'Titan Phone 5G', price: 29999, desc: '6.5-inch OLED display, dual camera, 5000mAh battery.', eco: 'B', ecoRating: 4.0, footprint: 35.6, img: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400' },
       { name: 'SoundAura Noise Cancelling Headphones', price: 9999, desc: 'Active noise cancelling headphones with deep bass.', eco: 'C', ecoRating: 3.2, footprint: 12.5, img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400' },
@@ -169,6 +169,9 @@ const generateDummyData = () => {
         sellerId: `seller_${sellerIdx}`,
         sellerName: `Vendor Elite ${sellerIdx}`,
         images: [template.img, template.img.replace('w=400', 'w=500')],
+        image: template.img,
+        imageUrl: template.img,
+        thumbnail: template.img,
         rating: +(4.0 + (pidCount % 11) * 0.1).toFixed(1) > 5 ? 5.0 : +(4.0 + (pidCount % 11) * 0.1).toFixed(1),
         reviewCount: 10 + (pidCount % 45),
         sustainability: {

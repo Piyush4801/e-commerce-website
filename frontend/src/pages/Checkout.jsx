@@ -406,6 +406,10 @@ export const Checkout = () => {
                     src={item.image || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'} 
                     alt={item.name} 
                     className="w-12 h-12 object-cover rounded-xl bg-slate-100 shrink-0" 
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400';
+                    }}
                   />
                   <div className="flex-grow min-w-0 text-xs">
                     <h4 className="font-bold text-slate-800 dark:text-slate-200 truncate">{item.name}</h4>

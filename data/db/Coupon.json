@@ -1,57 +1,57 @@
 [
   {
-    "_id": "hpc7nnl32",
-    "createdAt": "2026-06-16T20:50:03.076Z",
-    "updatedAt": "2026-06-16T20:50:03.076Z",
+    "_id": "1xgw1cnnf",
+    "createdAt": "2026-06-16T21:21:29.203Z",
+    "updatedAt": "2026-06-16T21:21:29.203Z",
     "code": "WELCOME100",
     "type": "flat",
     "value": 100,
     "minPurchase": 500,
     "isActive": true,
-    "expiryDate": "2026-07-16T20:50:03.028Z"
+    "expiryDate": "2026-07-16T21:21:29.167Z"
   },
   {
-    "_id": "sco98vsvz",
-    "createdAt": "2026-06-16T20:50:03.076Z",
-    "updatedAt": "2026-06-16T20:50:03.076Z",
+    "_id": "u8kocxwil",
+    "createdAt": "2026-06-16T21:21:29.204Z",
+    "updatedAt": "2026-06-16T21:21:29.204Z",
     "code": "FESTIVAL20",
     "type": "percentage",
     "value": 20,
     "minPurchase": 1500,
     "isActive": true,
-    "expiryDate": "2026-07-01T20:50:03.028Z"
+    "expiryDate": "2026-07-01T21:21:29.167Z"
   },
   {
-    "_id": "tqshhjgls",
-    "createdAt": "2026-06-16T20:50:03.076Z",
-    "updatedAt": "2026-06-16T20:50:03.076Z",
+    "_id": "sw43zdzwu",
+    "createdAt": "2026-06-16T21:21:29.204Z",
+    "updatedAt": "2026-06-16T21:21:29.204Z",
     "code": "GREENSAVE",
     "type": "flat",
     "value": 150,
     "minPurchase": 1000,
     "isActive": true,
-    "expiryDate": "2026-07-31T20:50:03.028Z"
+    "expiryDate": "2026-07-31T21:21:29.167Z"
   },
   {
-    "_id": "293m5khi2",
-    "createdAt": "2026-06-16T20:50:03.076Z",
-    "updatedAt": "2026-06-16T20:50:03.076Z",
+    "_id": "ths5e99il",
+    "createdAt": "2026-06-16T21:21:29.204Z",
+    "updatedAt": "2026-06-16T21:21:29.204Z",
     "code": "SUPER50",
     "type": "percentage",
     "value": 50,
     "minPurchase": 10000,
     "isActive": true,
-    "expiryDate": "2026-06-26T20:50:03.028Z"
+    "expiryDate": "2026-06-26T21:21:29.167Z"
   },
   {
-    "_id": "89jibiyxd",
-    "createdAt": "2026-06-16T20:50:03.076Z",
-    "updatedAt": "2026-06-16T20:50:03.076Z",
+    "_id": "7svx7poqj",
+    "createdAt": "2026-06-16T21:21:29.204Z",
+    "updatedAt": "2026-06-16T21:21:29.204Z",
     "code": "EXPIRED10",
     "type": "percentage",
     "value": 10,
     "minPurchase": 100,
     "isActive": false,
-    "expiryDate": "2026-06-11T20:50:03.028Z"
+    "expiryDate": "2026-06-11T21:21:29.167Z"
   }
 ]

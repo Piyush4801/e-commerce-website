@@ -7,5 +7,23 @@
     "userName": "Shopper Name 1",
     "totalCoinsEarned": 920,
     "gamesPlayed": 1
+  },
+  {
+    "_id": "vk2vxl86t",
+    "createdAt": "2026-06-16T21:10:22.248Z",
+    "updatedAt": "2026-06-16T21:10:22.248Z",
+    "userId": "limhfeinz",
+    "userName": "piyush",
+    "totalCoinsEarned": 630,
+    "gamesPlayed": 0
+  },
+  {
+    "_id": "xkx75u133",
+    "createdAt": "2026-06-16T21:37:43.911Z",
+    "updatedAt": "2026-06-16T21:37:56.844Z",
+    "userId": "sjtnupsrf",
+    "userName": "joshi",
+    "totalCoinsEarned": 600,
+    "gamesPlayed": 1
   }
 ]

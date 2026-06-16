@@ -42,7 +42,7 @@ export const CartProvider = ({ children }) => {
         quantity,
         sellerId: product.sellerId,
         ecoScore: product.sustainability?.ecoScore || 'C',
-        image: product.images?.[0] || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'
+        image: product.images?.[0] || product.image || product.imageUrl || product.thumbnail || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'
       }];
     });
   };

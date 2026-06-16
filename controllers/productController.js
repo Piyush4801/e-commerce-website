@@ -97,6 +97,9 @@ const createProduct = async (req, res) => {
   try {
     const { name, description, price, category, stock, images, sustainability } = req.body;
 
+    const productImages = images || ['https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'];
+    const firstImage = productImages[0] || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400';
+
     const newProduct = await Product.create({
       name,
       description,
@@ -105,7 +108,10 @@ const createProduct = async (req, res) => {
       stock: parseInt(stock),
       sellerId: req.user._id,
       sellerName: req.user.name,
-      images: images || ['https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'],
+      images: productImages,
+      image: firstImage,
+      imageUrl: firstImage,
+      thumbnail: firstImage,
       sustainability: sustainability || { ecoScore: 'C', ecoRating: 3.0, carbonFootprint: 5.0 }
     });
 
@@ -146,13 +152,19 @@ const updateProduct = async (req, res) => {
       return res.status(403).json({ success: false, message: 'Unauthorized. You do not own this product.' });
     }
 
+    const updatedImages = images || product.images;
+    const firstImage = (updatedImages && updatedImages[0]) || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400';
+
     const updated = await Product.findByIdAndUpdate(prodId, {
       name,
       description,
       price: price ? parseFloat(price) : product.price,
       category: category || product.category,
       stock: stock !== undefined ? parseInt(stock) : product.stock,
-      images: images || product.images,
+      images: updatedImages,
+      image: firstImage,
+      imageUrl: firstImage,
+      thumbnail: firstImage,
       sustainability: sustainability || product.sustainability,
       updatedAt: new Date().toISOString()
     }, { new: true });

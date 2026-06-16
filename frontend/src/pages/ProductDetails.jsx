@@ -300,10 +300,14 @@ export const ProductDetails = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <img 
-                    src={galleryImages[activeImgIndex]} 
+                    src={galleryImages[activeImgIndex] || product.image || product.imageUrl || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'} 
                     alt={product.name} 
                     className="w-full h-full object-cover transition-transform duration-100 ease-out" 
                     style={isZoomed ? zoomStyle : { transform: 'scale(1)', transformOrigin: 'center' }}
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400';
+                    }}
                   />
                 </div>
                 
@@ -319,7 +323,15 @@ export const ProductDetails = () => {
                           : 'border-slate-200 dark:border-darkBorder/40 hover:border-slate-400'
                       }`}
                     >
-                      <img src={img} alt={`${product.name} thumb-${idx}`} className="w-full h-full object-cover" />
+                      <img 
+                        src={img} 
+                        alt={`${product.name} thumb-${idx}`} 
+                        className="w-full h-full object-cover" 
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src = 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400';
+                        }}
+                      />
                     </button>
                   ))}
                 </div>
@@ -441,7 +453,15 @@ export const ProductDetails = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center">
             {/* Primary Product Mini Summary */}
             <div className="p-4 rounded-2xl border border-slate-200 bg-white/40 dark:bg-darkCard/40 dark:border-darkBorder/40 glass flex gap-3 text-xs items-center">
-              <img src={product.images?.[0]} alt="primary" className="w-12 h-12 object-cover rounded-xl bg-slate-100" />
+               <img 
+                src={product.images?.[0] || product.image || product.imageUrl || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'} 
+                alt="primary" 
+                className="w-12 h-12 object-cover rounded-xl bg-slate-100" 
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400';
+                }}
+              />
               <div>
                 <strong className="block text-slate-800 dark:text-slate-100 truncate max-w-[150px]">{product.name}</strong>
                 <span className="text-emerald-500 font-extrabold">₹{product.price.toLocaleString()}</span>
@@ -455,7 +475,15 @@ export const ProductDetails = () => {
                 className="p-4 rounded-2xl border border-emerald-500/25 bg-emerald-500/5 glass flex justify-between items-center text-xs"
               >
                 <div className="flex gap-3 items-center min-w-0">
-                  <img src={item.images?.[0]} alt={item.name} className="w-12 h-12 object-cover rounded-xl bg-slate-100" />
+                  <img 
+                    src={item.images?.[0] || item.image || item.imageUrl || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'} 
+                    alt={item.name} 
+                    className="w-12 h-12 object-cover rounded-xl bg-slate-100" 
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400';
+                    }}
+                  />
                   <div className="min-w-0">
                     <strong className="block text-slate-800 dark:text-slate-100 truncate max-w-[120px]">{item.name}</strong>
                     <span className="text-emerald-500 font-extrabold">₹{item.price.toLocaleString()}</span>

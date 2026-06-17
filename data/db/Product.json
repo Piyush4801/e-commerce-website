@@ -248,5 +248,57 @@
     },
     "createdAt": "2026-06-16T22:54:57.676Z",
     "updatedAt": "2026-06-16T22:54:57.676Z"
+  },
+  {
+    "name": "AeroSprint Running Shoes",
+    "description": "Lightweight running shoes with responsive cushioning, perfect for daily runs and marathons.",
+    "price": 2499,
+    "category": "Sports",
+    "stock": 45,
+    "sellerId": "seller_piyush_001",
+    "sellerName": "Piyush Elite Merchant",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+    ],
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
+    "thumbnail": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
+    "rating": 4.6,
+    "reviewCount": 54,
+    "sustainability": {
+      "ecoScore": "B",
+      "ecoRating": 3.5,
+      "carbonFootprint": 4.1
+    },
+    "createdAt": "2026-06-17T01:58:19.734Z",
+    "updatedAt": "2026-06-17T01:58:19.734Z",
+    "_id": "6a31ff3b07c49bb275c9f5b4",
+    "__v": 0
+  },
+  {
+    "name": "DevPro Coding Laptop 15-inch",
+    "description": "High-performance coding laptop with 16GB RAM, 512GB NVMe SSD, and a tactile backlit keyboard for developers.",
+    "price": 55999,
+    "category": "Electronics",
+    "stock": 20,
+    "sellerId": "seller_piyush_001",
+    "sellerName": "Piyush Elite Merchant",
+    "images": [
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500"
+    ],
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500",
+    "imageUrl": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500",
+    "thumbnail": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500",
+    "rating": 4.8,
+    "reviewCount": 112,
+    "sustainability": {
+      "ecoScore": "C",
+      "ecoRating": 2.8,
+      "carbonFootprint": 15.5
+    },
+    "createdAt": "2026-06-17T01:58:20.084Z",
+    "updatedAt": "2026-06-17T01:58:20.085Z",
+    "_id": "6a31ff3c07c49bb275c9f5b6",
+    "__v": 0
   }
 ]

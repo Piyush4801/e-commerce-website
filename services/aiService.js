@@ -104,7 +104,9 @@ const getConversationalProducts = async (text) => {
 
   // Filter by text search query keywords
   if (parsed.query && parsed.query.length > 1) {
-    const keywords = parsed.query.split(/\s+/).filter(k => k.length > 2);
+    const stopWords = new Set(['tell', 'me', 'about', 'this', 'product', 'my', 'budget', 'is', 'of', 'rs', 'the', 'a', 'an', 'and', 'or', 'for', 'to', 'in', 'with', 'on', 'can', 'you', 'i', 'need', 'want', 'show', 'suggest', 'find', 'looking', 'good', 'best', 'sleek', 'cheap', 'premium', 'under', 'below', 'less', 'than', 'rupees']);
+    const keywords = parsed.query.split(/\s+/).filter(k => k.length > 2 && !stopWords.has(k.toLowerCase()));
+    
     if (keywords.length > 0) {
       products = products.filter(p => {
         return keywords.some(k => 
@@ -123,7 +125,7 @@ const getConversationalProducts = async (text) => {
 
 The top recommendation is **${bestChoice.name}** (Rating: ${bestChoice.rating}⭐, ₹${bestChoice.price.toLocaleString()}) because it offers the highest rating and includes premium specifications matching your query. It also boasts a sustainability eco-score of "${bestChoice.sustainability.ecoScore}".`;
   } else {
-    explanation = `I analyzed your request for "${parsed.query}"${parsed.budget ? ` under ₹${parsed.budget.toLocaleString()}` : ''}, but we don't have matching products in that budget range at the moment. Try adjusting your budget or query.`;
+    explanation = `I analyzed your request for "${parsed.query}"${parsed.budget ? ` under ₹${parsed.budget.toLocaleString()}` : ''}, but we don't have matching products${parsed.budget ? ' in that budget range' : ''} at the moment. Try adjusting your query.`;
   }
 
   return {

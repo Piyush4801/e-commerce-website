@@ -1,3 +1,4 @@
+const OpenAI = require('openai');
 const Product = require('../models/Product');
 
 // A list of stop words and helpers to find clean categories
@@ -74,7 +75,6 @@ const parseConversation = (text) => {
   // 3. Extract search query (remove budget mentions and standard helper words)
   let cleanQuery = normalizedText
     .replace(/(?:under|below|less than|rs\.?|₹)\s*[\d,]+/g, '')
-    .replace(/(?:i need|i want|show me|suggest|find|looking for|good|best|sleek|cheap|premium)/g, '')
     .trim();
 
   // Remove trailing punctuations
@@ -87,7 +87,7 @@ const parseConversation = (text) => {
   };
 };
 
-const getConversationalProducts = async (text) => {
+const getConversationalProducts = async (text, history = []) => {
   const normalizedText = text.toLowerCase().trim();
   const greetingPatterns = [
     /^(hi|hello|hey|greetings)(?:\s.*)?$/,
@@ -96,7 +96,7 @@ const getConversationalProducts = async (text) => {
     /^help\??$/
   ];
 
-  if (greetingPatterns.some(pattern => pattern.test(normalizedText))) {
+  if (history.length === 0 && greetingPatterns.some(pattern => pattern.test(normalizedText))) {
     return {
       parsed: { query: text },
       products: [],
@@ -104,6 +104,142 @@ const getConversationalProducts = async (text) => {
     };
   }
 
+  // --- NVIDIA LLM INTEGRATION (Phase 1: Memory & Function Calling) ---
+  if (process.env.NVIDIA_API_KEY) {
+    try {
+      const openai = new OpenAI({
+        baseURL: "https://integrate.api.nvidia.com/v1",
+        apiKey: process.env.NVIDIA_API_KEY
+      });
+      
+      const searchProductsTool = {
+        type: "function",
+        function: {
+          name: "search_products",
+          description: "Search the e-commerce product catalog based on user criteria.",
+          parameters: {
+            type: "object",
+            properties: {
+              category: {
+                type: "string",
+                description: "The product category. Must be exactly one of: Electronics, Fashion, Books, Grocery, Beauty & Personal Care, Sports, Home & Kitchen"
+              },
+              budget: {
+                type: "number",
+                description: "The maximum price the user is willing to pay in INR."
+              },
+              keywords: {
+                type: "array",
+                items: { type: "string" },
+                description: "Key search terms to look for in product titles or descriptions."
+              }
+            }
+          }
+        }
+      };
+
+      const chatHistory = [{
+        role: "system",
+        content: "You are SmartCart AI, a friendly and helpful e-commerce shopping assistant. Use the search_products tool when the user asks for recommendations. Remember their previous messages for context."
+      }];
+
+      history.forEach(msg => {
+        chatHistory.push({
+          role: msg.role === 'model' ? 'assistant' : 'user',
+          content: msg.parts[0].text
+        });
+      });
+      chatHistory.push({ role: 'user', content: text });
+
+      const completion = await openai.chat.completions.create({
+        model: "nvidia/nemotron-3-ultra-550b-a55b",
+        messages: chatHistory,
+        tools: [searchProductsTool],
+        temperature: 1,
+        top_p: 0.95,
+        max_tokens: 1024,
+      });
+
+      let productsFound = [];
+      let parsedParams = {};
+
+      const message = completion.choices[0].message;
+      let functionCall = null;
+
+      if (message.tool_calls && message.tool_calls.length > 0) {
+        functionCall = message.tool_calls[0].function;
+      }
+
+      let responseText = message.content || "";
+
+      if (functionCall && functionCall.name === "search_products") {
+        const args = JSON.parse(functionCall.arguments);
+        parsedParams = args;
+        
+        let filter = {};
+        if (args.category) {
+          filter.category = { $regex: new RegExp(args.category, 'i') };
+        }
+        
+        let products = await Product.find(filter);
+        
+        if (args.budget) {
+          products = products.filter(p => p.price <= args.budget);
+        }
+        
+        if (args.keywords && args.keywords.length > 0) {
+          // No NVIDIA embedding model specified, using text matching fallback
+          products = products.filter(p => {
+            return args.keywords.every(k => {
+              const term = k.toLowerCase();
+              const textToSearch = (p.name + ' ' + p.description + ' ' + p.category).toLowerCase();
+              return textToSearch.includes(term);
+            });
+          });
+        }
+
+        productsFound = products.slice(0, 5);
+
+        // Send the function response back to the model
+        chatHistory.push(message);
+        chatHistory.push({
+          role: "tool",
+          tool_call_id: message.tool_calls[0].id,
+          name: "search_products",
+          content: JSON.stringify({
+            products: productsFound.map(p => ({
+              name: p.name,
+              price: p.price,
+              rating: p.rating,
+              ecoScore: p.sustainability?.ecoScore
+            }))
+          })
+        });
+
+        const secondCompletion = await openai.chat.completions.create({
+          model: "nvidia/nemotron-3-ultra-550b-a55b",
+          messages: chatHistory,
+          temperature: 1,
+          top_p: 0.95,
+          max_tokens: 1024,
+        });
+        
+        responseText = secondCompletion.choices[0].message.content || "";
+      }
+      
+      return {
+        parsed: { query: text, ...parsedParams },
+        products: productsFound,
+        explanation: responseText
+      };
+      
+    } catch (err) {
+      console.error("Gemini API Error, falling back to legacy algorithm:", err);
+      // Fallback to legacy logic below
+    }
+  }
+
+  // --- LEGACY ALGORITHM FALLBACK ---
   const parsed = parseConversation(text);
   let filter = {};
   
@@ -120,16 +256,16 @@ const getConversationalProducts = async (text) => {
 
   // Filter by text search query keywords
   if (parsed.query && parsed.query.length > 1) {
-    const stopWords = new Set(['tell', 'me', 'about', 'this', 'product', 'my', 'budget', 'is', 'of', 'rs', 'the', 'a', 'an', 'and', 'or', 'for', 'to', 'in', 'with', 'on', 'can', 'you', 'i', 'need', 'want', 'show', 'suggest', 'find', 'looking', 'good', 'best', 'sleek', 'cheap', 'premium', 'under', 'below', 'less', 'than', 'rupees', 'more', 'some', 'any', 'other', 'another', 'mote']);
+    const stopWords = new Set(['tell', 'me', 'about', 'this', 'product', 'my', 'budget', 'is', 'of', 'rs', 'the', 'a', 'an', 'and', 'or', 'for', 'to', 'in', 'with', 'on', 'can', 'you', 'i', 'need', 'want', 'show', 'suggest', 'find', 'looking', 'good', 'best', 'sleek', 'cheap', 'premium', 'under', 'below', 'less', 'than', 'rupees', 'more', 'some', 'any', 'other', 'another', 'mote', 'all']);
     const keywords = parsed.query.split(/\s+/).filter(k => k.length > 2 && !stopWords.has(k.toLowerCase()));
     
     if (keywords.length > 0) {
       products = products.filter(p => {
-        return keywords.some(k => {
+        return keywords.every(k => {
           const term = k.toLowerCase();
           const stem1 = term.replace(/s$/, '');
           const stem2 = term.replace(/es$/, '');
-          const textToSearch = (p.name + ' ' + p.description).toLowerCase();
+          const textToSearch = (p.name + ' ' + p.description + ' ' + p.category).toLowerCase();
           return textToSearch.includes(term) || textToSearch.includes(stem1) || textToSearch.includes(stem2);
         });
       });
@@ -140,9 +276,7 @@ const getConversationalProducts = async (text) => {
   let explanation = '';
   if (products.length > 0) {
     const bestChoice = [...products].sort((a, b) => b.rating - a.rating)[0];
-    explanation = `Based on your request, I scanned our inventory${parsed.category ? ` in ${parsed.category}` : ''}${parsed.budget ? ` with a budget under ₹${parsed.budget.toLocaleString()}` : ''}. I found ${products.length} options. 
-
-The top recommendation is **${bestChoice.name}** (Rating: ${bestChoice.rating}⭐, ₹${bestChoice.price.toLocaleString()}) because it offers the highest rating and includes premium specifications matching your query. It also boasts a sustainability eco-score of "${bestChoice.sustainability.ecoScore}".`;
+    explanation = `Based on your request, I scanned our inventory${parsed.category ? ` in ${parsed.category}` : ''}${parsed.budget ? ` with a budget under ₹${parsed.budget.toLocaleString()}` : ''}. I found ${products.length} options.\n\nThe top recommendation is **${bestChoice.name}** (Rating: ${bestChoice.rating}⭐, ₹${bestChoice.price.toLocaleString()}) because it offers the highest rating and includes premium specifications matching your query. It also boasts a sustainability eco-score of "${bestChoice.sustainability.ecoScore}".`;
   } else {
     explanation = `I analyzed your request for "${parsed.query}"${parsed.budget ? ` under ₹${parsed.budget.toLocaleString()}` : ''}, but we don't have matching products${parsed.budget ? ' in that budget range' : ''} at the moment. Try adjusting your query.`;
   }
@@ -152,6 +286,125 @@ The top recommendation is **${bestChoice.name}** (Rating: ${bestChoice.rating}�
     products: products.slice(0, 5), // Limit to top 5 recommendations
     explanation
   };
+};
+
+// Phase 2: Streaming (SSE) Version
+const getConversationalProductsStream = async (text, history = [], onChunk) => {
+  const normalizedText = text.toLowerCase().trim();
+  const greetingPatterns = [
+    /^(hi|hello|hey|greetings)(?:\s.*)?$/,
+    /^what can you do\??$/,
+    /^who are you\??$/,
+    /^help\??$/
+  ];
+
+  if (history.length === 0 && greetingPatterns.some(pattern => pattern.test(normalizedText))) {
+    onChunk(JSON.stringify({ type: 'text', text: "Hello! I am SmartCart AI, your personal shopping assistant. I can help you find products, suggest items based on your budget (e.g., 'running shoes under ₹3000'), and provide smart recommendations. What are you looking for today?" }) + '\n\n');
+    onChunk(JSON.stringify({ type: 'done' }) + '\n\n');
+    return;
+  }
+
+  if (process.env.NVIDIA_API_KEY) {
+    try {
+      const openai = new OpenAI({
+        baseURL: "https://integrate.api.nvidia.com/v1",
+        apiKey: process.env.NVIDIA_API_KEY
+      });
+
+      // Local fallback parsing since Nemotron tool calling hangs
+      const parsed = parseConversation(text);
+      let filter = {};
+      if (parsed.category) filter.category = parsed.category;
+      let products = await Product.find(filter);
+      
+      if (parsed.budget) {
+        products = products.filter(p => p.price <= parsed.budget);
+      }
+
+      if (parsed.query && parsed.query.length > 1) {
+        const stopWords = ['just', 'give', 'me', 'all', 'the', 'that', 'are', 'available', 'show', 'suggest', 'find', 'looking', 'for', 'a', 'an', 'in', 'on', 'with', 'and', 'is', 'to', 'can', 'you', 'i', 'want', 'need', 'some', 'any', 'please', 'good', 'best', 'cheap', 'premium'];
+        const keywords = parsed.query.split(/\s+/).filter(k => k.length > 2 && !stopWords.includes(k));
+        
+        if (keywords.length > 0) {
+          products = products.map(p => {
+            const text = (p.name + ' ' + p.description + ' ' + p.category).toLowerCase();
+            let score = 0;
+            for (let k of keywords) {
+              const singular = k.endsWith('s') ? k.slice(0, -1) : k;
+              if (text.includes(k) || text.includes(singular)) score += 1;
+            }
+            return { product: p, score };
+          }).filter(p => p.score > 0)
+            .sort((a, b) => b.score - a.score)
+            .map(p => p.product);
+        }
+      }
+
+      const productsFound = products.slice(0, 5).map(p => {
+        const obj = p.toObject ? p.toObject() : p;
+        delete obj.embedding;
+        return obj;
+      });
+      
+      // Stream products to UI immediately
+      onChunk(JSON.stringify({ type: 'products', products: productsFound }) + '\n\n');
+
+      const systemPrompt = `You are SmartCart AI, a friendly e-commerce shopping assistant.
+The user asked for: "${text}".
+I searched the database and found these top matching products:
+${JSON.stringify(productsFound.map(p => ({ name: p.name, price: p.price, rating: p.rating, ecoScore: p.sustainability?.ecoScore })), null, 2)}
+If products were found, summarize them warmly and recommend the best one. If no products were found, apologize and suggest they try another search. Do not hallucinate products.`;
+
+      const chatHistory = [{ role: "system", content: systemPrompt }];
+
+      history.forEach(msg => {
+        chatHistory.push({
+          role: msg.role === 'model' ? 'assistant' : 'user',
+          content: msg.parts[0].text
+        });
+      });
+      chatHistory.push({ role: 'user', content: text });
+
+      const stream = await openai.chat.completions.create({
+        model: "meta/llama-3.1-70b-instruct",
+        messages: chatHistory,
+        temperature: 1,
+        top_p: 0.95,
+        max_tokens: 4000,
+        stream: true
+      });
+      
+      for await (const chunk of stream) {
+        const reasoning = chunk.choices[0]?.delta?.reasoning_content;
+        if (reasoning) {
+          // Stream reasoning as italicized text if desired, or just normal text
+          onChunk(JSON.stringify({ type: 'text', text: reasoning }) + '\n\n');
+        }
+        const content = chunk.choices[0]?.delta?.content || "";
+        if (content) {
+          onChunk(JSON.stringify({ type: 'text', text: content }) + '\n\n');
+        }
+      }
+      
+      onChunk(JSON.stringify({ type: 'done' }) + '\n\n');
+      return;
+    } catch (err) {
+      console.error("Streaming error:", err);
+      let errMsg = err.message || 'Unknown';
+      if (errMsg.includes('429 Too Many Requests') || errMsg.includes('exceeded your current quota')) {
+        errMsg = "I am receiving too many requests right now. Please wait a minute and try again.";
+      } else {
+        errMsg = "I encountered an internal error. Please try again later.";
+      }
+      onChunk(JSON.stringify({ type: 'text', text: errMsg }) + '\n\n');
+      onChunk(JSON.stringify({ type: 'done' }) + '\n\n');
+      return;
+    }
+  }
+
+  // Fallback if no API key
+  onChunk(JSON.stringify({ type: 'text', text: "Sorry, AI is currently disabled." }) + '\n\n');
+  onChunk(JSON.stringify({ type: 'done' }) + '\n\n');
 };
 
 // Recommendation Algorithms
@@ -210,6 +463,7 @@ const getFrequentlyBoughtTogether = async (productId) => {
 module.exports = {
   parseConversation,
   getConversationalProducts,
+  getConversationalProductsStream,
   getPersonalizedRecommendations,
   getSimilarProducts,
   getFrequentlyBoughtTogether

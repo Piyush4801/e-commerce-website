@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import axios from '../../services/api.js';
 import { useCart } from '../../context/CartContext';
-import { MessageSquare, Send, Sparkles, X, ShoppingCart } from 'lucide-react';
+import { MessageSquare, Send, Sparkles, X, ShoppingCart, ThumbsUp, ThumbsDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const AIChatbot = () => {
@@ -23,30 +23,81 @@ export const AIChatbot = () => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, isOpen]);
 
+  const handleFeedback = (idx, type) => {
+    console.log(`Feedback ${type} logged for message index ${idx}`);
+    // Future: send to /api/analytics/feedback
+  };
+
   const handleSend = async (textToSend) => {
     const query = textToSend || input;
     if (!query.trim()) return;
 
     if (!textToSend) setInput('');
 
+    // Construct history array for Gemini (excluding the initial hardcoded welcome message)
+    const history = messages.slice(1).map(m => ({
+      role: m.sender === 'bot' ? 'model' : 'user',
+      parts: [{ text: m.text }]
+    }));
+
     // Append user message
     setMessages(prev => [...prev, { sender: 'user', text: query, products: [] }]);
     setLoading(true);
 
     try {
-      const res = await axios.post('/api/products/ai/conversational', { text: query });
-      if (res.data.success) {
-        setMessages(prev => [...prev, {
-          sender: 'bot',
-          text: res.data.explanation,
-          products: res.data.products || []
-        }]);
-      } else {
-        setMessages(prev => [...prev, {
-          sender: 'bot',
-          text: "I had some trouble scanning the catalog. Could you try rephrasing your search?",
-          products: []
-        }]);
+      const response = await fetch('/api/products/ai/conversational', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: query, history: history })
+      });
+
+      if (!response.ok) throw new Error("Network response was not ok");
+
+      // Add empty bot message
+      setMessages(prev => [...prev, { sender: 'bot', text: '', products: [] }]);
+      setLoading(false); // Hide spinner, streaming starts immediately
+
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder('utf-8');
+      
+      let botText = '';
+      let buffer = '';
+
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        
+        buffer += decoder.decode(value, { stream: true });
+        
+        let boundary = buffer.indexOf('\n\n');
+        while (boundary !== -1) {
+          const messageStr = buffer.slice(0, boundary);
+          buffer = buffer.slice(boundary + 2);
+          
+          if (messageStr.startsWith('data: ')) {
+            try {
+              const data = JSON.parse(messageStr.substring(6));
+              
+              if (data.type === 'products') {
+                setMessages(prev => {
+                  const newMsgs = [...prev];
+                  newMsgs[newMsgs.length - 1] = { ...newMsgs[newMsgs.length - 1], products: data.products };
+                  return newMsgs;
+                });
+              } else if (data.type === 'text') {
+                botText += data.text;
+                setMessages(prev => {
+                  const newMsgs = [...prev];
+                  newMsgs[newMsgs.length - 1] = { ...newMsgs[newMsgs.length - 1], text: botText };
+                  return newMsgs;
+                });
+              }
+            } catch (e) {
+              console.error("SSE parse error", e, messageStr);
+            }
+          }
+          boundary = buffer.indexOf('\n\n');
+        }
       }
     } catch (error) {
       setMessages(prev => [...prev, {
@@ -110,6 +161,18 @@ export const AIChatbot = () => {
                 >
                   {msg.text}
                 </div>
+                
+                {/* Feedback Buttons for Bot */}
+                {msg.sender === 'bot' && i !== 0 && (
+                  <div className="flex items-center gap-2 mt-1 ml-1 opacity-60 hover:opacity-100 transition-opacity">
+                    <button onClick={() => handleFeedback(i, 'up')} className="text-gray-400 hover:text-emerald-500 transition-colors">
+                      <ThumbsUp size={10} />
+                    </button>
+                    <button onClick={() => handleFeedback(i, 'down')} className="text-gray-400 hover:text-red-500 transition-colors">
+                      <ThumbsDown size={10} />
+                    </button>
+                  </div>
+                )}
 
                 {/* Attached Products Cards */}
                 {msg.products && msg.products.length > 0 && (

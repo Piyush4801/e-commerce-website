@@ -309,23 +309,33 @@ const addReview = async (req, res) => {
   }
 };
 
-// Conversational AI Search Endpoint
+// Conversational AI Search Endpoint (Streaming)
 const searchConversational = async (req, res) => {
   try {
-    const { text } = req.body;
+    const { text, history } = req.body;
     if (!text) {
       return res.status(400).json({ success: false, message: 'Text prompt query is required.' });
     }
-    const result = await aiService.getConversationalProducts(text);
-    return res.json({ success: true, ...result });
+
+    // Set headers for Server-Sent Events (SSE)
+    res.setHeader('Content-Type', 'text/event-stream');
+    res.setHeader('Cache-Control', 'no-cache');
+    res.setHeader('Connection', 'keep-alive');
+    res.flushHeaders();
+
+    await aiService.getConversationalProductsStream(text, history || [], (chunk) => {
+      res.write(`data: ${chunk}`);
+    });
+    
+    res.end();
   } catch (error) {
     req.error = error;
-    console.error(error);
-    return res.status(500).json({
-      success: false,
-      message: "Internal Server Error",
-      error: error.message
-    });
+    console.error("Streaming error:", error);
+    // If headers are already sent, we can't send a JSON 500 response, just end the stream
+    if (!res.headersSent) {
+      return res.status(500).json({ success: false, message: "Internal Server Error" });
+    }
+    res.end();
   }
 };
 

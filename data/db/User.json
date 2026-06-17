@@ -3,7 +3,7 @@
     "_id": "6a31d1c3128b70570f09a516",
     "name": "Piyush Admin",
     "email": "piyush24@gmail.com",
-    "password": "$2a$12$m5OLvhbUC9Ma.AoAg7Zyn.Ny7EVg1YRmz6CNCFkiMxDR43oUgfkHe",
+    "password": "$2a$12$IPnPkttBRw422fh/j2xU5ePSklmj6vlRLbMWtuLByGKNrO.DcE4Gy",
     "phone": "+919999999999",
     "role": "admin",
     "status": "active",
@@ -12,7 +12,7 @@
     "tier": "Platinum",
     "isVerifiedSeller": false,
     "createdAt": "2026-06-16T22:44:19.273Z",
-    "updatedAt": "2026-06-16T22:44:19.275Z"
+    "updatedAt": "2026-06-17T01:22:43.204Z"
   },
   {
     "_id": "seller_piyush_001",

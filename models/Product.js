@@ -23,6 +23,9 @@ const ProductSchema = new mongoose.Schema({
     carbonFootprint: { type: Number, default: 5.2 } // in kg CO2
   },
   
+  // Vector Search Embeddings (768 dimensions for Gemini)
+  embedding: [{ type: Number }],
+  
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now }
 });

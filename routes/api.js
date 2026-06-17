@@ -12,6 +12,13 @@ const couponController = require('../controllers/couponController');
 const sellerController = require('../controllers/sellerController');
 const adminController = require('../controllers/adminController');
 const hackathonController = require('../controllers/hackathonController');
+const rateLimit = require('express-rate-limit');
+
+const aiRateLimiter = rateLimit({
+  windowMs: 60 * 1000, // 1 minute
+  max: 20, // Limit each IP to 20 requests per `window`
+  message: { success: false, message: 'Too many requests, please try again later.' }
+});
 
 // Models
 const Notification = require('../models/Notification');
@@ -187,7 +194,7 @@ router.get('/seller/activity-logs', authenticate, authorize(['seller']), async (
 // 2. PRODUCT MANAGEMENT & SEARCH ROUTES
 // ==========================================
 router.get('/products', productController.getProducts);
-router.post('/products/ai/conversational', productController.searchConversational);
+router.post('/products/ai/conversational', aiRateLimiter, productController.searchConversational);
 router.get('/products/ai/recommendations', authenticate, productController.getRecommendations);
 
 router.get('/products/:id', productController.getProductById);

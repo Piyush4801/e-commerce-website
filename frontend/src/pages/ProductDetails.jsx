@@ -286,11 +286,9 @@ export const ProductDetails = () => {
         {/* Left Column: Product Images */}
         <div className="lg:col-span-6 flex flex-col gap-4">
           {(() => {
-            const galleryImages = [
-              product.images?.[0] || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400',
-              product.images?.[1] || 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400',
-              product.images?.[2] || 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400'
-            ];
+            const galleryImages = (product.images && product.images.length > 0)
+              ? product.images
+              : [product.image || product.imageUrl || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'];
             return (
               <>
                 <div 

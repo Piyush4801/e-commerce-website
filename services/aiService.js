@@ -88,6 +88,22 @@ const parseConversation = (text) => {
 };
 
 const getConversationalProducts = async (text) => {
+  const normalizedText = text.toLowerCase().trim();
+  const greetingPatterns = [
+    /^(hi|hello|hey|greetings)(?:\s.*)?$/,
+    /^what can you do\??$/,
+    /^who are you\??$/,
+    /^help\??$/
+  ];
+
+  if (greetingPatterns.some(pattern => pattern.test(normalizedText))) {
+    return {
+      parsed: { query: text },
+      products: [],
+      explanation: "Hello! I am SmartCart AI, your personal shopping assistant. I can help you find products, suggest items based on your budget (e.g., 'running shoes under ₹3000'), and provide smart recommendations. What are you looking for today?"
+    };
+  }
+
   const parsed = parseConversation(text);
   let filter = {};
   
@@ -104,15 +120,18 @@ const getConversationalProducts = async (text) => {
 
   // Filter by text search query keywords
   if (parsed.query && parsed.query.length > 1) {
-    const stopWords = new Set(['tell', 'me', 'about', 'this', 'product', 'my', 'budget', 'is', 'of', 'rs', 'the', 'a', 'an', 'and', 'or', 'for', 'to', 'in', 'with', 'on', 'can', 'you', 'i', 'need', 'want', 'show', 'suggest', 'find', 'looking', 'good', 'best', 'sleek', 'cheap', 'premium', 'under', 'below', 'less', 'than', 'rupees']);
+    const stopWords = new Set(['tell', 'me', 'about', 'this', 'product', 'my', 'budget', 'is', 'of', 'rs', 'the', 'a', 'an', 'and', 'or', 'for', 'to', 'in', 'with', 'on', 'can', 'you', 'i', 'need', 'want', 'show', 'suggest', 'find', 'looking', 'good', 'best', 'sleek', 'cheap', 'premium', 'under', 'below', 'less', 'than', 'rupees', 'more', 'some', 'any', 'other', 'another', 'mote']);
     const keywords = parsed.query.split(/\s+/).filter(k => k.length > 2 && !stopWords.has(k.toLowerCase()));
     
     if (keywords.length > 0) {
       products = products.filter(p => {
-        return keywords.some(k => 
-          p.name.toLowerCase().includes(k) || 
-          p.description.toLowerCase().includes(k)
-        );
+        return keywords.some(k => {
+          const term = k.toLowerCase();
+          const stem1 = term.replace(/s$/, '');
+          const stem2 = term.replace(/es$/, '');
+          const textToSearch = (p.name + ' ' + p.description).toLowerCase();
+          return textToSearch.includes(term) || textToSearch.includes(stem1) || textToSearch.includes(stem2);
+        });
       });
     }
   }

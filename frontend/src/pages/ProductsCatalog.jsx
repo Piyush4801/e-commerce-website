@@ -79,7 +79,15 @@ export const ProductsCatalog = () => {
     setSearchParams({});
   };
 
-  const categories = ['Electronics', 'Fashion', 'Books', 'Grocery', 'Beauty', 'Sports', 'Home & Kitchen'];
+  const categories = [
+    { name: 'Electronics', image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400' },
+    { name: 'Fashion', image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=400' },
+    { name: 'Books', image: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=400' },
+    { name: 'Grocery', image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=400' },
+    { name: 'Beauty', image: 'https://images.unsplash.com/photo-1596462502278-27bf85033e5a?w=400' },
+    { name: 'Sports', image: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?w=400' },
+    { name: 'Home & Kitchen', image: 'https://images.unsplash.com/photo-1556910103-1c02745a872f?w=400' }
+  ];
 
   return (
     <div className="min-h-screen pt-24 pb-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-grid-pattern">
@@ -164,15 +172,18 @@ export const ProductsCatalog = () => {
                 <span>All Categories</span>
               </label>
               {categories.map(cat => (
-                <label key={cat} className="flex items-center gap-2 cursor-pointer font-semibold text-slate-700 dark:text-slate-300">
+                <label key={cat.name} className="flex items-center gap-2 cursor-pointer font-semibold text-slate-700 dark:text-slate-300 hover:text-emerald-500 transition-colors py-1">
                   <input
                     type="radio"
                     name="cat_filter"
-                    checked={category === cat}
-                    onChange={() => setCategory(cat)}
-                    className="text-emerald-500 focus:ring-emerald-500"
+                    checked={category === cat.name}
+                    onChange={() => setCategory(cat.name)}
+                    className="text-emerald-500 focus:ring-emerald-500 mt-0.5"
                   />
-                  <span>{cat}</span>
+                  <div className="w-6 h-6 rounded-full overflow-hidden border border-slate-200 dark:border-darkBorder/60 flex-shrink-0">
+                    <img src={cat.image} alt={cat.name} className="w-full h-full object-cover" />
+                  </div>
+                  <span className="text-xs">{cat.name}</span>
                 </label>
               ))}
             </div>
@@ -202,9 +213,9 @@ export const ProductsCatalog = () => {
 
           {/* Rating filter */}
           <div className="flex flex-col gap-2">
-            <span className="text-[10px] font-bold text-slate-400 dark:text-slate-455 uppercase tracking-wider">Minimum Rating</span>
+            <span className="text-[10px] font-bold text-slate-400 dark:text-slate-455 uppercase tracking-wider">Customer Ratings</span>
             <div className="flex flex-col gap-1.5">
-              {[4, 3, 2].map(stars => (
+              {[5, 4, 3, 2].map(stars => (
                 <label key={stars} className="flex items-center gap-2 cursor-pointer font-semibold text-slate-700 dark:text-slate-305 dark:text-slate-300">
                   <input
                     type="radio"
@@ -213,7 +224,7 @@ export const ProductsCatalog = () => {
                     onChange={() => setMinRating(String(stars))}
                     className="text-emerald-500 focus:ring-emerald-500"
                   />
-                  <span>{stars}★ & above</span>
+                  <span>{stars}★ Ratings</span>
                 </label>
               ))}
             </div>

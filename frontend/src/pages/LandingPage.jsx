@@ -69,13 +69,13 @@ export const LandingPage = () => {
   }, []);
 
   const categories = [
-    { name: 'Electronics', count: 15, icon: '💻', bg: 'from-blue-500/10 to-blue-500/5' },
-    { name: 'Fashion', count: 20, icon: '👕', bg: 'from-pink-500/10 to-pink-500/5' },
-    { name: 'Books', count: 12, icon: '📚', bg: 'from-amber-500/10 to-amber-500/5' },
-    { name: 'Grocery', count: 18, icon: '🍎', bg: 'from-emerald-500/10 to-emerald-500/5' },
-    { name: 'Beauty', count: 14, icon: '🧴', bg: 'from-purple-500/10 to-purple-500/5' },
-    { name: 'Sports', count: 12, icon: '⚽', bg: 'from-red-500/10 to-red-500/5' },
-    { name: 'Home & Kitchen', count: 14, icon: '🍳', bg: 'from-teal-500/10 to-teal-500/5' }
+    { name: 'Electronics', count: 15, image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400', bg: 'from-blue-500/10 to-blue-500/5' },
+    { name: 'Fashion', count: 20, image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=400', bg: 'from-pink-500/10 to-pink-500/5' },
+    { name: 'Books', count: 12, image: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=400', bg: 'from-amber-500/10 to-amber-500/5' },
+    { name: 'Grocery', count: 18, image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=400', bg: 'from-emerald-500/10 to-emerald-500/5' },
+    { name: 'Beauty', count: 14, image: 'https://images.unsplash.com/photo-1596462502278-27bf85033e5a?w=400', bg: 'from-purple-500/10 to-purple-500/5' },
+    { name: 'Sports', count: 12, image: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?w=400', bg: 'from-red-500/10 to-red-500/5' },
+    { name: 'Home & Kitchen', count: 14, image: 'https://images.unsplash.com/photo-1556910103-1c02745a872f?w=400', bg: 'from-teal-500/10 to-teal-500/5' }
   ];
 
   const stats = [
@@ -154,9 +154,16 @@ export const LandingPage = () => {
             <Link
               key={idx}
               to={`/products?category=${encodeURIComponent(cat.name)}`}
-              className={`p-4 rounded-2xl border border-gray-200/50 dark:border-darkBorder bg-white/40 dark:bg-darkCard/40 glass hover:border-emerald-500/40 dark:hover:border-emerald-500/30 flex flex-col items-center justify-center gap-2 text-center group hover:-translate-y-1 transition-all duration-300`}
+              className={`p-4 rounded-2xl border border-gray-200/50 dark:border-darkBorder bg-white/40 dark:bg-darkCard/40 glass hover:border-emerald-500/40 dark:hover:border-emerald-500/30 flex flex-col items-center justify-center gap-3 text-center group hover:-translate-y-1 transition-all duration-300`}
             >
-              <span className="text-3xl group-hover:scale-110 transition-transform">{cat.icon}</span>
+              <div className="w-16 h-16 rounded-full border border-emerald-500/20 group-hover:border-emerald-500/80 overflow-hidden shadow-inner transition-colors duration-300 flex-shrink-0 bg-slate-100 dark:bg-darkBorder/30">
+                <img 
+                  src={cat.image} 
+                  alt={cat.name} 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                  referrerPolicy="no-referrer"
+                />
+              </div>
               <div>
                 <h4 className="font-bold text-xs text-slate-800 dark:text-slate-200 group-hover:text-emerald-500">
                   {cat.name}

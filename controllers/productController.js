@@ -32,9 +32,14 @@ const getProducts = async (req, res) => {
       products = products.filter(p => p.price <= parseFloat(maxPrice));
     }
 
-    // Filter by rating
+    // Filter by rating bracket (e.g. 4 means 4.0 to 4.9)
     if (minRating) {
-      products = products.filter(p => p.rating >= parseFloat(minRating));
+      const ratingVal = parseInt(minRating);
+      if (ratingVal === 5) {
+        products = products.filter(p => p.rating === 5.0);
+      } else {
+        products = products.filter(p => Math.floor(p.rating) === ratingVal);
+      }
     }
 
     // Sort

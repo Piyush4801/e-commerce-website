@@ -1,6 +1,18 @@
 @import "tailwindcss";
 
 @theme {
+  --color-white: #ffffff;
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+
   --color-primary-50: #f0fdf4;
   --color-primary-100: #dcfce7;
   --color-primary-200: #bbf7d0;
@@ -27,22 +39,22 @@ body {
 
 .dark {
   /* Override global Tailwind colors for true dark mode */
-  --color-white: var(--color-darkCard);
-  --color-gray-50: var(--color-darkBg);
+  --color-white: #161d30;
+  --color-gray-50: #0b0f19;
   --color-gray-100: #1e293b;
-  --color-gray-200: var(--color-darkBorder);
+  --color-gray-200: #242f4c;
   --color-gray-800: #cbd5e1;
   --color-gray-900: #f8fafc;
-  --color-slate-50: var(--color-darkBg);
+  --color-slate-50: #0b0f19;
   --color-slate-100: #1e293b;
-  --color-slate-200: var(--color-darkBorder);
+  --color-slate-200: #242f4c;
   --color-slate-800: #cbd5e1;
   --color-slate-900: #f8fafc;
 }
 
 .dark body {
-  background-color: var(--color-darkBg);
-  color: var(--color-gray-900);
+  background-color: #0b0f19;
+  color: #f8fafc;
 }
 
 /* Premium Scrollbar */

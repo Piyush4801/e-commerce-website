@@ -31,8 +31,8 @@ const OrderSchema = new mongoose.Schema({
   paymentStatus: { type: String, enum: ['pending', 'paid', 'failed'], default: 'pending' },
   orderStatus: { 
     type: String, 
-    enum: ['pending', 'confirmed', 'processing', 'packed', 'shipped', 'out_for_delivery', 'delivered'],
-    default: 'pending'
+    enum: ['pending_admin_approval', 'pending', 'confirmed', 'processing', 'packed', 'shipped', 'out_for_delivery', 'delivered', 'declined_by_admin', 'cancelled'],
+    default: 'pending_admin_approval'
   },
   
   shippingAddress: {

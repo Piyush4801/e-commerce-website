@@ -242,6 +242,7 @@ router.get('/admin/fraud-reports', authenticate, authorize(['admin']), adminCont
 router.post('/admin/fraud-reports/:id/review', authenticate, authorize(['admin']), adminController.reviewFraudReport);
 router.post('/admin/coins/adjust', authenticate, authorize(['admin']), adminController.adjustUserCoins);
 router.get('/admin/reviews', authenticate, authorize(['admin']), adminController.getAllReviews);
+router.get('/admin/orders', authenticate, authorize(['admin']), adminController.getAllOrders);
 
 // ==========================================
 // 7. NOTIFICATION SYSTEM

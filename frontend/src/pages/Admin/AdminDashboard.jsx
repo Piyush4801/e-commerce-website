@@ -12,6 +12,7 @@ export const AdminDashboard = () => {
   const [users, setUsers] = useState([]);
   const [fraudReports, setFraudReports] = useState([]);
   const [reviews, setReviews] = useState([]);
+  const [orders, setOrders] = useState([]);
   const [securityStats, setSecurityStats] = useState(null);
   
   const [loading, setLoading] = useState(true);
@@ -44,6 +45,11 @@ export const AdminDashboard = () => {
       const reviewRes = await axios.get('/api/admin/reviews');
       if (reviewRes.data.success) {
         setReviews(reviewRes.data.reviews || []);
+      }
+
+      const ordersRes = await axios.get('/api/admin/orders');
+      if (ordersRes.data.success) {
+        setOrders(ordersRes.data.orders || []);
       }
 
       const secRes = await axios.get('/api/admin/security-dashboard');
@@ -84,6 +90,19 @@ export const AdminDashboard = () => {
       }
     } catch (err) {
       setActionMessage('Failed to update fraud log.');
+    }
+  };
+
+  const handleUpdateOrderStatus = async (orderId, status) => {
+    setActionMessage('');
+    try {
+      const res = await axios.put(`/api/orders/${orderId}/status`, { status });
+      if (res.data.success) {
+        setActionMessage(`✅ Order successfully ${status === 'confirmed' ? 'approved' : 'declined'}.`);
+        fetchAdminData();
+      }
+    } catch (err) {
+      setActionMessage('Failed to update order status.');
     }
   };
 
@@ -163,6 +182,7 @@ export const AdminDashboard = () => {
         <div className="flex gap-2 text-xs font-bold bg-white dark:bg-darkCard p-1 rounded-xl border border-gray-200/50 dark:border-darkBorder max-w-full overflow-x-auto whitespace-nowrap scrollbar-none">
           {[
             { id: 'analytics', label: 'Platform Stats' },
+            { id: 'orders', label: `Order Approvals (${orders.filter(o => o.orderStatus === 'pending_admin_approval').length})` },
             { id: 'sellers', label: `Seller Approvals (${pendingSellers.length})` },
             { id: 'fraud', label: `Fraud Audit (${fraudReports.filter(r => r.status === 'pending').length})` },
             { id: 'security', label: `Security Audit (${securityStats?.allAlerts?.length || 0})` },
@@ -391,6 +411,56 @@ export const AdminDashboard = () => {
                   ))}
                 </tbody>
               </table>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ==================================================== */}
+      {/* ORDER APPROVALS VIEW */}
+      {/* ==================================================== */}
+      {activeTab === 'orders' && (
+        <div className="flex flex-col gap-8 animate-fade-in">
+          <div className="p-5 rounded-2xl border border-gray-200/50 dark:border-darkBorder bg-white dark:bg-darkCard glass flex flex-col gap-4 shadow-sm">
+            <h3 className="font-extrabold text-sm text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
+              <ShoppingBag className="text-emerald-500" size={16} />
+              <span>Pending Order Approvals</span>
+            </h3>
+
+            <div className="flex flex-col gap-4 max-h-[600px] overflow-y-auto pr-1">
+              {orders.filter(o => o.orderStatus === 'pending_admin_approval').map(order => (
+                <div key={order._id} className="p-4 rounded-xl border border-emerald-500/30 bg-emerald-500/5 flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center text-xs">
+                  <div className="flex-1">
+                    <strong className="block font-bold text-slate-800 dark:text-slate-200 text-sm mb-1">
+                      Order #{order._id.slice(-6).toUpperCase()}
+                    </strong>
+                    <div className="text-[10px] text-gray-500 flex flex-col gap-1">
+                      <span>Customer: {order.customerName} ({order.customerEmail})</span>
+                      <span>Total Amount: ₹{order.netAmount.toLocaleString()} ({order.paymentMethod.toUpperCase()})</span>
+                      <span>Items: {order.items.map(i => `${i.name} (x${i.quantity})`).join(', ')}</span>
+                    </div>
+                  </div>
+                  <div className="flex gap-2 shrink-0">
+                    <button
+                      onClick={() => handleUpdateOrderStatus(order._id, 'confirmed')}
+                      className="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-[10px] flex items-center gap-1 shadow-md shadow-emerald-500/20"
+                    >
+                      <CheckCircle2 size={12} />
+                      Approve
+                    </button>
+                    <button
+                      onClick={() => handleUpdateOrderStatus(order._id, 'declined_by_admin')}
+                      className="px-4 py-2 rounded-lg bg-rose-500 hover:bg-rose-600 text-white font-bold text-[10px] flex items-center gap-1 shadow-md shadow-rose-500/20"
+                    >
+                      <UserX size={12} />
+                      Decline
+                    </button>
+                  </div>
+                </div>
+              ))}
+              {orders.filter(o => o.orderStatus === 'pending_admin_approval').length === 0 && (
+                <span className="text-xs text-gray-400 py-8 text-center italic">No orders pending admin approval right now.</span>
+              )}
             </div>
           </div>
         </div>

@@ -183,9 +183,9 @@ const placeOrder = async (req, res) => {
       { status: 'pending', description: 'Order submitted and pending merchant review' }
     ];
 
-    // If order was flagged, block payment status until review, otherwise set paid (simulated success)
+    // Set the order to pending_admin_approval (default behavior now)
     const paymentStatus = fraudValidation.isFlagged ? 'pending' : 'paid';
-    const orderStatus = fraudValidation.isFlagged ? 'pending' : 'confirmed';
+    const orderStatus = fraudValidation.isFlagged ? 'pending' : 'pending_admin_approval';
 
     if (orderStatus === 'confirmed') {
       timeline.push({ status: 'confirmed', description: 'Payment verified and order confirmed' });
@@ -263,24 +263,11 @@ const placeOrder = async (req, res) => {
       }
     }
 
-    // Real-Time Socket alerts to Seller
-    const io = req.app.get('socketio');
-    if (io) {
-      const sellerIds = [...new Set(orderItems.map(item => item.sellerId))];
-      sellerIds.forEach(async (selId) => {
-        io.to(selId).emit('notification', {
-          title: '🔔 New Order Received',
-          message: `Order #${order._id.slice(-6).toUpperCase()} of ₹${netAmount.toLocaleString()} has been placed.`,
-          type: 'success'
-        });
-
-        await Notification.create({
-          userId: selId,
-          title: '🔔 New Order Received',
-          message: `Order #${order._id.slice(-6).toUpperCase()} of ₹${netAmount.toLocaleString()} has been placed.`,
-          type: 'success'
-        });
-      });
+    // Real-Time Socket alerts to Seller (DELAYED until admin approval)
+    // We will just notify the admins that a new order needs approval
+    if (io && !fraudValidation.isFlagged) {
+      // Find admins and notify them? We will just keep it simple.
+      // Sellers will be notified later in updateOrderStatus when the Admin approves it.
     }
 
     // 8. Process rewards and tier upgrades (Only if order is paid/confirmed)
@@ -330,12 +317,12 @@ const placeOrder = async (req, res) => {
         updatedAt: new Date().toISOString()
       }, { new: true });
 
-      // Notify customer
+      // Notify customer that it is pending admin approval
       await Notification.create({
         userId: req.user._id,
-        title: '📦 Order Confirmed!',
-        message: `Your order for ₹${netAmount.toLocaleString()} has been confirmed. You earned ${pointsEarned} reward points!`,
-        type: 'success'
+        title: '📦 Order Under Review',
+        message: `Your order for ₹${netAmount.toLocaleString()} is currently pending admin approval. You will be notified once confirmed!`,
+        type: 'info'
       });
     } else {
       await Notification.create({
@@ -350,7 +337,7 @@ const placeOrder = async (req, res) => {
       success: true,
       message: fraudValidation.isFlagged 
         ? 'Order placed on security hold for manual verification.' 
-        : 'Order placed and confirmed successfully!',
+        : 'Order placed successfully! It is now pending Admin Approval.',
       order,
       user: {
         rewardPoints: updatedUser.rewardPoints,
@@ -472,6 +459,27 @@ const updateOrderStatus = async (req, res) => {
       message: `Your order #${orderId.slice(-6)} status has been updated to: ${status.toUpperCase()}.`,
       type: 'info'
     });
+
+    // If it was just confirmed by admin, notify the sellers now
+    if (status === 'confirmed') {
+      const io = req.app.get('socketio');
+      const sellerIds = [...new Set(order.items.map(item => item.sellerId))];
+      for (const selId of sellerIds) {
+        if (io) {
+          io.to(selId).emit('notification', {
+            title: '🔔 New Order Received (Approved)',
+            message: `Admin has approved order #${orderId.slice(-6)}.`,
+            type: 'success'
+          });
+        }
+        await Notification.create({
+          userId: selId,
+          title: '🔔 New Order Received (Approved)',
+          message: `Admin has approved order #${orderId.slice(-6)}.`,
+          type: 'success'
+        });
+      }
+    }
 
     return res.json({ success: true, message: 'Order status updated successfully.', order: updated });
   } catch (error) {

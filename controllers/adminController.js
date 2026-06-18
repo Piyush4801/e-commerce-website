@@ -341,6 +341,23 @@ const getAllReviews = async (req, res) => {
   }
 };
 
+const getAllOrders = async (req, res) => {
+  try {
+    const orders = await Order.find({});
+    // Sort descending by created date
+    orders.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    return res.json({ success: true, orders });
+  } catch (error) {
+    req.error = error;
+    console.error(error);
+    return res.status(500).json({
+      success: false,
+      message: "Internal Server Error",
+      error: error.message
+    });
+  }
+};
+
 module.exports = {
   getPlatformAnalytics,
   getUsers,
@@ -348,5 +365,6 @@ module.exports = {
   getFraudReports,
   reviewFraudReport,
   adjustUserCoins,
-  getAllReviews
+  getAllReviews,
+  getAllOrders
 };

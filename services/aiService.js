@@ -152,7 +152,7 @@ const getConversationalProducts = async (text, history = []) => {
       chatHistory.push({ role: 'user', content: text });
 
       const completion = await openai.chat.completions.create({
-        model: "nvidia/nemotron-3-ultra-550b-a55b",
+        model: "meta/llama-3.1-8b-instruct",
         messages: chatHistory,
         tools: [searchProductsTool],
         temperature: 1,
@@ -217,7 +217,7 @@ const getConversationalProducts = async (text, history = []) => {
         });
 
         const secondCompletion = await openai.chat.completions.create({
-          model: "nvidia/nemotron-3-ultra-550b-a55b",
+          model: "meta/llama-3.1-8b-instruct",
           messages: chatHistory,
           temperature: 1,
           top_p: 0.95,
@@ -366,7 +366,7 @@ If products were found, summarize them warmly and recommend the best one. If no 
       chatHistory.push({ role: 'user', content: text });
 
       const stream = await openai.chat.completions.create({
-        model: "meta/llama-3.1-70b-instruct",
+        model: "meta/llama-3.1-8b-instruct",
         messages: chatHistory,
         temperature: 1,
         top_p: 0.95,

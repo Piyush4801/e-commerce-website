@@ -300,10 +300,11 @@ const getModel = (name, mongooseSchema) => {
 
 const isValidId = (id) => {
   if (!id) return false;
+  if (typeof id === 'string' && id.trim().length > 0) return true;
   if (useMongo) {
     return mongoose.Types.ObjectId.isValid(id);
   }
-  return typeof id === 'string' && id.trim().length > 0;
+  return false;
 };
 
 module.exports = {

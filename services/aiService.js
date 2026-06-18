@@ -105,6 +105,7 @@ const getConversationalProducts = async (text, history = []) => {
   }
 
   // --- NVIDIA LLM INTEGRATION (Phase 1: Memory & Function Calling) ---
+  console.log("KEY IS:", process.env.NVIDIA_API_KEY);
   if (process.env.NVIDIA_API_KEY) {
     try {
       const openai = new OpenAI({
@@ -304,6 +305,7 @@ const getConversationalProductsStream = async (text, history = [], onChunk) => {
     return;
   }
 
+  console.log("KEY IS:", process.env.NVIDIA_API_KEY);
   if (process.env.NVIDIA_API_KEY) {
     try {
       const openai = new OpenAI({
@@ -402,9 +404,57 @@ If products were found, summarize them warmly and recommend the best one. If no 
     }
   }
 
-  // Fallback if no API key
-  onChunk(JSON.stringify({ type: 'text', text: "Sorry, AI is currently disabled." }) + '\n\n');
-  onChunk(JSON.stringify({ type: 'done' }) + '\n\n');
+  // --- LEGACY ALGORITHM FALLBACK ---
+  const parsed = parseConversation(text);
+  let filter = {};
+  if (parsed.category) filter.category = parsed.category;
+  let products = await Product.find(filter);
+  
+  if (parsed.budget) {
+    products = products.filter(p => p.price <= parsed.budget);
+  }
+
+  if (parsed.query && parsed.query.length > 1) {
+    const stopWords = new Set(['tell', 'me', 'about', 'this', 'product', 'my', 'budget', 'is', 'of', 'rs', 'the', 'a', 'an', 'and', 'or', 'for', 'to', 'in', 'with', 'on', 'can', 'you', 'i', 'need', 'want', 'show', 'suggest', 'find', 'looking', 'good', 'best', 'sleek', 'cheap', 'premium', 'under', 'below', 'less', 'than', 'rupees', 'more', 'some', 'any', 'other', 'another', 'mote', 'all']);
+    const keywords = parsed.query.split(/\s+/).filter(k => k.length > 2 && !stopWords.has(k.toLowerCase()));
+    
+    if (keywords.length > 0) {
+      products = products.filter(p => {
+        return keywords.every(k => {
+          const term = k.toLowerCase();
+          const stem1 = term.replace(/s$/, '');
+          const stem2 = term.replace(/es$/, '');
+          const textToSearch = (p.name + ' ' + p.description + ' ' + p.category).toLowerCase();
+          return textToSearch.includes(term) || textToSearch.includes(stem1) || textToSearch.includes(stem2);
+        });
+      });
+    }
+  }
+
+  const productsFound = products.slice(0, 5).map(p => {
+    const obj = p.toObject ? p.toObject() : p;
+    delete obj.embedding;
+    return obj;
+  });
+
+  onChunk(JSON.stringify({ type: 'products', products: productsFound }) + '\\n\\n');
+
+  let explanation = '';
+  if (productsFound.length > 0) {
+    const bestChoice = [...productsFound].sort((a, b) => b.rating - a.rating)[0];
+    explanation = `Based on your request, I scanned our inventory${parsed.category ? ` in ${parsed.category}` : ''}${parsed.budget ? ` with a budget under ₹${parsed.budget.toLocaleString()}` : ''}. I found ${productsFound.length} options.\\n\\nThe top recommendation is **${bestChoice.name}** (Rating: ${bestChoice.rating}⭐, ₹${bestChoice.price.toLocaleString()}) because it offers the highest rating and matches your query.`;
+  } else {
+    explanation = `I analyzed your request for "${parsed.query}"${parsed.budget ? ` under ₹${parsed.budget.toLocaleString()}` : ''}, but we don't have matching products${parsed.budget ? ' in that budget range' : ''} at the moment. Try adjusting your query.`;
+  }
+
+  // Stream the explanation text
+  const words = explanation.split(' ');
+  for (let i = 0; i < words.length; i++) {
+    onChunk(JSON.stringify({ type: 'text', text: words[i] + (i === words.length - 1 ? '' : ' ') }) + '\\n\\n');
+    await new Promise(r => setTimeout(r, 30)); // Fake streaming delay
+  }
+
+  onChunk(JSON.stringify({ type: 'done' }) + '\\n\\n');
 };
 
 // Recommendation Algorithms

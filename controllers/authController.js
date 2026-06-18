@@ -5,6 +5,7 @@ const Notification = require('../models/Notification');
 const { JWT_SECRET, REFRESH_TOKEN_SECRET } = require('../middleware/auth');
 const CoinWallet = require('../models/CoinWallet');
 const CoinTransaction = require('../models/CoinTransaction');
+const { canLogin, touchSession, removeSession } = require('../services/sessionTracker');
 
 // Simple User Agent Parser
 const parseUserAgent = (ua) => {
@@ -97,6 +98,10 @@ const register = async (req, res) => {
       return res.status(400).json({ success: false, message: 'Passwords do not match.' });
     }
 
+    if (!canLogin('new_registration')) {
+      return res.status(403).json({ success: false, message: 'Server at full capacity. Maximum 5 concurrent users allowed. Please try again later.' });
+    }
+
     // Check if user exists by mobile
     const existingUserPhone = await User.findOne({
       $or: [{ phone: mobile }, { mobile }]
@@ -173,6 +178,8 @@ const register = async (req, res) => {
       type: 'earn',
       reason: 'Welcome bonus for registration'
     });
+
+    touchSession(newUser._id);
 
     return res.status(201).json({
       success: true,
@@ -317,6 +324,10 @@ const login = async (req, res) => {
       }
     }
 
+    if (!canLogin(user._id)) {
+      return res.status(403).json({ success: false, message: 'Server at full capacity. Maximum 5 concurrent users allowed. Please try again later.' });
+    }
+
     // Reset failed counter and update history
     await User.findByIdAndUpdate(user._id, {
       $set: { failedLoginAttempts: 0, lockUntil: null, lastLogin: new Date().toISOString() },
@@ -328,6 +339,8 @@ const login = async (req, res) => {
     // Set Cookies
     const { refreshToken } = setAuthCookies(res, user._id, user.role);
     await User.findByIdAndUpdate(user._id, { $set: { refreshToken } });
+
+    touchSession(user._id);
 
     // Admin login activity logging
     if (user.role === 'admin') {
@@ -424,6 +437,7 @@ const logout = async (req, res) => {
       try {
         const decoded = jwt.verify(refreshToken, REFRESH_TOKEN_SECRET);
         await User.findByIdAndUpdate(decoded.id, { $set: { refreshToken: null } });
+        removeSession(decoded.id);
       } catch (e) {}
     }
 

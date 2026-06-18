@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
+const { touchSession } = require('../services/sessionTracker');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'smartcart_ai_jwt_secret_token_123';
 const REFRESH_TOKEN_SECRET = process.env.REFRESH_TOKEN_SECRET || 'smartcart_ai_refresh_token_secret_456';
@@ -30,6 +31,7 @@ const authenticate = async (req, res, next) => {
               maxAge: 15 * 60 * 1000 // 15 mins
             });
             req.user = user;
+            touchSession(user._id);
             return next();
           }
         } catch (e) {}
@@ -47,6 +49,7 @@ const authenticate = async (req, res, next) => {
         return res.status(403).json({ success: false, message: 'Your account is suspended. Contact support.' });
       }
       req.user = user;
+      touchSession(user._id);
       next();
     } catch (err) {
       if (err.name === 'TokenExpiredError') {
@@ -65,6 +68,7 @@ const authenticate = async (req, res, next) => {
                 maxAge: 15 * 60 * 1000
               });
               req.user = user;
+              touchSession(user._id);
               return next();
             }
           } catch (e) {}

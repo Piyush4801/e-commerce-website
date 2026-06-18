@@ -55,7 +55,7 @@ app.use(requestLogger);
 // Stricter Rate Limiter for Authentication endpoints
 const authLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: process.env.NODE_ENV === 'production' ? 5 : 1000,
+  max: process.env.NODE_ENV === 'production' ? 50 : 1000,
   message: { 
     success: false, 
     message: 'You have attempted multiple logins recently. Please wait a few minutes.' 
